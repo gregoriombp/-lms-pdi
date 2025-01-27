@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assistir a um vídeo</title>
+    <link rel="icon" href="../../public/images/logo/Logo_icon_261px.png" type="image/png">
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="../../public/css/material-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="../../public/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="../../public/css/app.css" rel="stylesheet">
+
+    <!-- Quill Theme -->
+    <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-sticky-subnav layout-default max-height-100vh">
+
+    <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+    <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout bg-primary900 max-height-100vh" style="background-image: url(../../public/images/illustration/BACKGROUND-ONBOARDING.png);
+                    background-size: cover;">
+
+
+
+
+
+
+
+        <!-- Header -->
+
+
+
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+        <div class="mdk-box js-mdk-box mb-0" data-effects="parallax-background blend-background">
+            <div class="mdk-box__bg">
+                <div class="mdk-box__bg-front"
+                    style="background-image: url(../../public/images/illustration/BACKGROUND-ONBOARDING.png);">
+                </div>
+            </div>
+            <div class="mdk-box__content justify-content-center max-height-100vh">
+                <div class="container page__container page-section d-flex flex-column justify-content-center max-height-100vh"" style="
+                    min-height: 100vh;">
+                    <div class="mdk-box__content justify-content-center">
+                        <div class="hero container page__container text-center py-64pt">
+                            <h1 class="text-white text-shadow">Bem-vindo(a)</h1>
+                            <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt">Para começar, por
+                                favor, preencha o formulário abaixo com suas informações pessoais.</p>
+
+
+
+                         
+
+                        </div>
+                        <!-- <div class="d-flex justify-content-center mb-4">
+                            <div class="w-40">
+                                <style>
+                                    .course-nav {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        position: relative;
+                                    }
+
+                                    .course-nav::before {
+                                        background-color: #9613f3 !important;
+                                    }
+                                </style>
+                                <nav class="course-nav">
+                                    <a href="student-take-lesson.html" data-toggle="tooltip"
+                                        class="bg-purple300" data-placement="bottom"
+                                        data-title=""><strong>1</strong></a>
+                                    <a data-toggle="tooltip" data-placement="bottom"
+                                         class="bg-white" data-title=""
+                                        href="student-take-lesson.html"><strong>2</strong></a>
+                                    <a data-toggle="tooltip" data-placement="bottom"
+                                        data-title="" class="bg-white"
+                                        href="student-take-lesson.html"><strong>3</strong></a>
+                                </nav>
+                            </div>
+                        </div> -->
+                    </div>
+                    
+
+                    <div class="flex d-flex justify-content-center align-items-center pb-64pt">
+                        <!-- First Form -->
+                        <div id="form-1" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                            style="width: 50%; transition: opacity 0.5s ease-in-out;">
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                   <!-- <div class="d-flex justify-content-center align-items-center mb-12pt">
+                                        <p class="h4">Formulário de Onboarding</p>
+                                        </div>
+                                   
+                                    <div class="page-separator"></div>-->
+                                    <form action="#" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="form-label" for="name">Nome Completo</label>
+                                            <input id="name" type="text" class="form-control"
+                                                placeholder="Digite seu nome completo">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input id="email" type="email" class="form-control"
+                                                placeholder="Digite seu email">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="birth">Data de Nascimento</label>
+                                            <input id="birth" type="date" class="form-control">
+                                        </div>
+
+                                        <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                           
+                                            <button type="button" onclick="switchForms()"
+                                                class="btn btn-primary btn-rounded">Avançar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Form -->
+                        <div id="form-2" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                            style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100">
+                            
+                                    <div>
+                                        <h4 class="text-center mb-4">Em quanto tempo você planeja concluir o
+                                            curso?</h4>
+                                    </div>
+                                    <div class="d-flex flex-column flex-grow-1 justify-content-center">
+                                    <form action="#" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="form-label h3 mb-4"></label>
+
+                                            <div class="form-group px-4">
+                                                <div class="slider-container">
+                                                    <input type="range" class="custom-range" min="0" max="3" step="1"
+                                                        id="timeSlider">
+                                                    <div class="slider-labels d-flex justify-content-between mt-2">
+                                                        <span class="slider-label">3 meses</span>
+                                                        <span class="slider-label">6 meses</span>
+                                                        <span class="slider-label">1 ano</span>
+                                                        <span class="slider-label">2 anos</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                        <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                        <button type="button" onclick="switchToAvatars()"
+                                            class="btn btn-primary btn-rounded">Avançar</button>
+                                    </div>
+                       
+                            </div>
+                        </div>
+
+                        <!-- Third Form -->
+                        <div id="form-3" class="card rounded-lg p-4 mb-24pt" style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100">
+                                <!-- Título no topo -->
+                                <div>
+                                    <h4 class="text-center mb-4">Escolha seu avatar</h4>
+                                </div>
+
+                                <!-- Carrossel no meio -->
+                                <div class="flex-grow-1 d-flex align-items-center">
+                                    <div id="avatarCarousel" class="carousel slide w-100" data-interval="false">
+                                        <div class="carousel-inner text-center">
+                                            <div class="carousel-item active">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/people/110/guy-1.jpg"
+                                                        class="avatar-option" data-avatar-id="1">
+                                                    <img src="../../public/images/people/110/guy-2.jpg"
+                                                        class="avatar-option center-avatar selected"
+                                                        data-avatar-id="2">
+                                                    <img src="../../public/images/people/110/guy-3.jpg"
+                                                        class="avatar-option" data-avatar-id="3">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/people/110/guy-4.jpg"
+                                                        class="avatar-option" data-avatar-id="4">
+                                                    <img src="../../public/images/people/110/guy-5.jpg"
+                                                        class="avatar-option" data-avatar-id="5">
+                                                    <img src="../../public/images/people/110/guy-6.jpg"
+                                                        class="avatar-option" data-avatar-id="6">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/people/110/guy-7.jpg"
+                                                        class="avatar-option" data-avatar-id="7">
+                                                    <img src="../../public/images/people/110/guy-8.jpg"
+                                                        class="avatar-option " data-avatar-id="8">
+                                                    <img src="../../public/images/people/110/guy-9.jpg"
+                                                        class="avatar-option" data-avatar-id="9">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="prev">
+                                            <span class="material-icons text-primary400">chevron_left</span>
+                                        </a>
+                                        <a class="carousel-control-next bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="next">
+                                            <span class="material-icons text-primary400">chevron_right</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Botões na parte inferior -->
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <a href="home.html" class="btn btn-primary btn-rounded">Finalizar Perfil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        .custom-range {
+                            width: 100%;
+                            appearance: none !important;
+                            -webkit-appearance: none !important;
+                            height: 3px !important;
+                            background: linear-gradient(to right, #2196F3, #4CAF50, #9C27B0, #E91E63) !important;
+                            border-radius: 5px !important;
+                            outline: none !important;
+                        }
+
+                        .custom-range::-webkit-slider-thumb {
+                            -webkit-appearance: none !important;
+                            appearance: none !important ;
+                            width: 20px !important;
+                            height: 20px !important;
+                            background: #8230e6 !important ;
+                            border: 2px solid #b785f3 !important;
+                            border-radius: 50% !important;
+                            cursor: pointer !important;
+                            transition: all 0.3s ease !important;
+                        }
+
+                        .custom-range::-webkit-slider-thumb:hover {
+                            transform: scale(1.2) !important;
+                        }
+
+                        .slider-labels {
+                            margin-top: 20px;
+                            padding: 0 10px;
+                        }
+
+                        .slider-label {
+                            font-size: 14px !important;
+                            color: #666 !important;
+                            text-align: center !important;
+                            position: relative !important;
+                            cursor: pointer !important;
+                            transition: color 0.3s ease !important;
+                        }
+
+                        .slider-label.active {
+                            color: #8230e6 !important;
+                            font-weight: bold !important;
+                        }
+
+                        .carousel-control-prev,
+                        .carousel-control-next {
+                            width: 40px;
+                            height: 40px;
+                            background: rgba(0, 0, 0, 0.2);
+                            border-radius: 50%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            opacity: 1;
+                        }
+
+                        .carousel-control-prev:hover,
+                        .carousel-control-next:hover {
+                            background: rgba(0, 0, 0, 0.5);
+                        }
+
+                        .carousel-control-prev {
+                            left: 10px;
+                        }
+
+                        .carousel-control-next {
+                            right: 10px;
+                        }
+
+                        .material-icons {
+                            color: white;
+                        }
+
+                        .avatar-group {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 20px;
+                        }
+
+                        .avatar-option {
+                            width: 140px;
+                            height: 140px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            cursor: pointer;
+                            opacity: 0.5;
+                            transition: all 0.3s ease;
+                            border: 3px solid transparent;
+                        }
+
+                        .avatar-option.center-avatar {
+                            width: 140px;
+                            height: 140px;
+                        }
+
+                        .avatar-option.selected {
+                            border-color: #4CAF50;
+                            opacity: 1;
+                            box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+                        }
+                    </style>
+
+                    <script>
+                        function switchForms() {
+                            const form1 = document.getElementById('form-1');
+                            const form2 = document.getElementById('form-2');
+
+                            form1.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form1.style.display = 'none';
+                                form2.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form2.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        function switchToAvatars() {
+                            const form2 = document.getElementById('form-2');
+                            const form3 = document.getElementById('form-3');
+
+                            form2.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form2.style.display = 'none';
+                                form3.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form3.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        // Adicionar interatividade ao slider
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const slider = document.getElementById('timeSlider');
+                            const labels = document.querySelectorAll('.slider-label');
+
+                            slider.addEventListener('input', function () {
+                                // Remove active class from all labels
+                                labels.forEach(label => label.classList.remove('active'));
+                                // Add active class to current label
+                                labels[this.value].classList.add('active');
+                            });
+
+                            // Adicionar interatividade aos labels
+                            labels.forEach((label, index) => {
+                                label.addEventListener('click', function () {
+                                    slider.value = index;
+                                    // Trigger input event to update active state
+                                    slider.dispatchEvent(new Event('input'));
+                                });
+                            });
+                        });
+
+                        // Avatar selection handling
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const avatarCarousel = document.getElementById('avatarCarousel');
+                            const avatarGroup = avatarCarousel.querySelector('.avatar-group');
+
+                            // Desabilitar o slide automático
+                            $(avatarCarousel).carousel({
+                                interval: false,
+                                wrap: true
+                            });
+
+                            // Função para mover um avatar para o centro
+                            function moveToCenter(clickedAvatar) {
+                                const avatars = document.querySelectorAll('.avatar-option');
+                                const currentCenter = document.querySelector('.center-avatar');
+
+                                // Remove classes do avatar central atual
+                                currentCenter.classList.remove('center-avatar', 'selected');
+                                currentCenter.style.opacity = '0.5';
+
+                                // Adiciona classes ao novo avatar central
+                                clickedAvatar.classList.add('center-avatar', 'selected');
+                                clickedAvatar.style.opacity = '1';
+
+                                // Ajusta opacidade dos outros avatares
+                                avatars.forEach(avatar => {
+                                    if (avatar !== clickedAvatar) {
+                                        avatar.classList.remove('selected');
+                                        avatar.style.opacity = '0.5';
+                                    }
+                                });
+                            }
+
+                            // Handler para clique nos avatares
+                            avatarCarousel.addEventListener('click', function (e) {
+                                if (e.target.classList.contains('avatar-option') && !e.target.classList
+                                    .contains('center-avatar')) {
+                                    moveToCenter(e.target);
+                                }
+                            });
+
+                            // Modificar comportamento das setas para mover uma imagem por vez
+                            $('.carousel-control-next').click(function () {
+                                const currentCenter = document.querySelector('.center-avatar');
+                                const nextAvatar = currentCenter.nextElementSibling;
+                                if (nextAvatar) {
+                                    moveToCenter(nextAvatar);
+                                }
+                            });
+
+                            $('.carousel-control-prev').click(function () {
+                                const currentCenter = document.querySelector('.center-avatar');
+                                const prevAvatar = currentCenter.previousElementSibling;
+                                if (prevAvatar) {
+                                    moveToCenter(prevAvatar);
+                                }
+                            });
+                        });
+
+                        function goBack() {
+                            const form2 = document.getElementById('form-2');
+                            const form3 = document.getElementById('form-3');
+                            const form1 = document.getElementById('form-1');
+                            
+                            if (form3.style.display === 'block') {
+                                // Voltando do form 3 para o form 2
+                                form3.style.opacity = '0';
+                                setTimeout(() => {
+                                    form3.style.display = 'none';
+                                    form2.style.display = 'block';
+                                    setTimeout(() => {
+                                        form2.style.opacity = '1';
+                                    }, 50);
+                                }, 500);
+                            } else if (form2.style.display === 'block') {
+                                // Voltando do form 2 para o form 1
+                                form2.style.opacity = '0';
+                                setTimeout(() => {
+                                    form2.style.display = 'none';
+                                    form1.style.display = 'block';
+                                    setTimeout(() => {
+                                        form1.style.opacity = '1';
+                                    }, 50);
+                                }, 500);
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- // END Header Layout Content -->
+
+        <!-- Footer -->
+        <!-- 
+        <div class="bg-white border-top-2 mt-auto">
+            <div class="container page__container page-section d-flex flex-column">
+                <p class="text-70 brand mb-24pt" style="font-size: 16px;">
+                    <img class="brand-icon mr-3" src="../../public/images/logo/Logo_icon_261px.png" width="48"
+                        alt="Luma">
+                    Programa de Desenvolvimento Inicial
+                </p>
+                <p class="measure-lead-max text-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
+                    foi desenvolvida junto ao ENAP para transformar o aprendizado e a capacitação de servidores em
+                    uma experiência eficiente e acessível. Com recursos interativos e um design funcional,
+                    oferecemos um ambiente integrado para cursos, trilhas de conhecimento, avaliações e relatórios
+                    de desempenho.
+                </p>
+                <p class="mb-8pt d-flex">
+                    <a href="" class="text-70 text-underline mr-8pt small">Termos e Condições</a>
+                    <a href="" class="text-70 text-underline small">Plolíticas de Privacidade</a>
+                </p>
+                <p class="text-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
+            </div>
+        </div>
+-->
+        <!-- // END Footer -->
+
+
+        <!-- // END Header Layout -->
+
+        <!-- Drawer -->
+
+
+
+        <!-- // END Drawer -->
+
+        <!-- // Timer -->
+
+        <script>
+            function startTimer(duration, display) {
+                var timer = duration,
+                    minutes, seconds;
+                setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    display.textContent = minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        timer = duration;
+                    }
+                }, 1000);
+            }
+
+            window.onload = function () {
+                var sixtyMinutes = 60 * 52,
+                    display = document.querySelector('#time');
+                startTimer(sixtyMinutes, display);
+            };
+        </script>
+
+        <!-- END TIMER -->
+
+        <!-- jQuery -->
+        <script src="../../public/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="../../public/vendor/popper.min.js"></script>
+        <script src="../../public/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="../../public/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="../../public/vendor/material-design-kit.js"></script>
+
+        <!-- App JS -->
+        <script src="../../public/js/app.js"></script>
+
+        <!-- Quill -->
+        <script src="../../public/vendor/quill.min.js"></script>
+        <script src="../../public/js/quill.js"></script>
+
+
+
+</body>
+
+</html>

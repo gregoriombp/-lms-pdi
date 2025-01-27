@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Cor de fundo, se necessário */
+}
+
+.containerhome {
+  position: relative;
+  width: 1200px; /* Largura do contêiner */
+  height: 675px; /* Altura do contêiner */
+
+  /*   width: 100%;
+      height: 100vh;*/ /*esse código aqui é pra dar full screen*/
+  background-size: cover;
+}
+
+/* Pseudo-elemento para a imagem de fundo */
+.containerhome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/images/home_page/background-no-one.jpg'); /* Sua ilustração aqui */
+  background-size: cover;
+  z-index: -1; /* Coloca o pseudo-elemento atrás das portas */
+  transition: filter 0.3s ease; /* Adiciona transição ao filtro */
+}
+
+/* Estilos para as portas */
+.door, .character {
+  position: absolute;
+}
+
+.character a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+#door1 {
+  width: 100px;
+  height: 180px;
+  top: 50px;
+  left: 100px;
+  
+}
+
+#door2 {
+  width: 100px;
+  height: 180px;
+  top: 50px;
+  left: 250px;
+}
+
+#door3 {
+  width: 100px;
+  height: 180px;
+  top: 50px;
+  left: 400px;
+}
+
+#door4 {
+  width: 100px;
+  height: 180px;
+  top: 350px;
+  left: 100px;
+}
+
+#door5 {
+  width: 100px;
+  height: 180px;
+  top: 350px;
+  left: 250px;
+}
+
+#door6 {
+  width: 100px;
+  height: 180px;
+  top: 350px;
+  left: 400px;
+}
+
+.character {
+  width: 200px;
+  height: 300px;
+  bottom: 20px;
+  right: 50px;
+  transition: transform 0.3s ease; /* Para a animação do personagem */
+}
+
+/* Efeito de destaque no pseudo-elemento */
+.highlighted::before {
+  filter: brightness(120%) contrast(110%);
+}
+
+/* Efeito de escurecimento nas portas não focadas */
+.dimmed {
+  filter: brightness(80%) contrast(90%);
+}

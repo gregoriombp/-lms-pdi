@@ -1,0 +1,293 @@
+
+/* Estilos gerais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%; /* Garante que o body e html ocupem a tela inteira */
+  margin: 0;
+  padding: 0;
+  background-color: #011317;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #011317;  
+    background: -webkit-linear-gradient(to left, #011317, #011317);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.areaeixo1 {
+    background: #01646a;  
+    background: -webkit-linear-gradient(to left, #011317, #011317);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(132, 241, 255, 0.9);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 21s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+        border-radius: 0;
+    }
+
+    50%{
+        transform: translateY(-2000px) rotate(720deg);
+        opacity: 0.5;
+        border-radius: 20%;
+    }
+
+    70%{
+        transform: translateY(-3000px) rotate(720deg);
+        opacity: 1;
+        border-radius: 20%;
+    }
+
+    100%{
+        transform: translateY(-5000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.containereixo1 {
+    position: relative;
+  
+    width: 1440px; /* Largura fixa */
+    height: 810px; /* Altura fixa (proporção da imagem de fundo) */
+    background: url('../../public/images/illustration/segundatelaV6.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 1440px) {
+      .containereixo1 {
+        background: url('../../public/images/icon/expand-screen.png') no-repeat center center;
+        background-size: contain;
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+.containerhome {
+  position: relative;
+
+  width: 1440px; /* Largura fixa */
+  height: 810px; /* Altura fixa (proporção da imagem de fundo) */
+  background: url('../../public/images/home_page/background-no-one2.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 1440px) {
+    .containerhome {
+      background: url('../../public/images/icon/expand-screen.png') no-repeat center center;
+      background-size: contain;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+
+  @media (max-width: 1440px) {
+    #character.interactive-area2, #character{
+  
+     display: none;
+    }
+  }
+
+
+/* Áreas interativas invisíveis */
+.interactive-area2 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0); /* Invisível por padrão */
+    transition:  0.3s ease, border 0.3s ease; /* Animação no hover */
+    cursor: pointer;
+    filter: contrast(1.0) brightness(1.0);
+    transform: scale(1.0);
+  }
+  
+  .interactive-area2:hover {
+    background: rgba(255, 255, 255, 0.0); /* Fundo levemente visível no hover */
+    border: 0px solid rgba(255, 255, 255, 0.0); /* Contorno no hover */
+    filter: contrast(1.2) brightness(1.2);
+    transform: scale(1.5);
+  
+  }
+
+/* Áreas interativas invisíveis */
+.interactive-area {
+  position: absolute;
+  background: rgba(255, 255, 255, 0); /* Invisível por padrão */
+  transition: background 0.3s ease, border 0.3s ease; /* Animação no hover */
+  cursor: pointer;
+  filter: contrast(1.0) brightness(1.0);
+}
+
+.interactive-area:hover {
+  background: rgba(255, 255, 255, 0.2); /* Fundo levemente visível no hover */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Contorno no hover */
+  filter: contrast(1.15) brightness(1.1);
+
+}
+
+/* Definindo áreas específicas */
+#door1 {
+  top: 36px; /* Ajuste fino */
+  left: 53px;
+  width: 110px;
+  height: 278px;
+  clip-path: url('#door1clip') /* Forma oval para o personagem */
+}
+
+#door2 {
+  top: 180px; /* Ajuste fino */
+  left: 500px;
+  width: 90px;
+  height: 150px;
+}
+
+#character.interactive-area2 {
+    z-index: 1;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%) scale(1); /* Escala padrão */
+    width: 50%; /* Define a largura */
+    height: auto; /* Mantém a proporção */
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que a imagem seja ajustada dentro do contêiner */
+    transition: transform 0.3s ease; /* Transição suave para o efeito */
+}
+
+#character.interactive-area2:hover {
+    transform: translateX(-50%) scale(1.05) translateY(-5%); /* Aumenta levemente ao hover */
+}

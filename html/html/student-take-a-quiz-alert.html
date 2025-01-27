@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assistir a um vídeo</title>
+    <link rel="icon" href="../../public/images/logo/Logo_icon_261px.png" type="image/png">
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="../../public/css/material-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="../../public/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="../../public/css/app.css" rel="stylesheet">
+
+    <!-- Quill Theme -->
+    <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-sticky-subnav layout-default ">
+
+    <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+    <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+
+
+
+
+
+
+        <!-- Header -->
+
+        <div id="header" class="mdk-header js-mdk-header mb-0" data-fixed data-effects="">
+            <div class="mdk-header__content">
+
+                <!-- Navbar -->
+
+                <div class="navbar navbar-expand pr-0 navbar-light bg-white navbar-shadow" id="default-navbar"
+                    data-primary>
+
+                    <!-- Navbar Brand -->
+
+                    <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                        <span class="mr-0 mr-lg-8pt">
+
+                            <span class=""><img src="../../public/images/Asset 4@4x.png" alt="logo" class="img-fluid"
+                                    style="max-height: 48px;" /></span>
+
+                        </span>
+
+
+
+
+                    </a>
+
+                    <!-- // END Navbar Brand -->
+
+
+
+                    <!-- Navbar Toggler -->
+
+                    <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                data-caret="false">Eixos</a>
+                            <div class="dropdown-menu">
+                                <a href="student-eixo1.html" class="dropdown-item">Eixo 1</a>
+                                <a href="#" class="dropdown-item">Eixo 2</a>
+                                <a href="#" class="dropdown-item">Eixo 3</a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt">Eixo
+                                        4</span> <span
+                                        class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        5</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        6</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+
+
+
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notification-center.html" class="nav-link">Notificações</a>
+                        </li>
+
+
+                    </ul>
+
+                    <!-- // END Navbar Toggler -->
+
+
+
+
+
+                    <div class="flex"></div>
+
+                    <!-- Navbar Menu -->
+
+                    <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+                        <!-- Notifications dropdown -->
+
+                        <!-- // END Notifications dropdown -->
+
+                        <!-- Notifications dropdown -->
+                        <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
+                            data-toggle="tooltip" data-title="Notifications" data-placement="bottom"
+                            data-boundary="window">
+                            <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
+                                data-caret="false">
+                                <i class="material-icons">notifications_none</i>
+                                <span class="badge badge-notifications badge-accent">1</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right rounded-lg">
+                                <div data-perfect-scrollbar class="position-relative">
+                                    <div class="dropdown-header pt-16pt"><strong>
+                                            <h5>Central de Notificações</h5>
+                                        </strong></div>
+                                    <div class="list-group list-group-flush mb-0">
+
+                                        <a href="javascript:void(0);"
+                                            class="list-group-item list-group-item-action unread">
+                                            <span class="d-flex align-items-center mb-1">
+
+
+                                                <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-15.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">Você subiu um
+                                                        nível!</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
+                                                        porque
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        suas conquistas.
+                                                    </span>
+                                                    <small class="text-black-50">3 minutos atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex align-items-center mb-1">
+
+
+
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-16.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">+4 Chaves</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
+                                                        porque
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        suas conquistas.
+                                                    </span>
+                                                    <small class="text-black-50">7 minuttos atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex align-items-center mb-1">
+
+
+
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-17.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">+1 Medalha</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma medalha
+                                                        porque
+                                                        terminou todas as atividades obrigatórias do eixo.
+                                                    </span>
+                                                    <small class="text-black-50">5 horas atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+
+                                        <a href="notification-center.html"
+                                            class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-xs mr-2">
+                                                    <span class="avatar-title rounded-circle bg-accent">
+                                                        <i class="material-icons font-size-16pt text-white">add</i>
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100">Veja todas as suas
+                                                        notificações</strong>
+
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // END Notifications dropdown -->
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link d-flex align-items-center dropdown-toggle"
+                                data-toggle="dropdown" data-caret="false">
+
+                                <span class="avatar avatar-sm mr-8pt2">
+
+                                    <span class="avatar-title rounded-circle bg-primary"> <img
+                                            class=" avatar rounded-circle"
+                                            src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"> </span>
+
+                                </span>
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
+                                <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
+                                <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                <a class="dropdown-item" href="#">Sair</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- // END Navbar Menu -->
+
+                </div>
+
+                <!-- // END Navbar -->
+
+            </div>
+        </div>
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+
+        <div class="mdk-header-layout__content page-content">
+            <div class="navbar navbar-list navbar-light bg-lightgreen border-bottom-2 border-bottom navbar-expand-sm"
+                style="white-space: nowrap;">
+                <div class="container page__container">
+                    <nav class="nav navbar-nav">
+                        <!-- <div class="nav-item navbar-list__item">
+                            <a href="student-take-course.html" class="nav-link h-auto"><i
+                                    class="material-icons icon--left">keyboard_backspace</i> Sair</a>
+                        </div>-->
+                        <div class="nav-item navbar-list__item">
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="mr-16pt">
+                                    <a href="student-take-course.html"><img src="../../public/images/icon/icon-quiz.png"
+                                            width="40" alt="Angular" class="rounded"></a>
+                                </div>
+                                <div class="flex">
+                                    <a href="student-take-course.html" class="card-title text-body mb-0">Questionário de
+                                        Avaliação</a>
+                                    <p class="lh-1 d-flex align-items-center mb-0">
+                                        <span class="text-50 small font-weight-bold mr-8pt">Eixo 1</span>
+                                        <span class="text-50 small">Desafios Estratégicos na Gestão da Inovação</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="bg-primary900 pb-lg-64pt py-64pt">
+                <div class="container page__container">
+
+
+                    <div class=" flex d-flex flex-column align-items-center justify-content-center mb-16pt text-center">
+                        <h2 class=" text-white flex m-0 mb-32pt">Hora de testar suas habilidades!</h2>
+                        <h1 class="text-primary300 flex m-0 w-75 mb-32pt">Quiz: Desafios Estratégicos na Gestão da
+                            Inovação
+                        </h1>
+                    </div>
+
+                    <div class="d-flex flex-wrap mb-16pt align-items-center justify-content-center">
+                        <a href="student-take-a-quiz.html"><button type="button" class="btn btn-white btn-md btn-rounded">
+                                <i class="material-icons icon--left">launch</i> Iniciar Quiz
+                            </button></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="container page__container mt-112pt">
+                <div class="page-headline text-center">
+
+                    <h2>Antes de começar, leia as instruções</h2>
+                    <p class="lead w-75 mx-auto text-70">Os questionários/quizzes têm como objetivo
+                        verificar a aprendizagem dos alunos para obtenção de certificado. Eles se baseiam nas aulas
+                        em
+                        vídeo e materiais de apoio.</p>
+                </div>
+
+
+            </div>
+
+            <div class="container page__container mt-2 pb-64pt">
+
+                <div class="row card-group-row border-bottom-2 botder-muted py-32pt">
+                    <div class="col-md-4 card-group-row__col">
+
+                        <div class="card card--elevated card-group-row__card bg-purple500 py-8pt">
+                            <div class="card-body d-flex ">
+                                <span
+                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-purple600">
+                                    <i class="material-icons">replay</i>
+                                </span>
+                                <div class="flex">
+                                    <a class="mb-12pt text-orange100" href="" style="font-size: 1.15rem;
+                                    font-weight: bold;
+                                    line-height: 1.5rem;
+                                    
+                                    ">
+                                        Somente 2 tentativas são permitidas</a>
+                                    <p class="text-purple100 mt-3"><strong>A partir da segunda tentativa, uma questão
+                                            que foi respondida incorretamente na primeira vez tem sua nota
+                                            reduzida.</strong>
+                                        <p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 card-group-row__col">
+
+                        <div class="card card--elevated card-group-row__card bg-orange300 py-8pt ">
+                            <div class="card-body d-flex ">
+                                <span
+                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-orange500">
+                                    <i class="material-icons">access_time</i>
+                                </span>
+                                <div class="flex">
+                                    <a class="mb-12pt text-orange100" href="" style="font-size: 1.15rem;
+                                       font-weight: bold;
+                                       line-height: 1.5rem;
+                                       
+                                       ">
+                                        Limite de Tempo</a>
+                                    <p class="text-orange500 mb-0 mt-3"><strong>Você terá até 1 hora para concluir e
+                                            enviar o questionário. Gerencie bem o tempo para responder todas as
+                                            perguntas com atenção e revisar as respostas antes do envio.</strong>
+                                        <p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 card-group-row__col">
+
+                        <div class="card card--elevated card-group-row__card bg-green200 py-8pt">
+                            <div class="card-body d-flex ">
+                                <span
+                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-green600">
+                                    <i class="material-icons">check_circle</i>
+                                </span>
+                                <div class="flex">
+                                    <a class="mb-12pt text-lightgreen" href="" style="font-size: 1.15rem;
+                                       font-weight: bold;
+                                       line-height: 1.5rem;
+                                       
+                                       ">
+                                        Método de Avaliação</a>
+                                    <p class="text-green500 mb-0 mt-3"><strong>Você terá até 1 hora para concluir e
+                                            enviar o questionário. Gerencie bem o tempo para responder todas as
+                                            perguntas com atenção e revisar as respostas antes do envio.</strong>
+                                        <p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="page-section ">
+                    <div class="mb-2">
+                        <h4>Importante:</h4>
+                        <p class="w-75  text-black-100" >Os quizzes e questionários são ferramentas para avaliar o aprendizado dos
+                            alunos, servindo como critério para a emissão do certificado. Baseados nas aulas em vídeo e
+                            nos materiais de apoio, eles permitem consulta livre durante sua realização. Caso surjam
+                            dúvidas, é possível discutir com outros alunos no fórum. Há também a possibilidade de uma
+                            segunda tentativa, sendo considerada a maior nota obtida. No entanto, é importante lembrar
+                            que as questões respondidas incorretamente na primeira tentativa terão seu valor reduzido na
+                            segunda tentativa.</p>
+                    </div>
+                </div>
+                <div class="page-section border-bottom-2 mt-32pt">
+                    <div class="container page__container">
+
+                        <div class="card">
+                            <img src="../../public/images/illustration/background-blur.jpg" alt="TypeScript"
+                                class="card-img" style="max-height: 100%; width: initial;">
+                            <div class="fullbleed bg-primary" style="opacity: .5;"></div>
+                            <img src="../../public/images/logo-color.svg" width="64"
+                                alt="Instruduction to TypeScript" class="rounded position-absolute"
+                                style="right: 1rem; top: 1rem;">
+                            <div class="card-body d-flex align-items-center justify-content-center fullbleed">
+                                <div>
+                                    <h2 class="text-white mb-16pt">Tudo certo? Vamos iniciar o quiz?</h2>
+                                    <div class="d-flex align-items-center mb-16pt justify-content-center">
+                                        <div class="d-flex align-items-center mr-16pt">
+                                            <span
+                                                class="material-icons icon-16pt text-white-50 mr-4pt">access_time</span>
+                                            <p class="flex text-white-50 lh-1 mb-0">60 minutos</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span
+                                                class="material-icons icon-16pt text-white-50 mr-4pt">play_circle_outline</span>
+                                            <p class="flex text-white-50 lh-1 mb-0">4 Questões</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="student-take-lesson.html"
+                                            class="btn btn-white btn-rounded mr-8pt">Iniciar</a>
+                                        <a href="student-take-course.html"
+                                            class="btn btn-outline-white btn-rounded ml-0">Repetir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- // END Header Layout Content -->
+
+        <!-- Footer -->
+
+        <div class="bg-white border-top-2 mt-auto">
+            <div class="container page__container page-section d-flex flex-column">
+                <p class="text-70 brand mb-24pt" style="font-size: 16px;">
+                    <img class="brand-icon mr-3" src="../../public/images/logo/Logo_icon_261px.png" width="48"
+                        alt="Luma">
+                    Programa de Desenvolvimento Inicial
+                </p>
+                <p class="measure-lead-max text-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
+                    foi desenvolvida junto ao ENAP para transformar o aprendizado e a capacitação de servidores em
+                    uma experiência eficiente e acessível. Com recursos interativos e um design funcional,
+                    oferecemos um ambiente integrado para cursos, trilhas de conhecimento, avaliações e relatórios
+                    de desempenho.
+                </p>
+                <p class="mb-8pt d-flex">
+                    <a href="" class="text-70 text-underline mr-8pt small">Termos e Condições</a>
+                    <a href="" class="text-70 text-underline small">Plolíticas de Privacidade</a>
+                </p>
+                <p class="text-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
+            </div>
+        </div>
+
+        <!-- // END Footer -->
+
+
+        <!-- // END Header Layout -->
+
+        <!-- Drawer -->
+
+
+
+        <!-- // END Drawer -->
+
+        <!-- // Timer -->
+
+        <script>
+            function startTimer(duration, display) {
+                var timer = duration,
+                    minutes, seconds;
+                setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    display.textContent = minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        timer = duration;
+                    }
+                }, 1000);
+            }
+
+            window.onload = function () {
+                var sixtyMinutes = 60 * 52,
+                    display = document.querySelector('#time');
+                startTimer(sixtyMinutes, display);
+            };
+        </script>
+
+        <!-- END TIMER -->
+
+        <!-- jQuery -->
+        <script src="../../public/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="../../public/vendor/popper.min.js"></script>
+        <script src="../../public/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="../../public/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="../../public/vendor/material-design-kit.js"></script>
+
+        <!-- App JS -->
+        <script src="../../public/js/app.js"></script>
+
+        <!-- Quill -->
+        <script src="../../public/vendor/quill.min.js"></script>
+        <script src="../../public/js/quill.js"></script>
+
+
+
+</body>
+
+</html>

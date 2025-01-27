@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assistir a um vídeo</title>
+    <link rel="icon" href="../../public/images/logo/Logo_icon_261px.png" type="image/png">
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="../../public/css/material-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="../../public/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="../../public/css/app.css" rel="stylesheet">
+
+    <!-- Quill Theme -->
+    <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-sticky-subnav layout-default ">
+
+    <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+    <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+
+
+
+
+
+
+        <!-- Header -->
+
+        <div id="header" class="mdk-header js-mdk-header mb-0" data-fixed data-effects="">
+            <div class="mdk-header__content">
+
+                <!-- Navbar -->
+
+                <div class="navbar navbar-expand pr-0 navbar-light bg-white navbar-shadow" id="default-navbar"
+                    data-primary>
+
+                    <!-- Navbar Brand -->
+
+                    <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                        <span class="mr-0 mr-lg-8pt">
+
+                            <span class=""><img src="../../public/images/Asset 4@4x.png" alt="logo" class="img-fluid"
+                                    style="max-height: 48px;" /></span>
+
+                        </span>
+
+
+
+
+                    </a>
+
+                    <!-- // END Navbar Brand -->
+
+
+
+                    <!-- Navbar Toggler -->
+
+                    <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                data-caret="false">Eixos</a>
+                            <div class="dropdown-menu">
+                                <a href="student-eixo1.html" class="dropdown-item">Eixo 1</a>
+                                <a href="#" class="dropdown-item">Eixo 2</a>
+                                <a href="#" class="dropdown-item">Eixo 3</a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt">Eixo
+                                        4</span> <span
+                                        class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        5</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+                                <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        6</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+
+
+
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notification-center.html" class="nav-link">Notificações</a>
+                        </li>
+
+
+                    </ul>
+
+                    <!-- // END Navbar Toggler -->
+
+
+
+
+
+                    <div class="flex"></div>
+
+                    <!-- Navbar Menu -->
+
+                    <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+                        <!-- Notifications dropdown -->
+
+                        <!-- // END Notifications dropdown -->
+
+                        <!-- Notifications dropdown -->
+                        <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
+                            data-toggle="tooltip" data-title="Notifications" data-placement="bottom"
+                            data-boundary="window">
+                            <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
+                                data-caret="false">
+                                <i class="material-icons">notifications_none</i>
+                                <span class="badge badge-notifications badge-accent">1</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right rounded-lg">
+                                <div data-perfect-scrollbar class="position-relative">
+                                    <div class="dropdown-header pt-16pt"><strong>
+                                            <h5>Central de Notificações</h5>
+                                        </strong></div>
+                                    <div class="list-group list-group-flush mb-0">
+
+                                        <a href="javascript:void(0);"
+                                            class="list-group-item list-group-item-action unread">
+                                            <span class="d-flex align-items-center mb-1">
+
+
+                                                <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-15.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">Você subiu um
+                                                        nível!</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
+                                                        porque
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        suas conquistas.
+                                                    </span>
+                                                    <small class="text-black-50">3 minutos atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex align-items-center mb-1">
+
+
+
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-16.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">+4 Chaves</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
+                                                        porque
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        suas conquistas.
+                                                    </span>
+                                                    <small class="text-black-50">7 minuttos atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex align-items-center mb-1">
+
+
+
+
+                                            </span>
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-lg mr-3">
+                                                    <span class="avatar-title rounded-circle p-0 bg-purple100">
+                                                        <img class=" avatar avatar-xl rounded-circle"
+                                                            src="../../public/images/icon/ICONS-AWARDS-17.png">
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100 card-title mb-1">+1 Medalha</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma medalha
+                                                        porque
+                                                        terminou todas as atividades obrigatórias do eixo.
+                                                    </span>
+                                                    <small class="text-black-50">5 horas atrás.</small>
+                                                </span>
+                                            </span>
+                                        </a>
+
+
+                                        <a href="notification-center.html"
+                                            class="list-group-item list-group-item-action">
+
+                                            <span class="d-flex">
+                                                <span class="avatar avatar-xs mr-2">
+                                                    <span class="avatar-title rounded-circle bg-accent">
+                                                        <i class="material-icons font-size-16pt text-white">add</i>
+                                                    </span>
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong class="text-black-100">Veja todas as suas
+                                                        notificações</strong>
+
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // END Notifications dropdown -->
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link d-flex align-items-center dropdown-toggle"
+                                data-toggle="dropdown" data-caret="false">
+
+                                <span class="avatar avatar-sm mr-8pt2">
+
+                                    <span class="avatar-title rounded-circle bg-primary"> <img
+                                            class=" avatar rounded-circle"
+                                            src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"> </span>
+
+                                </span>
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
+                                <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
+                                <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                <a class="dropdown-item" href="#">Sair</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- // END Navbar Menu -->
+
+                </div>
+
+                <!-- // END Navbar -->
+
+            </div>
+        </div>ao es
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+
+        <div class="mdk-header-layout__content page-content">
+            <div class="navbar navbar-list navbar-light bg-lightgreen border-bottom-2 border-bottom navbar-expand-sm"
+                style="white-space: nowrap;">
+                <div class="container page__container">
+                    <nav class="nav navbar-nav">
+                        <!-- <div class="nav-item navbar-list__item">
+                            <a href="student-take-course.html" class="nav-link h-auto"><i
+                                    class="material-icons icon--left">keyboard_backspace</i> Sair</a>
+                        </div>-->
+                        <div class="nav-item navbar-list__item">
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="mr-16pt">
+                                    <a href="student-take-course.html"><img src="../../public/images/icon/icon-quiz.png"
+                                            width="40" alt="Angular" class="rounded"></a>
+                                </div>
+                                <div class="flex">
+                                    <a href="student-take-course.html" class="card-title text-body mb-0">Questionário de
+                                        Avaliação</a>
+                                    <p class="lh-1 d-flex align-items-center mb-0">
+                                        <span class="text-50 small font-weight-bold mr-8pt">Eixo 1</span>
+                                        <span class="text-50 small">Desafios Estratégicos na Gestão da Inovação</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="bg-primary900 pb-lg-64pt py-32pt">
+                <div class="container page__container py-64pt text-center text-sm-left">
+                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                        <nav class="course-nav">
+                            <a href="#" data-toggle="tooltip" class="bg-white" data-placement="bottom"
+                                data-title="Questão 1"><span class="material-icons text-success">check_circle</span></a>
+                            <a href="#" data-toggle="tooltip" class="bg-white" data-placement="bottom"
+                                data-title="Questão 2"><span class="material-icons text-danger">close</span></a>
+                            <a href="#" data-toggle="tooltip" class="bg-white" data-placement="bottom"
+                                data-title="Questão 3"><span class="material-icons text-success">check_circle</span></a>
+                            <a href="#" data-toggle="tooltip" class="bg-white" data-placement="bottom"
+                                data-title="Questão 4"><span class="material-icons text-success">check_circle</span></a>
+
+                        </nav>
+
+                        <div class="d-flex flex-column align-items-center py-32pt" style="min-height: 200px;">
+                            <p class="lead text-primary600 strong chip chip-pill bg-primary200 measure-lead-max">
+                                Quiz: Conceitos Fundamentais de Gamificação
+                            </p>
+                            <div class="d-flex flex-column align-items-center mb-32pt">
+                            <h1 class="text-white pb-8pt pt-16pt">
+                                Você acertou 3 de 4 questões
+                            </h1>
+                            <p class="text-white"> Veja a correção das questões abaixo ou acesse o seu dashboard para ver suas conquistas.</p>
+                        </div>
+                            <a href="student-dashboard.html"
+                                class="btn justify-content-center btn-white btn-rounded w-sm-auto">
+                                <i class="material-icons icon--left">tune</i>Ver Dashboard
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="navbar navbar-expand-md navbar-list navbar-dark border-bottom-0 mb-32pt "
+                style="white-space: nowrap;">
+                <div class="container page__container">
+                    <ul class="nav navbar-nav flex navbar-list__item">
+                        <li class="nav-item">
+                            <div class="page-separator__text"></div>
+                        </li>
+                    </ul>
+                    <div class="nav navbar-nav ml-sm-auto navbar-list__item">
+                        <div class="nav-item d-flex flex-column flex-sm-row ml-sm-16pt">
+                            <a href="student-take-a-quiz-alert.html"
+                                class="btn btn-rounded justify-content-center btn-outline-secondary w-100 w-sm-auto mb-16pt mb-sm-0"
+                                data-toggle="tooltip" data-placement="bottom"
+                                data-title="Ao repetir o Quiz, o valor da sua pontuação é reduzido em 50%."><i
+                                    class="material-icons icon--left">refresh</i>Repetir Quiz</a>
+
+                            <a href="home.html"
+                                class="btn justify-content-center btn-primary btn-rounded w-100 w-sm-auto mb-16pt mb-sm-0 ml-sm-16pt">Fechar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container page__container">
+                <div class="row">
+                    <div class="col-lg-8">
+
+                        <div class="border-left-2 page-section pl-32pt pt-0 mt-0">
+
+                            <div class="d-flex align-items-center page-num-container mb-16pt">
+                                <div class="page-num bg-primary200 text-primary600">1</div>
+                                <h4>Questão 1 de 4</h4>
+                            </div>
+
+                            <p class="text-70 measure-lead mb-32pt mb-lg-48pt">Considerando os desafios e práticas
+                                relacionadas à gestão da inovação, qual(is) das estratégias abaixo são eficazes para
+                                estimular a
+                                inovação de forma consistente dentro de uma empresa?</p>
+
+                            <ul class="list-quiz">
+                                <li class="list-quiz-item active">
+                                    <span class="list-quiz-badge bg-success text-white"><i
+                                            class="material-icons">check</i></span>
+                                    <span class="list-quiz-text">Fomentar uma cultura organizacional que tolere falhas e
+                                        encoraje experimentação.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">B</span>
+                                    <span class="list-quiz-text">Implementar processos rígidos de controle para garantir
+                                        que todas as ideias sigam um único fluxo aprovado pela liderança.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-white-100 bg-success"><i
+                                            class="material-icons">check</i></span>
+                                    <span class="list-quiz-text">Estabelecer parcerias estratégicas com startups ou
+                                        outras empresas para acesso a novas tecnologias.</span>
+                                </li>
+
+                            </ul>
+
+
+
+                            <div class="ml-sm-32pt mt-3 card p-3" style="background-color: rgba(119, 193, 58, .05);">
+                                <div class="d-flex">
+
+
+                                    <span
+                                        class="icon-holder icon-holder--outline-secondary text-success border-success rounded-circle d-inline-flex mb-8pt mr-12pt"
+                                        style="width: 42px; height: 42px;">
+                                        <i class="material-icons">check</i>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="text-body"><strong>Você acertou!</strong></a>
+                                        </div>
+                                        <p class="mt-1 text-70"> A inovação depende de uma cultura que valorize a
+                                            experimentação e tolere falhas, pois isso encoraja os colaboradores a propor
+                                            soluções criativas sem medo de errar (A). Além disso, parcerias estratégicas
+                                            com startups ou outras empresas possibilitam acesso a novas tecnologias e
+                                            ideias externas, acelerando o processo de inovação e ampliando as
+                                            possibilidades de criação (C). Por outro lado, processos rígidos de controle
+                                            (B) limitam a flexibilidade e sufocam a criatividade, dificultando a
+                                            adaptação e o surgimento de ideias disruptivas. Assim, A e C são eficazes
+                                            porque promovem a agilidade e a colaboração essenciais à inovação.</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="border-left-2 page-section pl-32pt">
+
+                            <div class="d-flex align-items-center page-num-container mb-16pt">
+                                <div class="page-num bg-primary200 text-primary600">2</div>
+                                <h4>Questão 2 de 4</h4>
+                            </div>
+
+                            <p class="text-70 measure-lead mb-32pt mb-lg-48pt">Marque a alternativa correta em relação
+                                ao ciclo
+                                de vida do projeto e ações executadas pela equipe e pelo líder do projeto ao longo do
+                                ciclo de
+                                vida.</p>
+
+                            <ul class="list-quiz">
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">A</span>
+                                    <span class="list-quiz-text">As ações de monitoramento são executadas durante a fase
+                                        de
+                                        execução do projeto, após o planejamento.</span>
+                                </li>
+                                <li class="list-quiz-item active">
+                                    <span class="list-quiz-badge bg-danger text-white"><i
+                                            class="material-icons">close</i></span>
+                                    <span class="list-quiz-text">Fomentar uma cultura organizacional que tolere falhas e
+                                        encoraje experimentação.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">C</span>
+                                    <span class="list-quiz-text">O ciclo de vida de todos os projetos é composto de 4
+                                        fases:
+                                        inicial, estruturação, execução e encerramento.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">D</span>
+                                    <span class="list-quiz-text">As ações de execução são executadas durante a fase de
+                                        execução
+                                        do projeto, após o planejamento.</span>
+                                </li>
+                            </ul>
+
+                            <div class="ml-sm-32pt mt-3 card p-3" style="background-color: rgba(237, 11, 76, .05);">
+                                <div class="d-flex">
+
+
+                                    <span
+                                        class="icon-holder icon-holder--outline-secondary text-danger border-danger rounded-circle d-inline-flex mb-8pt mr-12pt"
+                                        style="width: 42px; height: 42px;">
+                                        <i class="material-icons">close</i>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="text-body"><strong>Você errou esta questão.</strong></a>
+                                        </div>
+                                        <p class="mt-1 text-70"> Temporibus autem quibusdam et aut officiis debitis aut
+                                            rerum
+                                            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                            non
+                                            recusandae.</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-left-2 page-section pl-32pt">
+
+                            <div class="d-flex align-items-center page-num-container mb-16pt">
+                                <div class="page-num bg-primary200 text-primary600">3</div>
+                                <h4>Questão 3 de 4</h4>
+                            </div>
+
+                            <p class="text-70 measure-lead mb-32pt mb-lg-48pt">Qual é a alternativa que melhor descreve
+                                o papel
+                                do gerente do projeto ao longo da execução do projeto?</p>
+
+                            <ul class="list-quiz">
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge">A</span>
+                                    <span class="list-quiz-text">Gerencia a equipe, lidera, faz a abertura do projeto,
+                                        resolve
+                                        conflitos.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">B</span>
+                                    <span class="list-quiz-text">Gerencia a equipe, lidera, cria o cronograma do
+                                        projeto,
+                                        resolve conflitos.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">C</span>
+                                    <span class="list-quiz-text">Gerencia a equipe, lidera, comunica informações
+                                        importantes,
+                                        trata problemas, resolve conflitos.</span>
+                                </li>
+                                <li class="list-quiz-item active">
+                                    <span class="list-quiz-badge bg-success text-white"><i
+                                            class="material-icons">check</i></span></span>
+                                    <span class="list-quiz-text">Gerencia a equipe, lidera, executa as atividades para
+                                        produzir
+                                        as entregas, trata problemas.</span>
+                                </li>
+                            </ul>
+                            <div class="ml-sm-32pt mt-3 card p-3" style="background-color: rgba(119, 193, 58, .05);">
+                                <div class="d-flex">
+
+
+                                    <span
+                                        class="icon-holder icon-holder--outline-secondary text-success border-success rounded-circle d-inline-flex mb-8pt mr-12pt"
+                                        style="width: 42px; height: 42px;">
+                                        <i class="material-icons">check</i>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="text-body"><strong>Você acertou!</strong></a>
+                                        </div>
+                                        <p class="mt-1 text-70"> Temporibus autem quibusdam et aut officiis debitis aut
+                                            rerum
+                                            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
+                                            non
+                                            recusandae. Itaque earum rerum hic tenetur a sapiente delectus.</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-left-2 page-section pl-32pt">
+
+                            <div class="d-flex align-items-center page-num-container mb-16pt">
+                                <div class="page-num bg-primary200 text-primary600">4</div>
+                                <h4>Questão 4 de 4</h4>
+                            </div>
+
+                            <p class="text-70 measure-lead mb-32pt mb-lg-48pt">O que são os problemas e questões do
+                                projeto?
+
+                            </p>
+
+                            <ul class="list-quiz">
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">A</span>
+                                    <span class="list-quiz-text">São atividades a serem feitas para cumprir o
+                                        escopo.</span>
+                                </li>
+                                <li class="list-quiz-item active">
+                                    <span class="list-quiz-badge bg-success text-white"><i
+                                            class="material-icons">check</i></span>
+                                    <span class="list-quiz-text">São riscos do projeto que devem ser monitorados.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">C</span>
+                                    <span class="list-quiz-text">São atividades que não foram feitas e devem ser
+                                        escaladas.</span>
+                                </li>
+                                <li class="list-quiz-item">
+                                    <span class="list-quiz-badge text-dark">D</span>
+                                    <span class="list-quiz-text">São itens não planejados, devem ser registrados e
+                                        atribuídos a
+                                        responsáveis.</span>
+                                </li>
+                            </ul>
+
+                            <div class="ml-sm-32pt mt-3 card p-3" style="background-color: rgba(119, 193, 58, .05);">
+                                <div class="d-flex">
+
+
+                                    <span
+                                        class="icon-holder icon-holder--outline-secondary text-success border-success rounded-circle d-inline-flex mb-8pt mr-12pt"
+                                        style="width: 42px; height: 42px;">
+                                        <i class="material-icons">check</i>
+                                    </span>
+
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="text-body"><strong>Você acertou!</strong></a>
+                                        </div>
+                                        <p class="mt-1 text-70"> Ut aut reiciendis voluptatibus maiores alias
+                                            consequatur aut
+                                            perferendis doloribus asperiores repellat.</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card mb-3 mb-auto">
+                        <div class="card-body">
+                            <h5>Resumo</h5>
+                            <div class="d-flex mb-8pt">
+                                <div class="flex"><strong class="text-70">Iniciado em</strong></div>
+                                <strong>terça, 22 de Janeiro às 15:32</strong>
+                            </div>
+                            <div class="d-flex mb-8pt">
+                                <div class="flex"><strong class="text-70">Status</strong></div>
+                                <strong>Finalizado</strong>
+                            </div>
+                            <div class="d-flex mb-8pt">
+                                <div class="flex"><strong class="text-70">Concluído em</strong></div>
+                                <strong>terça, 22 de Janeiro 15:52</strong>
+                            </div>
+                            <div class="d-flex mb-8pt">
+                                <div class="flex"><strong class="text-70">Tempo Empregado</strong></div>
+                                <strong>20 minutos</strong>
+                            </div>
+                            <div class="d-flex mb-8pt">
+                                <div class="flex"><strong class="text-70">Questões corretas</strong></div>
+                                <strong>4/4</strong>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- // END Header Layout Content -->
+
+    <!-- Footer -->
+
+    <div class="bg-white border-top-2 mt-auto">
+        <div class="container page__container page-section d-flex flex-column">
+            <p class="text-70 brand mb-24pt" style="font-size: 16px;">
+                <img class="brand-icon mr-3" src="../../public/images/logo/Logo_icon_261px.png" width="48" alt="Luma">
+                Programa de Desenvolvimento Inicial
+            </p>
+            <p class="measure-lead-max text-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
+                foi desenvolvida junto ao ENAP para transformar o aprendizado e a capacitação de servidores em
+                uma experiência eficiente e acessível. Com recursos interativos e um design funcional,
+                oferecemos um ambiente integrado para cursos, trilhas de conhecimento, avaliações e relatórios
+                de desempenho.
+            </p>
+            <p class="mb-8pt d-flex">
+                <a href="" class="text-70 text-underline mr-8pt small">Termos e Condições</a>
+                <a href="" class="text-70 text-underline small">Plolíticas de Privacidade</a>
+            </p>
+            <p class="text-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
+        </div>
+    </div>
+
+    <!-- // END Footer -->
+
+
+    <!-- // END Header Layout -->
+
+    <!-- Drawer -->
+
+
+
+    <!-- // END Drawer -->
+
+    <!-- // Timer -->
+
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration,
+                minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var sixtyMinutes = 60 * 52,
+                display = document.querySelector('#time');
+            startTimer(sixtyMinutes, display);
+        };
+    </script>
+
+    <!-- END TIMER -->
+
+    <!-- jQuery -->
+    <script src="../../public/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../public/vendor/popper.min.js"></script>
+    <script src="../../public/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="../../public/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="../../public/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="../../public/js/app.js"></script>
+
+    <!-- Quill -->
+    <script src="../../public/vendor/quill.min.js"></script>
+    <script src="../../public/js/quill.js"></script>
+
+
+
+</body>
+
+</html>
