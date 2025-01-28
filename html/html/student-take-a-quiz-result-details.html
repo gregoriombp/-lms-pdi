@@ -40,6 +40,26 @@
     <!-- Quill Theme -->
     <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
 
+    <style>
+        .animated-gradient {
+            background: linear-gradient(270deg, #001d19, #00737b,  #067083,  #012a26);
+            background-size: 200% 200%;
+            animation: gradientAnimation 16s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="layout-sticky-subnav layout-default ">
@@ -298,7 +318,7 @@
                 <!-- // END Navbar -->
 
             </div>
-        </div>ao es
+        </div>
 
         <!-- // END Header -->
 
@@ -333,8 +353,8 @@
                 </div>
             </div>
 
-            <div class="bg-primary900 pb-lg-64pt py-32pt">
-                <div class="container page__container py-64pt text-center text-sm-left">
+            <div class="animated-gradient pb-lg-64pt py-32pt">
+                <div class="container page__container text-center text-sm-left">
                     <div class="container d-flex flex-column justify-content-center align-items-center">
                         <nav class="course-nav">
                             <a href="#" data-toggle="tooltip" class="bg-white" data-placement="bottom"
@@ -658,7 +678,7 @@
 
 
 
-                    <div class="card mb-3 mb-auto">
+                    <div class="card flex mb-3 mb-auto w-100">
                         <div class="card-body">
                             <h5>Resumo</h5>
                             <div class="d-flex mb-8pt">

@@ -27,14 +27,14 @@
     --light: #f8f9fa;
     --dark: #303840;
     --black: #272c33;
-    --accent: #004E53;
-    --accent-red: #004E53;
+    --accent: #7000C4;
+    --accent-red: #7000C4;
     --accent-yellow: #e4a93c;
     --accent-dodger-blue: #00747B;
     --accent-pickled-bluewood: #303956;
     --accent-electric-violet: #9c42ff;
     --primary-purple: #824ee1;
-    --primary-red: #004E53;
+    --primary-red: #7000C4;
     --primary-yellow: #e4a93c;
     --primary-light: #9cf;
     --primary-dodger-blue: #00747B;
@@ -657,7 +657,7 @@ small {
 
 code {
     font-size: 87.5%;
-    color: #004E53;
+    color: #7000C4;
     word-wrap: break-word
 }
 
@@ -4435,8 +4435,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-accent {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
 }
 
 .btn-accent:hover {
@@ -4444,8 +4444,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-accent:hover {
-    background-color: #0f848c;
-    border-color: #0f848c;
+    background-color: #8e2dd9;
+    border-color: #8e2dd9;
 }
 
 .btn-accent.focus,
@@ -4455,9 +4455,9 @@ fieldset:disabled a.btn {
 
 [dir] .btn-accent.focus,
 [dir] .btn-accent:focus {
-    background-color: #c80940;
-    border-color: #bc093c;
-    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075), 0 0 0 1px rgba(240, 48, 103, .5)
+    background-color: #2e014e;
+    border-color: #2e014e;
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .0), 0 1px 1px rgba(39, 44, 51, .0), 0 0 0 1px rgba(240, 48, 103, .0)
 }
 
 .btn-accent.disabled,
@@ -4467,8 +4467,8 @@ fieldset:disabled a.btn {
 
 [dir] .btn-accent.disabled,
 [dir] .btn-accent:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .btn-accent:not(:disabled):not(.disabled).active,
@@ -4480,14 +4480,14 @@ fieldset:disabled a.btn {
 [dir] .btn-accent:not(:disabled):not(.disabled).active,
 [dir] .btn-accent:not(:disabled):not(.disabled):active,
 [dir] .show>.btn-accent.dropdown-toggle {
-    background-color: #bc093c;
-    border-color: #b00838
+    background-color: #5b1a8a;
+    border-color: #5b1a8a;
 }
 
 [dir] .btn-accent:not(:disabled):not(.disabled).active:focus,
 [dir] .btn-accent:not(:disabled):not(.disabled):active:focus,
 [dir] .show>.btn-accent.dropdown-toggle:focus {
-    box-shadow: inset 0 3px 5px rgba(39, 44, 51, .125), 0 0 0 1px rgba(240, 48, 103, .5)
+    box-shadow: inset 0 3px 5px rgba(39, 44, 51, .125), 0 0 0 1px rgba(148, 4, 184, 0.5)
 }
 
 .btn-accent-red {
@@ -4495,8 +4495,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-accent-red {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075)
 }
 
@@ -4528,8 +4528,8 @@ fieldset:disabled a.btn {
 
 [dir] .btn-accent-red.disabled,
 [dir] .btn-accent-red:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .btn-accent-red:not(:disabled):not(.disabled).active,
@@ -4861,8 +4861,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-primary-red {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075)
 }
 
@@ -4894,8 +4894,8 @@ fieldset:disabled a.btn {
 
 [dir] .btn-primary-red.disabled,
 [dir] .btn-primary-red:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .btn-primary-red:not(:disabled):not(.disabled).active,
@@ -5621,11 +5621,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-accent {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-accent {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .btn-outline-accent:hover {
@@ -5633,8 +5633,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-outline-accent:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-accent.focus,
@@ -5644,7 +5644,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-accent.disabled,
 .btn-outline-accent:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-accent.disabled,
@@ -5661,8 +5661,8 @@ fieldset:disabled a.btn {
 [dir] .btn-outline-accent:not(:disabled):not(.disabled).active,
 [dir] .btn-outline-accent:not(:disabled):not(.disabled):active,
 [dir] .show>.btn-outline-accent.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-accent:not(:disabled):not(.disabled).active:focus,
@@ -5672,11 +5672,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-accent-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-accent-red {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .btn-outline-accent-red:hover {
@@ -5684,8 +5684,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-outline-accent-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-accent-red.focus,
@@ -5695,7 +5695,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-accent-red.disabled,
 .btn-outline-accent-red:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-accent-red.disabled,
@@ -5712,8 +5712,8 @@ fieldset:disabled a.btn {
 [dir] .btn-outline-accent-red:not(:disabled):not(.disabled).active,
 [dir] .btn-outline-accent-red:not(:disabled):not(.disabled):active,
 [dir] .show>.btn-outline-accent-red.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-accent-red:not(:disabled):not(.disabled).active:focus,
@@ -5978,11 +5978,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-primary-red {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .btn-outline-primary-red:hover {
@@ -5990,8 +5990,8 @@ fieldset:disabled a.btn {
 }
 
 [dir] .btn-outline-primary-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-primary-red.focus,
@@ -6001,7 +6001,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary-red.disabled,
 .btn-outline-primary-red:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .btn-outline-primary-red.disabled,
@@ -6018,8 +6018,8 @@ fieldset:disabled a.btn {
 [dir] .btn-outline-primary-red:not(:disabled):not(.disabled).active,
 [dir] .btn-outline-primary-red:not(:disabled):not(.disabled):active,
 [dir] .show>.btn-outline-primary-red.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .btn-outline-primary-red:not(:disabled):not(.disabled).active:focus,
@@ -9452,7 +9452,7 @@ a.badge-black:focus {
 }
 
 [dir] .badge-accent {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 a.badge-accent:focus,
@@ -9480,7 +9480,7 @@ a.badge-accent:focus {
 }
 
 [dir] .badge-accent-red {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 a.badge-accent-red:focus,
@@ -9648,7 +9648,7 @@ a.badge-primary-purple:focus {
 }
 
 [dir] .badge-primary-red {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 a.badge-primary-red:focus,
@@ -12706,6 +12706,10 @@ a.close.disabled {
 }
 
 
+
+[dir] .bg-purple50 {
+    background-color: #FAF5FF !important
+}
 
 [dir] .bg-purple100 {
     background-color: #E8DDFF !important
@@ -26409,7 +26413,7 @@ a.text-black:hover {
 }
 
 .text-accent {
-    color: #004E53 !important
+    color: #7000C4 !important
 }
 
 a.text-accent:focus,
@@ -26418,7 +26422,7 @@ a.text-accent:hover {
 }
 
 .text-accent-red {
-    color: #004E53 !important
+    color: #7000C4 !important
 }
 
 a.text-accent-red:focus,
@@ -26472,7 +26476,7 @@ a.text-primary-purple:hover {
 }
 
 .text-primary-red {
-    color: #004E53 !important
+    color: #7000C4 !important
 }
 
 a.text-primary-red:focus,
@@ -27318,7 +27322,7 @@ a.text-primary-pickled-bluewood:hover {
 [dir] .btn-outline-accent.is-loading:after,
 [dir] .is-loading-accent:after,
 [dir] .loader-accent {
-    border-color: #004E53 #004E53 transparent
+    border-color: #7000C4 #7000C4 transparent
 }
 
 [dir] .btn-accent.is-loading:after {
@@ -27328,7 +27332,7 @@ a.text-primary-pickled-bluewood:hover {
 [dir] .btn-outline-accent-red.is-loading:after,
 [dir] .is-loading-accent-red:after,
 [dir] .loader-accent-red {
-    border-color: #004E53 #004E53 transparent
+    border-color: #7000C4 #7000C4 transparent
 }
 
 [dir] .btn-accent-red.is-loading:after {
@@ -27388,7 +27392,7 @@ a.text-primary-pickled-bluewood:hover {
 [dir] .btn-outline-primary-red.is-loading:after,
 [dir] .is-loading-primary-red:after,
 [dir] .loader-primary-red {
-    border-color: #004E53 #004E53 transparent
+    border-color: #7000C4 #7000C4 transparent
 }
 
 [dir] .btn-primary-red.is-loading:after {
@@ -28522,7 +28526,7 @@ a.text-primary-pickled-bluewood:hover {
 
 [dir] .bg-accent,
 [dir] .bg-accent-red {
-    background-color: #004E53 !important
+    background-color: #7000C4 !important
 }
 
 [dir] .bg-accent-yellow {
@@ -28546,7 +28550,7 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .bg-primary-red {
-    background-color: #004E53 !important
+    background-color: #7000C4 !important
 }
 
 [dir] .bg-primary-yellow {
@@ -29281,53 +29285,53 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .border-accent {
-    border-color: #004E53 !important
+    border-color: #7000C4 !important
 }
 
 [dir=ltr] .border-left-accent {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir=ltr] .border-right-accent,
 [dir=rtl] .border-left-accent {
-    border-right-color: #004E53 !important
+    border-right-color: #7000C4 !important
 }
 
 [dir=rtl] .border-right-accent {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir] .border-top-accent {
-    border-top-color: #004E53 !important
+    border-top-color: #7000C4 !important
 }
 
 [dir] .border-bottom-accent {
-    border-bottom-color: #004E53 !important
+    border-bottom-color: #7000C4 !important
 }
 
 [dir] .border-accent-red {
-    border-color: #004E53 !important
+    border-color: #7000C4 !important
 }
 
 [dir=ltr] .border-left-accent-red {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir=ltr] .border-right-accent-red,
 [dir=rtl] .border-left-accent-red {
-    border-right-color: #004E53 !important
+    border-right-color: #7000C4 !important
 }
 
 [dir=rtl] .border-right-accent-red {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir] .border-top-accent-red {
-    border-top-color: #004E53 !important
+    border-top-color: #7000C4 !important
 }
 
 [dir] .border-bottom-accent-red {
-    border-bottom-color: #004E53 !important
+    border-bottom-color: #7000C4 !important
 }
 
 [dir] .border-accent-yellow {
@@ -29456,28 +29460,28 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .border-primary-red {
-    border-color: #004E53 !important
+    border-color: #7000C4 !important
 }
 
 [dir=ltr] .border-left-primary-red {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir=ltr] .border-right-primary-red,
 [dir=rtl] .border-left-primary-red {
-    border-right-color: #004E53 !important
+    border-right-color: #7000C4 !important
 }
 
 [dir=rtl] .border-right-primary-red {
-    border-left-color: #004E53 !important
+    border-left-color: #7000C4 !important
 }
 
 [dir] .border-top-primary-red {
-    border-top-color: #004E53 !important
+    border-top-color: #7000C4 !important
 }
 
 [dir] .border-bottom-primary-red {
-    border-bottom-color: #004E53 !important
+    border-bottom-color: #7000C4 !important
 }
 
 [dir] .border-primary-yellow {
@@ -30278,18 +30282,18 @@ a.text-primary-pickled-bluewood:hover {
 
 [dir] .icon-holder--accent {
     background-image: none;
-    background-color: #004E53;
-    border: 1px solid #004E53
+    background-color: #7000C4;
+    border: 1px solid #7000C4
 }
 
 .icon-holder--accent:hover {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--accent:hover {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--accent:hover:hover {
@@ -30297,18 +30301,18 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--accent:hover:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--outline-accent {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--outline-accent {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--outline-accent:hover {
@@ -30316,8 +30320,8 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--outline-accent:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--accent-red {
@@ -30326,18 +30330,18 @@ a.text-primary-pickled-bluewood:hover {
 
 [dir] .icon-holder--accent-red {
     background-image: none;
-    background-color: #004E53;
-    border: 1px solid #004E53
+    background-color: #7000C4;
+    border: 1px solid #7000C4
 }
 
 .icon-holder--accent-red:hover {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--accent-red:hover {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--accent-red:hover:hover {
@@ -30345,18 +30349,18 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--accent-red:hover:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--outline-accent-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--outline-accent-red {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--outline-accent-red:hover {
@@ -30364,8 +30368,8 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--outline-accent-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--accent-yellow {
@@ -30614,18 +30618,18 @@ a.text-primary-pickled-bluewood:hover {
 
 [dir] .icon-holder--primary-red {
     background-image: none;
-    background-color: #004E53;
-    border: 1px solid #004E53
+    background-color: #7000C4;
+    border: 1px solid #7000C4
 }
 
 .icon-holder--primary-red:hover {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--primary-red:hover {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--primary-red:hover:hover {
@@ -30633,18 +30637,18 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--primary-red:hover:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--outline-primary-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .icon-holder--outline-primary-red {
     background-image: none;
     background-color: transparent;
-    border: 1px solid #004E53
+    border: 1px solid #7000C4
 }
 
 .icon-holder--outline-primary-red:hover {
@@ -30652,8 +30656,8 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .icon-holder--outline-primary-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .icon-holder--primary-yellow {
@@ -31817,7 +31821,7 @@ body {
 }
 
 .alert-soft-accent {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .alert-soft-accent {
@@ -31834,7 +31838,7 @@ body {
 }
 
 .alert-soft-accent-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .alert-soft-accent-red {
@@ -31936,7 +31940,7 @@ body {
 }
 
 .alert-soft-primary-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .alert-soft-primary-red {
@@ -34387,8 +34391,8 @@ body {
 }
 
 [dir] .progression-bar--active-accent .progression-bar__item--active .progression-bar__item-icon {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .progression-bar--active-accent-red .progression-bar__item--active .progression-bar__item-icon {
@@ -34396,8 +34400,8 @@ body {
 }
 
 [dir] .progression-bar--active-accent-red .progression-bar__item--active .progression-bar__item-icon {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .progression-bar--active-accent-yellow .progression-bar__item--active .progression-bar__item-icon {
@@ -34450,8 +34454,8 @@ body {
 }
 
 [dir] .progression-bar--active-primary-red .progression-bar__item--active .progression-bar__item-icon {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .progression-bar--active-primary-yellow .progression-bar__item--active .progression-bar__item-icon {
@@ -34537,7 +34541,7 @@ body {
 }
 
 code.django .hljs-template-tag {
-    color: #004E53
+    color: #7000C4
 }
 
 .bg-dark code {
@@ -35595,8 +35599,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-accent {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075)
 }
 
@@ -35628,8 +35632,8 @@ code.django .hljs-template-tag {
 
 [dir] .chip-accent.disabled,
 [dir] .chip-accent:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .chip-accent:not(:disabled):not(.disabled).active,
@@ -35652,11 +35656,11 @@ code.django .hljs-template-tag {
 }
 
 .chip-outline-accent {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-accent {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .chip-outline-accent:hover {
@@ -35664,8 +35668,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-outline-accent:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-accent.focus,
@@ -35675,7 +35679,7 @@ code.django .hljs-template-tag {
 
 .chip-outline-accent.disabled,
 .chip-outline-accent:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-accent.disabled,
@@ -35692,8 +35696,8 @@ code.django .hljs-template-tag {
 [dir] .chip-outline-accent:not(:disabled):not(.disabled).active,
 [dir] .chip-outline-accent:not(:disabled):not(.disabled):active,
 [dir] .show>.chip-outline-accent.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-accent:not(:disabled):not(.disabled).active:focus,
@@ -35707,8 +35711,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-accent-red {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075)
 }
 
@@ -35740,8 +35744,8 @@ code.django .hljs-template-tag {
 
 [dir] .chip-accent-red.disabled,
 [dir] .chip-accent-red:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .chip-accent-red:not(:disabled):not(.disabled).active,
@@ -35764,11 +35768,11 @@ code.django .hljs-template-tag {
 }
 
 .chip-outline-accent-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-accent-red {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .chip-outline-accent-red:hover {
@@ -35776,8 +35780,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-outline-accent-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-accent-red.focus,
@@ -35787,7 +35791,7 @@ code.django .hljs-template-tag {
 
 .chip-outline-accent-red.disabled,
 .chip-outline-accent-red:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-accent-red.disabled,
@@ -35804,8 +35808,8 @@ code.django .hljs-template-tag {
 [dir] .chip-outline-accent-red:not(:disabled):not(.disabled).active,
 [dir] .chip-outline-accent-red:not(:disabled):not(.disabled):active,
 [dir] .show>.chip-outline-accent-red.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-accent-red:not(:disabled):not(.disabled).active:focus,
@@ -36379,8 +36383,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-primary-red {
-    background-color: #004E53;
-    border-color: #004E53;
+    background-color: #7000C4;
+    border-color: #7000C4;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(39, 44, 51, .075)
 }
 
@@ -36412,8 +36416,8 @@ code.django .hljs-template-tag {
 
 [dir] .chip-primary-red.disabled,
 [dir] .chip-primary-red:disabled {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 .chip-primary-red:not(:disabled):not(.disabled).active,
@@ -36436,11 +36440,11 @@ code.django .hljs-template-tag {
 }
 
 .chip-outline-primary-red {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-primary-red {
-    border-color: #004E53
+    border-color: #7000C4
 }
 
 .chip-outline-primary-red:hover {
@@ -36448,8 +36452,8 @@ code.django .hljs-template-tag {
 }
 
 [dir] .chip-outline-primary-red:hover {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-primary-red.focus,
@@ -36459,7 +36463,7 @@ code.django .hljs-template-tag {
 
 .chip-outline-primary-red.disabled,
 .chip-outline-primary-red:disabled {
-    color: #004E53
+    color: #7000C4
 }
 
 [dir] .chip-outline-primary-red.disabled,
@@ -36476,8 +36480,8 @@ code.django .hljs-template-tag {
 [dir] .chip-outline-primary-red:not(:disabled):not(.disabled).active,
 [dir] .chip-outline-primary-red:not(:disabled):not(.disabled):active,
 [dir] .show>.chip-outline-primary-red.dropdown-toggle {
-    background-color: #004E53;
-    border-color: #004E53
+    background-color: #7000C4;
+    border-color: #7000C4
 }
 
 [dir] .chip-outline-primary-red:not(:disabled):not(.disabled).active:focus,
@@ -38715,7 +38719,7 @@ label {
 }
 
 [dir] .sidebar-submenu .sidebar-menu-text:after {
-    background-color: #004E53;
+    background-color: #7000C4;
     border-radius: 100%
 }
 
@@ -38952,7 +38956,7 @@ label {
 }
 
 [dir] .sidebar-black .sidebar-submenu .sidebar-menu-text:after {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 [dir] .navbar-dark .sidebar-black .navbar-search,
@@ -39456,7 +39460,7 @@ label {
 }
 
 [dir] .sidebar-dark-purple .sidebar-submenu .sidebar-menu-text:after {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 [dir] .navbar-dark .sidebar-dark-purple .navbar-search,
@@ -39944,7 +39948,7 @@ label {
 }
 
 [dir] .sidebar-dark-pickled-bluewood .sidebar-submenu .sidebar-menu-text:after {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 [dir] .navbar-dark .sidebar-dark-pickled-bluewood .navbar-search,
@@ -40021,7 +40025,7 @@ label {
 }
 
 [dir] .sidebar-light-red .sidebar-submenu .sidebar-menu-text:after {
-    background-color: #004E53
+    background-color: #7000C4
 }
 
 [dir] .sidebar-light-purple .sidebar-submenu .sidebar-menu-text:after {
@@ -42546,7 +42550,7 @@ label {
 }
 
 .course-nav .active .material-icons {
-    color: #004E53
+    color: #7000C4
 }
 
 .player {
@@ -42605,7 +42609,7 @@ label {
 }
 
 [dir] .player__play {
-    background-color: #004E53;
+    background-color: #7000C4;
     padding: 0;
     border-radius: .25rem
 }
