@@ -82,12 +82,13 @@
                     <div class="mdk-box__content justify-content-center">
                         <div class="hero container page__container text-center py-64pt">
                             <h1 class="text-white text-shadow">Bem-vindo(a)</h1>
-                            <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt">Para começar, por
+                            <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt"
+                                style="font-size: 1rem !important;">Para começar, por
                                 favor, preencha o formulário abaixo com suas informações pessoais.</p>
 
 
 
-                         
+
 
                         </div>
                         <!-- <div class="d-flex justify-content-center mb-4">
@@ -117,7 +118,7 @@
                             </div>
                         </div> -->
                     </div>
-                    
+
 
                     <div class="flex d-flex justify-content-center align-items-center pb-64pt">
                         <!-- First Form -->
@@ -126,7 +127,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
 
-                                   <!-- <div class="d-flex justify-content-center align-items-center mb-12pt">
+                                    <!-- <div class="d-flex justify-content-center align-items-center mb-12pt">
                                         <p class="h4">Formulário de Onboarding</p>
                                         </div>
                                    
@@ -150,7 +151,7 @@
                                         </div>
 
                                         <div class="form-group d-flex justify-content-end mt-4 gap-2">
-                                           
+
                                             <button type="button" onclick="switchForms()"
                                                 class="btn btn-primary btn-rounded">Avançar</button>
                                         </div>
@@ -161,46 +162,67 @@
 
                         <!-- Second Form -->
                         <div id="form-2" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
-                            style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            style="width: 50%; height: 380px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
                             <div class="d-flex flex-column h-100">
-                            
-                                    <div>
-                                        <h4 class="text-center mb-4">Em quanto tempo você planeja concluir o
-                                            curso?</h4>
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-4">Em quanto tempo você planeja concluir o
+                                        curso?</h4>
+
+
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="avatar avatar-sm bg-purple100 rounded-circle">
+                                        <i class="avatar avatar-sm avatar-title bg-purple100 rounded-circle material-icons text-purple500 mr-2"
+                                            style="font-size: 38px;">schdule</i>
                                     </div>
-                                    <div class="d-flex flex-column flex-grow-1 justify-content-center">
+                                    <div class="ml-3 text-black-100"><strong>Marque uma opção abaixo.</strong> </div>
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1 mt-3">
+
                                     <form action="#" class="form-horizontal">
                                         <div class="form-group">
                                             <label class="form-label h3 mb-4"></label>
 
+
                                             <div class="form-group px-4">
-                                                <div class="slider-container">
-                                                    <input type="range" class="custom-range" min="0" max="3" step="1"
-                                                        id="timeSlider">
-                                                    <div class="slider-labels d-flex justify-content-between mt-2">
-                                                        <span class="slider-label">3 meses</span>
-                                                        <span class="slider-label">6 meses</span>
-                                                        <span class="slider-label">1 ano</span>
-                                                        <span class="slider-label">2 anos</span>
+                                                <div class="d-flex flex-wrap justify-content-between mt-0">
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="6">
+                                                        6 meses
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="12">
+                                                        1 ano
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="24">
+                                                        2 anos
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="30">
+                                                        2 anos e 6 meses
                                                     </div>
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </form>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-end mt-4 gap-2">
-                                        <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
-                                        <button type="button" onclick="switchToAvatars()"
-                                            class="btn btn-primary btn-rounded">Avançar</button>
-                                    </div>
-                       
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToAvatars()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
                             </div>
                         </div>
 
                         <!-- Third Form -->
-                        <div id="form-3" class="card rounded-lg p-4 mb-24pt" style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                        <div id="form-3" class="card rounded-lg p-4 mb-24pt"
+                            style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
                             <div class="d-flex flex-column h-100">
                                 <!-- Título no topo -->
                                 <div>
@@ -216,8 +238,7 @@
                                                     <img src="../../public/images/people/110/guy-1.jpg"
                                                         class="avatar-option" data-avatar-id="1">
                                                     <img src="../../public/images/people/110/guy-2.jpg"
-                                                        class="avatar-option center-avatar selected"
-                                                        data-avatar-id="2">
+                                                        class="avatar-option center-avatar selected" data-avatar-id="2">
                                                     <img src="../../public/images/people/110/guy-3.jpg"
                                                         class="avatar-option" data-avatar-id="3">
                                                 </div>
@@ -243,10 +264,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev bg-primary200 border-1" href="#avatarCarousel"
+                                            role="button" data-slide="prev">
                                             <span class="material-icons text-primary400">chevron_left</span>
                                         </a>
-                                        <a class="carousel-control-next bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="next">
+                                        <a class="carousel-control-next bg-primary200 border-1" href="#avatarCarousel"
+                                            role="button" data-slide="next">
                                             <span class="material-icons text-primary400">chevron_right</span>
                                         </a>
                                     </div>
@@ -254,7 +277,8 @@
 
                                 <!-- Botões na parte inferior -->
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
                                     <a href="home.html" class="btn btn-primary btn-rounded">Finalizar Perfil</a>
                                 </div>
                             </div>
@@ -274,10 +298,10 @@
 
                         .custom-range::-webkit-slider-thumb {
                             -webkit-appearance: none !important;
-                            appearance: none !important ;
+                            appearance: none !important;
                             width: 20px !important;
                             height: 20px !important;
-                            background: #8230e6 !important ;
+                            background: #8230e6 !important;
                             border: 2px solid #b785f3 !important;
                             border-radius: 50% !important;
                             cursor: pointer !important;
@@ -363,6 +387,19 @@
                             border-color: #4CAF50;
                             opacity: 1;
                             box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+                        }
+
+                        .time-option {
+                            cursor: pointer;
+                            padding: 8px 16px;
+                            border-radius: 20px;
+                            transition: all 0.3s ease;
+                        }
+
+                        .time-option.selected {
+                            background-color: #8230e6;
+                            color: white;
+                            border-color: #8230e6;
                         }
                     </style>
 
@@ -484,7 +521,7 @@
                             const form2 = document.getElementById('form-2');
                             const form3 = document.getElementById('form-3');
                             const form1 = document.getElementById('form-1');
-                            
+
                             if (form3.style.display === 'block') {
                                 // Voltando do form 3 para o form 2
                                 form3.style.opacity = '0';
@@ -506,6 +543,16 @@
                                     }, 50);
                                 }, 500);
                             }
+                        }
+
+                        function selectTimeOption(element) {
+                            // Remove selected class from all options
+                            document.querySelectorAll('.time-option').forEach(option => {
+                                option.classList.remove('selected');
+                            });
+
+                            // Add selected class to clicked option
+                            element.classList.add('selected');
                         }
                     </script>
                 </div>
