@@ -97,7 +97,7 @@
 
                         <!-- Navbar Toggler -->
 
-                        <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                        <ul class="nav navbar-nav d-none d-lg-flex flex justify-content-start ml-32pt">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Início</a>
                             </li>
@@ -324,48 +324,30 @@
 
                         <div class="interactive-area" id="door1"></div>
                         <div class="interactive-area" id="door2"></div>
+                        <div class="interactive-area" id="door3"></div>
+                        <div class="interactive-area" id="door4"></div>
+                        <div class="interactive-area" id="door5"></div>
+                        <div class="interactive-area" id="door6"></div>
+                        <div class="interactive-area" id="salaconferencia"></div>
+                        <div class="interactive-area" id="espaco360"></div>
                         <img class="interactive-area2" id="character" src="../../public/images/home_page/character.png">
                     </div>
                 </div>
-                <div class="page-section  mt-64pt" style="height: 220px;">
-                    <div class="container page__container h-100 justify-content-center align-items-center">
-
-                        <div class="d-flex flex-column flex-lg-row align-items-center h-100">
-                            <div
-                                class="d-flex flex-column flex-md-row align-items-center  flex  mb-lg-0 text-center text-md-left">
-                                <div class="avatar avatar-xxl   mb-md-0 mr-md-32pt">
-                                    <img src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"
-                                        class="avatar avatar-xxl rounded rounded-circle" alt="lesson">
-                                    <div class="overlay__content"></div>
-                                </div>
-                                <div class="flex measure-lead-max">
-                                    <div class="flex d-flex flex-row align-items-center">
-                                        <h1 class="measure-lead-max mb-0pt text-primary100">Olá, Gregório!
-                                        </h1>
-
-                                    </div>
-                                    <small class="  w-25 text-white-70">Que bom te ver novamente! Pronto para continuar
-                                        avançando? Confira as novidades no Dashboard e dê mais um passo na sua jornada
-                                        de aprendizado.</small>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="page-section flex d-flex bg-primary border-bottom-0 justify-content-center align-items-center" >
-                    <div class="container page__container flex d-flex  justify-content-center align-items-center" style="height: 220px;">
+                
+                <div
+                    class="page-section flex d-flex border-bottom-0 justify-content-center align-items-center">
+                    <div class="container page__container flex d-flex  justify-content-center align-items-center"
+                        style="height: 220px;">
                         <div class="row ">
                             <div class="col-lg-9 flex d-flex flex-lg-column">
                                 <div class="row">
                                     <div class="col-md-9 mb-24pt mb-lg-0 ">
                                         <p class="text-white-70 mb-0"><strong></strong></p>
-                                        <h2 class="text-white">Precisa de Ajuda?</h2>
-                                        <p class="text-white-50"><span class="text-white-100">Você está na página inicial da plataforma do Programa
-                                            de Desenvolvimento. </span> Para continuar, clique em uma das... Et dolorem modi ut omnis quaerat hic
+                                        <h2 class="text-white">Instruções</h2>
+                                        <p class="text-white-50"><span class="text-white-100">Você está na página
+                                                inicial da plataforma do Programa
+                                                de Desenvolvimento. </span> Para continuar, clique em uma das... Et
+                                            dolorem modi ut omnis quaerat hic
                                             repellendus dolorum et omnis veritatis. quia.</p>
                                     </div>
 
@@ -386,9 +368,9 @@
                         </div>
                     </div>
                 </div>
-              
 
-        
+
+
 
 
             </div>
@@ -457,14 +439,100 @@
 
 
 
+
+
+            <!-- Door 1 -->
             <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
                 <clippath id="door1clip">
-                    <path
-                        d="M0.5 268.689V6.89581C0.5 3.43151 3.42552 0.68702 6.88277 0.908031L104.383 7.14091C107.541 7.34283 110 9.9636 110 13.1287V271.805C110 275.194 107.195 277.91 103.808 277.802L6.30832 274.686C3.07089 274.582 0.5 271.928 0.5 268.689Z"
-                        stroke="white" />
+                    <path d="M195 17.5L0.5 0.5L1.5 484L195 488V17.5Z" fill="white" filter="url(#blur)" />
                 </clippath>
             </svg>
+            <!-- Door 2 -->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+                <clippath id="door2clip">
+                    <path d="M195 17.5L0.5 0.5L1.5 484L195 488V17.5Z" fill="white" filter="url(#blur)" />
+                </clippath>
+            </svg>
+            <!-- Door 3 -->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+                <clippath id="door3clip">
+                    <path d="M183.5 14.5L3 0.5L0 464.5L183.5 468V14.5Z" fill="white" filter="url(#blur)" />
+                </clippath>
+            </svg>
+            <!-- Door 4 -->
+            <svg>
+
+                <clippath id="door4clip">
+                    <path d="M210.5 0.5H0.5L1.5 502.5L210.5 489.5V0.5Z" fill="white" filter="url(#blur)" />
+                </clippath>
+            </svg>
+            <!-- Door 5 -->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+                <clippath id="door5clip">
+                    <path d="M194 0H0L2.5 483L196.5 471.5L194 0Z" fill="white" filter="url(#blur)" />
+                </clippath>
+            </svg>
+            <!-- Door 6 -->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+                <clippath id="door6clip">
+                    <path d="M183.5 0.5H0L4.5 467.5L183.5 457V0.5Z" fill="white" filter="url(#blur)" />
+                </clippath>
+            </svg>
+            <!-- Character -->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- Sala de Conferencias -->
+            <svg>
+                <clippath id="salaconferencia">
+                    <path d="M264.881 1.40511L4.88098 61.1088C2.60978 61.6303 1 63.6517 1 65.982V463.156C1 466.048 3.44667 468.337 6.33258 468.145L266.333 450.811C268.959 450.636 271 448.455 271 445.822V6.27828C271 3.06508 268.013 0.685979 264.881 1.40511Z" fill="white" stroke="white"/>
+                </clippath>
+            </svg>
+
+        
+                
+
+            <!-- Espaco 360-->
+            <svg>
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+            </svg>
         </div>
+
+       
+            
 </body>
 
 </html>
