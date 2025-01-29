@@ -36,6 +36,62 @@
     <!-- Quill Theme -->
     <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
 
+    <style>
+        .avatar-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .avatar-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .rotating-glow {
+            width: 200px;
+            height: 200px;
+            filter: blur(10px);
+            opacity: 0.8;
+            animation: rotate 20s linear infinite, glowPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes glowPulse {
+            0% {
+                filter: blur(10px) brightness(1);
+               
+            }
+            50% {
+                filter: blur(15px) brightness(1.3);
+              
+            }
+            100% {
+                filter: blur(10px) brightness(1);
+               
+            }
+        }
+
+        .avatar-background img {
+            width: 200px;
+            /* Ajuste conforme necessário */
+            height: 200px;
+            /* Ajuste conforme necessário */
+            opacity: 0.8;
+            /* Ajuste a opacidade conforme necessário */
+        }
+    </style>
+
 </head>
 
 <body class="layout-sticky-subnav layout-default ">
@@ -81,7 +137,7 @@
 
                             <span class="mr-0 mr-lg-8pt">
 
-                                <span class=""><img src="../../public/images/logo/Asset 15@2x.png" alt="logo"
+                                <span class=""><img src="../../public/images/logo/Logo-Text-White.png" alt="logo"
                                         class="img-fluid" style="max-height: 48px;" /></span>
 
                             </span>
@@ -127,9 +183,7 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="notification-center.html" class="nav-link">Notificações</a>
-                            </li>
+
 
 
                         </ul>
@@ -316,6 +370,77 @@
             <!-- Header Layout Content -->
 
             <div class="mdk-header-layout__content page-content">
+
+                <div class="page-section  mt-64pt" style="height: 250px;">
+                    <div class="container page__container h-100 justify-content-center align-items-center">
+
+                        <div class="d-flex flex-column flex-lg-row align-items-center h-100">
+                            <div
+                                class="d-flex flex-column flex-md-row align-items-center  flex  mb-lg-0 text-center text-md-left">
+                                <div class="avatar-wrapper position-relative">
+                                    <!-- Background ellipse with blur -->
+                                    <div class="avatar-background">
+                                        <img src="../../public/images/ELIPSE-GRADIENT.png" alt="background" class="rotating-glow">
+                                    </div>
+
+                                    <!-- Avatar image -->
+                                    <div class="avatar avatar-xxl mb-md-0 mr-md-32pt rounded-circle"
+                                        style="transform: scale(1.0);">
+                                        <img src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"
+                                            class="avatar avatar-xxl avatar-online rounded rounded-circle border-2"
+                                            alt="lesson">
+                                        <div class="overlay__content"></div>
+                                    </div>
+                                </div>
+                                <div class="flex measure-lead-max">
+                                    <div class="flex d-flex flex-row align-items-center">
+                                        <div>
+                                            <small class="text-white-70 d-block mb-1"><strong>Bem vindo,</strong></small>
+                                            <h2 class="measure-lead-max mb-0pt text-primary200">Gregório Pinheiro</h2>
+                                            <div class="border-bottom-0 border-secondary mb-16pt"></div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div>
+
+                                        <span class="chip chip-light d-inline-flex align-items-center"
+                                            data-toggle="tooltip" data-title="Chaves" data-placement="bottom">
+                                            <img src="../../public/images/icon/ICON-KEY-lg.png" alt="key icon"
+                                                style="width: 24px; height: 24px; margin-right: 8px; vertical-align: middle;">
+                                            2.432
+                                        </span>
+
+
+                                        <span class="chip chip-light d-inline-flex align-items-center"
+                                            data-toggle="tooltip" data-title="Aluno Nível 7" data-placement="bottom">
+                                            <i class="material-icons icon--left text-purple500">face</i> NÍVEL 7
+                                        </span>
+                                        <span class="align-items-center">
+                                            <a href="home.html" class="text-white-70 ml-4 mb-sm-0"><strong>Ver
+                                                    mais</strong> <i
+                                                    class="fa fa-chevron-circle-right text-white ml-4pt"
+                                                    aria-hidden="true"></i></i></a>
+                                        </span>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
                 <div class="page-section flex d-flex align-items-center justify-content-center pb-112pt"
                     style="padding-bottom: 0rem !important;">
 
@@ -333,9 +458,8 @@
                         <img class="interactive-area2" id="character" src="../../public/images/home_page/character.png">
                     </div>
                 </div>
-                
-                <div
-                    class="page-section flex d-flex border-bottom-0 justify-content-center align-items-center">
+
+                <div class="page-section flex d-flex border-bottom-0 justify-content-center align-items-center">
                     <div class="container page__container flex d-flex  justify-content-center align-items-center"
                         style="height: 220px;">
                         <div class="row ">
@@ -343,7 +467,7 @@
                                 <div class="row">
                                     <div class="col-md-9 mb-24pt mb-lg-0 ">
                                         <p class="text-white-70 mb-0"><strong></strong></p>
-                                        <h2 class="text-white">Instruções</h2>
+                                        <h3 class="text-white">Sobre</h3>
                                         <p class="text-white-50"><span class="text-white-100">Você está na página
                                                 inicial da plataforma do Programa
                                                 de Desenvolvimento. </span> Para continuar, clique em uma das... Et
@@ -381,24 +505,25 @@
 
             <!-- Footer -->
 
-            <div class="bg-light border-top-0 mt-auto">
+            <div class="bg-transparent border-top-0 mt-auto">
                 <div class="container page__container page-section d-flex flex-column">
-                    <p class="text-70 brand mb-24pt" style="font-size: 16px;">
+                    <p class="text-white-70 brand mb-24pt" style="font-size: 16px;">
                         <img class="brand-icon mr-3" src="../../public/images/logo/Logo_icon_261px.png" width="48"
                             alt="">
                         Programa de Desenvolvimento Inicial
                     </p>
-                    <p class="measure-lead-max text-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
+                    <p class="measure-lead-max text-white-50 small mr-8pt">A plataforma do Programa de Desenvolvimento
+                        Inicial
                         foi desenvolvida junto ao ENAP para transformar o aprendizado e a capacitação de servidores em
                         uma experiência eficiente e acessível. Com recursos interativos e um design funcional,
                         oferecemos um ambiente integrado para cursos, trilhas de conhecimento, avaliações e relatórios
                         de desempenho.
                     </p>
                     <p class="mb-8pt d-flex">
-                        <a href="" class="text-70 text-underline mr-8pt small">Termos e Condições</a>
-                        <a href="" class="text-70 text-underline small">Plolíticas de Privacidade</a>
+                        <a href="" class="text-white-70 text-underline mr-8pt small">Termos e Condições</a>
+                        <a href="" class="text-white-70 text-underline small">Plolíticas de Privacidade</a>
                     </p>
-                    <p class="text-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
+                    <p class="text-white-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
                 </div>
             </div>
 
@@ -514,12 +639,14 @@
             <!-- Sala de Conferencias -->
             <svg>
                 <clippath id="salaconferencia">
-                    <path d="M264.881 1.40511L4.88098 61.1088C2.60978 61.6303 1 63.6517 1 65.982V463.156C1 466.048 3.44667 468.337 6.33258 468.145L266.333 450.811C268.959 450.636 271 448.455 271 445.822V6.27828C271 3.06508 268.013 0.685979 264.881 1.40511Z" fill="white" stroke="white"/>
+                    <path
+                        d="M264.881 1.40511L4.88098 61.1088C2.60978 61.6303 1 63.6517 1 65.982V463.156C1 466.048 3.44667 468.337 6.33258 468.145L266.333 450.811C268.959 450.636 271 448.455 271 445.822V6.27828C271 3.06508 268.013 0.685979 264.881 1.40511Z"
+                        fill="white" stroke="white" />
                 </clippath>
             </svg>
 
-        
-                
+
+
 
             <!-- Espaco 360-->
             <svg>
@@ -531,8 +658,8 @@
             </svg>
         </div>
 
-       
-            
+
+
 </body>
 
 </html>
