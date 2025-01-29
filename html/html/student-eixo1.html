@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <!-- Home style 2 -->
-    <link type="text/css" href="../../public/css/home-style-2.css" rel="stylesheet">
+    <!-- Eixos style 2 -->
+    <link type="text/css" href="../../public/css/eixos.css" rel="stylesheet">
 
     <!-- Perfect Scrollbar -->
     <link type="text/css" href="../../public/vendor/perfect-scrollbar.css" rel="stylesheet">
@@ -72,7 +72,7 @@
 
                     <!-- Navbar -->
 
-                    <div class="navbar navbar-expand pr-0 navbar-dark bg-primary900" id="default-navbar" data-primary>
+                    <div class="navbar navbar-expand pr-0 navbar-dark bg-transparent" id="default-navbar" data-primary>
 
                         <!-- Navbar Brand -->
 
@@ -81,7 +81,7 @@
 
                             <span class="mr-0 mr-lg-8pt">
 
-                                <span class=""><img src="../../public/images/logo/Asset 15@2x.png" alt="logo"
+                                <span class=""><img src="../../public/images/logo/Logo-Text-White.png" alt="logo"
                                         class="img-fluid" style="max-height: 48px;" /></span>
 
                             </span>
@@ -97,9 +97,9 @@
 
                         <!-- Navbar Toggler -->
 
-                        <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                        <ul class="nav navbar-nav d-none d-lg-flex flex justify-content-start ml-32pt">
                             <li class="nav-item">
-                                <a href="home.html" class="nav-link">Início</a>
+                                <a href="#" class="nav-link">Início</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
@@ -127,9 +127,7 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="notification-center.html" class="nav-link">Notificações</a>
-                            </li>
+                         
 
 
                         </ul>
@@ -316,17 +314,6 @@
             <!-- Header Layout Content -->
 
             <div class="mdk-header-layout__content page-content">
-                <div class="page-section flex d-flex align-items-center justify-content-center pb-112pt"
-                    style="padding-bottom: 0rem !important;">
-
-                    <div class="containereixo1">
-                        <!-- Áreas invisíveis interativas -->
-
-                        <div class="interactive-areaa" id="door1a"></div>
-                        <div class="interactive-areaa" id="door2a"></div>
-
-                    </div>
-                </div>
                 <div class="page-section  mt-64pt" style="height: 320px;">
                     <div class="container page__container h-100 justify-content-center align-items-center">
 
@@ -356,9 +343,9 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
-                                <a href="lesson.html"
-                                    class="btn btn-outline-white btn-rounded mb-16pt mb-sm-0 mr-sm-16pt">Continuar de onde parei <i
-                                        class="material-icons icon--right">play_circle_outline</i></a>
+                                <a href="home.html"
+                                    class="btn btn-outline-white btn-rounded mb-16pt mb-sm-0 mr-sm-16pt"><i
+                                    class="material-icons icon--left">chevron_left</i>Voltar </a>
                              
                             </div>
                         </div>
@@ -366,6 +353,20 @@
 
                     </div>
                 </div>
+                <div class="page-section flex d-flex align-items-center justify-content-center pb-112pt"
+                style="padding-bottom: 0rem !important;">
+
+                <div class="containerhome">
+                    <!-- Áreas invisíveis interativas -->
+
+                    <div class="interactive-area" id="disciplina1"></div>
+                    <div class="interactive-area" id="disciplina2"></div>
+                    <div class="interactive-area" id="estudodecaso"></div>
+                    <div class="interactive-area" id="salaconferenciaseixo1"></div>
+                   
+                </div>
+            </div>
+            
 
 
                 <div class="card-body flex d-flex card position-sticy fixed-bottom justify-content-end  ml-auto mr-5"
@@ -399,24 +400,24 @@
 
             <!-- Footer -->
 
-            <div class="bg-light border-top-0 mt-auto">
+            <div class="bg-transparent border-top-0 mt-auto">
                 <div class="container page__container page-section d-flex flex-column">
-                    <p class="text-70 brand mb-24pt" style="font-size: 16px;">
+                    <p class="text-white-70 brand mb-24pt" style="font-size: 16px;">
                         <img class="brand-icon mr-3" src="../../public/images/logo/Logo_icon_261px.png" width="48"
                             alt="">
                         Programa de Desenvolvimento Inicial
                     </p>
-                    <p class="measure-lead-max text-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
+                    <p class="measure-lead-max text-white-50 small mr-8pt">A plataforma do Programa de Desenvolvimento Inicial
                         foi desenvolvida junto ao ENAP para transformar o aprendizado e a capacitação de servidores em
                         uma experiência eficiente e acessível. Com recursos interativos e um design funcional,
                         oferecemos um ambiente integrado para cursos, trilhas de conhecimento, avaliações e relatórios
                         de desempenho.
                     </p>
                     <p class="mb-8pt d-flex">
-                        <a href="" class="text-70 text-underline mr-8pt small">Termos e Condições</a>
-                        <a href="" class="text-70 text-underline small">Plolíticas de Privacidade</a>
+                        <a href="" class="text-white-70 text-underline mr-8pt small">Termos e Condições</a>
+                        <a href="" class="text-white-70 text-underline small">Plolíticas de Privacidade</a>
                     </p>
-                    <p class="text-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
+                    <p class="text-white-50 small mt-n1 mb-0">Copyright 2025 &copy; Todos os Direitos Reservados..</p>
                 </div>
             </div>
 
@@ -428,7 +429,7 @@
 
             <!-- // END Drawer -->
 
-            <script src="../../public/js/home-script2.js"></script>
+            <script src="../../public/js/eixos-script.js"></script>
 
 
             <!-- jQuery -->
@@ -457,13 +458,7 @@
 
 
 
-            <svg>
-                <clippath id="door1clip">
-                    <path
-                        d="M0.5 268.689V6.89581C0.5 3.43151 3.42552 0.68702 6.88277 0.908031L104.383 7.14091C107.541 7.34283 110 9.9636 110 13.1287V271.805C110 275.194 107.195 277.91 103.808 277.802L6.30832 274.686C3.07089 274.582 0.5 271.928 0.5 268.689Z"
-                        stroke="white" />
-                </clippath>
-            </svg>
+    
         </div>
 </body>
 
