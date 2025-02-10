@@ -62,6 +62,7 @@
             from {
                 transform: rotate(0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
@@ -70,15 +71,17 @@
         @keyframes glowPulse {
             0% {
                 filter: blur(10px) brightness(1);
-               
+
             }
+
             50% {
                 filter: blur(15px) brightness(1.3);
-              
+
             }
+
             100% {
                 filter: blur(10px) brightness(1);
-               
+
             }
         }
 
@@ -132,7 +135,7 @@
 
                         <!-- Navbar Brand -->
 
-                        <a href="index.html" class="navbar-brand mr-16pt">
+                        <a href="home.html" class="navbar-brand mr-16pt">
 
 
                             <span class="mr-0 mr-lg-8pt">
@@ -155,18 +158,26 @@
 
                         <ul class="nav navbar-nav d-none d-lg-flex flex justify-content-start ml-32pt">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Início</a>
+                                <a href="home.html" class="nav-link">Início</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
                                     data-caret="false">Eixos</a>
                                 <div class="dropdown-menu">
-                                    <a href="student-eixo1.html" class="dropdown-item">Eixo 1</a>
-                                    <a href="#" class="dropdown-item">Eixo 2</a>
-                                    <a href="#" class="dropdown-item">Eixo 3</a>
                                     <a href="#" class="dropdown-item"><span class="mr-16pt">Eixo
+                                        4</span> <span
+                                        class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
+                                    <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        2</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+
+                                    <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
+                                        3</span> <span
+                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+                                    
+                                        <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
                                             4</span> <span
-                                            class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
+                                            class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
                                     <a href="#" class="dropdown-item"><span class="mr-16pt text-20">Eixo
                                             5</span> <span
                                             class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
@@ -181,7 +192,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Dashboard</a>
+                                <a href="student-profile.html" class="nav-link">Meu Perfil</a>
                             </li>
 
 
@@ -348,8 +359,8 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
-                                    <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
-                                    <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                    <a class="dropdown-item" href="student-profile.html">Meu Perfil</a>
+                                    <a class="dropdown-item" href="student-edit-account-profile.html">Configurações</a>
                                     <a class="dropdown-item" href="#">Sair</a>
 
                                 </div>
@@ -371,7 +382,7 @@
 
             <div class="mdk-header-layout__content page-content">
 
-                <div class="page-section  mt-64pt" style="height: 250px;">
+                <div class="page-section  mt-16pt" style="height: 250px;">
                     <div class="container page__container h-100 justify-content-center align-items-center">
 
                         <div class="d-flex flex-column flex-lg-row align-items-center h-100">
@@ -380,7 +391,8 @@
                                 <div class="avatar-wrapper position-relative">
                                     <!-- Background ellipse with blur -->
                                     <div class="avatar-background">
-                                        <img src="../../public/images/ELIPSE-GRADIENT.png" alt="background" class="rotating-glow">
+                                        <img src="../../public/images/ELIPSE-GRADIENT.png" alt="background"
+                                            class="rotating-glow">
                                     </div>
 
                                     <!-- Avatar image -->
@@ -395,7 +407,8 @@
                                 <div class="flex measure-lead-max">
                                     <div class="flex d-flex flex-row align-items-center">
                                         <div>
-                                            <small class="text-white-70 d-block mb-1"><strong>Bem vindo,</strong></small>
+                                            <small class="text-white-70 d-block mb-1"><strong>Boas
+                                                    vindas,</strong></small>
                                             <h2 class="measure-lead-max mb-0pt text-primary200">Gregório Pinheiro</h2>
                                             <div class="border-bottom-0 border-secondary mb-16pt"></div>
                                         </div>
@@ -415,15 +428,41 @@
 
 
                                         <span class="chip chip-light d-inline-flex align-items-center"
-                                            data-toggle="tooltip" data-title="Aluno Nível 7" data-placement="bottom">
-                                            <i class="material-icons icon--left text-purple500">face</i> NÍVEL 7
+                                            data-toggle="tooltip" data-title="Aproveitamento" data-placement="bottom">
+                                            <i class="material-icons icon--left text-purple500">show_chart</i> 95%
                                         </span>
+
+                                        <span class="align-items-center ml-3">
+
+                                        <div class="avatar-group">
+                                            <div class="avatar avatar-sm"   data-toggle="tooltip" data-title="Legendário" data-placement="bottom">
+                                                <img src="../../public/images/icon/MEDAL-6.png"
+                                                     alt="Avatar"
+                                                     class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                            </div>
+                                            <div class="avatar avatar-sm"   data-toggle="tooltip" data-title="Novato" data-placement="bottom">
+                                                <img src="../../public/images/icon/MEDAL-2.png"
+                                                     alt="Avatar"
+                                                     class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                            </div>
+                                            <div class="avatar avatar-sm"   data-toggle="tooltip" data-title="Veterano" data-placement="bottom">
+                                                <img src="../../public/images/icon/MEDAL-4.png"
+                                                     alt="Avatar"
+                                                     class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                            </div>
+                                            <div class="avatar avatar-xs">
+                                                <a href="student-profile.html"> <span class="avatar-title rounded-circle border-0 bg-dark">+</span></a>
+                                            </div>
+                                        </div>
+                                    </span>
+                                       
                                         <span class="align-items-center">
-                                            <a href="home.html" class="text-white-70 ml-4 mb-sm-0"><strong>Ver
+                                            <a href="student-profile.html" class="text-white-70 ml-4 mb-sm-0"><strong>Ver
                                                     mais</strong> <i
                                                     class="fa fa-chevron-circle-right text-white ml-4pt"
                                                     aria-hidden="true"></i></i></a>
                                         </span>
+                                       
 
 
                                     </div>
@@ -448,11 +487,11 @@
                         <!-- Áreas invisíveis interativas -->
 
                         <div class="interactive-area" id="door1"></div>
-                        <div class="interactive-area" id="door2"></div>
-                        <div class="interactive-area" id="door3"></div>
-                        <div class="interactive-area" id="door4"></div>
-                        <div class="interactive-area" id="door5"></div>
-                        <div class="interactive-area" id="door6"></div>
+                        <div class="interactive-area locked-area" id="door2"></div>
+                        <div class="interactive-area locked-area" id="door3"></div>
+                        <div class="interactive-area locked-area" id="door4"></div>
+                        <div class="interactive-area locked-area" id="door5"></div>
+                        <div class="interactive-area locked-area" id="door6"></div>
                         <div class="interactive-area" id="salaconferencia"></div>
                         <div class="interactive-area" id="espaco360"></div>
                         <img class="interactive-area2" id="character" src="../../public/images/home_page/character.png">
@@ -599,34 +638,41 @@
                     <path d="M183.5 14.5L3 0.5L0 464.5L183.5 468V14.5Z" fill="white" filter="url(#blur)" />
                 </clippath>
             </svg>
-            <!-- Door 4 -->
-            <svg>
-
-                <clippath id="door4clip">
-                    <path d="M210.5 0.5H0.5L1.5 502.5L210.5 489.5V0.5Z" fill="white" filter="url(#blur)" />
-                </clippath>
-            </svg>
-            <!-- Door 5 -->
+            <!-- Door 4 
             <svg>
                 <defs>
-                    <filter id="blur">
+                    <filter id="blur4">
                         <feGaussianBlur stdDeviation="15" />
                     </filter>
                 </defs>
-                <clippath id="door5clip">
-                    <path d="M194 0H0L2.5 483L196.5 471.5L194 0Z" fill="white" filter="url(#blur)" />
-                </clippath>
+                <clipPath id="door4clip">
+
+                        <polygon class="cls-1" points="0 0 0 512 209.53 489 209.53 0 0 0"/>
+
+                </clipPath>
+            </svg> -->
+
+            <!-- Door 5 -->
+            <svg>
+                <defs>
+                    <filter id="blur5">
+                        <feGaussianBlur stdDeviation="15" />
+                    </filter>
+                </defs>
+                <clipPath id="door5clip">
+                    <path d="M2.5 0H196.5L194 483L0 471.5L2.5 0Z" fill="white" fill="white" filter="url(#blur5)" />
+                </clipPath>
             </svg>
             <!-- Door 6 -->
             <svg>
                 <defs>
-                    <filter id="blur">
+                    <filter id="blur6">
                         <feGaussianBlur stdDeviation="15" />
                     </filter>
                 </defs>
-                <clippath id="door6clip">
-                    <path d="M183.5 0.5H0L4.5 467.5L183.5 457V0.5Z" fill="white" filter="url(#blur)" />
-                </clippath>
+                <clipPath id="door6clip">
+                    <path d="M183.5 14.5L3 0.5L0 464.5L183.5 468V14.5Z" fill="white" filter="url(#blur6)" />
+                </clipPath>
             </svg>
             <!-- Character -->
             <svg>
@@ -644,6 +690,9 @@
                         fill="white" stroke="white" />
                 </clippath>
             </svg>
+
+
+
 
 
 

@@ -179,24 +179,21 @@ body, html {
 
 .containereixo1 {
     position: relative;
-   width: 100%;
-    width: 1440px; /* Largura fixa */
-    height: 810px; /* Altura fixa (proporção da imagem de fundo) */
+    width: 100%;
+    max-width: 1440px;
+    height: 810px;
     background: url('../../public/images/illustration/segundatelaV6.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  margin: 0 auto;
-  
-  }
-  
-  @media (max-width: 1440px) {
-      .containereixo1 {
-        background: url('../../public/images/icon/expand-screen.png') no-repeat center center;
-        background-size: contain;
-        width: 300px;
-        height: 300px;
-      }
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    .containereixo1 {
+        height: auto;
+        aspect-ratio: 16/9;
     }
+}
 
 .containerhome {
   position: relative;
@@ -329,7 +326,7 @@ body, html {
     position: fixed;
     display: none;
     background-color: white;
-    color: rgba(116, 0, 183);;
+    color: rgba(116, 0, 183);
     padding: 8px 12px;
     border-radius: 12px;
     font-size: 14px;
@@ -338,6 +335,138 @@ body, html {
     z-index: 9999;
     white-space: nowrap;
     text-align: center;
-} 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rounded-custom {
+    border-radius: 12px; /* Ajuste este valor para mais ou menos arredondamento */
+}
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+.locked-area {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@keyframes lockPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.9;
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.9;
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+    }
+}
+
+@keyframes glowBorder {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+.locked-area::before {
+    content: 'lock';
+    font-family: 'Material Icons';
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: lockPulse 2s ease-in-out infinite;
+    z-index: 2;
+}
+
+.locked-area::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+    z-index: 1;
+}
+
+.locked-area {
+    animation: glowBorder 2s ease-in-out infinite;
+}
+
+.locked-area:hover {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.locked-area:hover::before {
+    animation: lockPulse 1s ease-in-out infinite;
+}
+
+.locked-area:hover::after {
+    animation: shine 2s infinite;
+}
+
 
 
