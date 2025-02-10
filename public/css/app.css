@@ -34253,12 +34253,13 @@ body {
 }
 
 .progression-bar__item-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     color: inherit;
-    line-height: 22px;
+    line-height: 25px;
     font-size: 16px
 }
+
 
 [dir] .progression-bar__item-icon {
     border-radius: 50%;

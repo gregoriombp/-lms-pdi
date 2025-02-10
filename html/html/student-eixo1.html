@@ -293,7 +293,7 @@
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
                                     <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
-                                    <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                    <a class="dropdown-item" href="student-profile.html">Dashboard</a>
                                     <a class="dropdown-item" href="#">Sair</a>
 
                                 </div>
@@ -332,12 +332,8 @@
                                         </h1>
 
                                     </div>
-                                    <small class="  w-25 text-white-70">Sed ut perspiciatis unde omnis iste natus error
-                                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                                        nesciunt.</small>
+                                    <small class="  w-25 text-white-70">Este eixo se destina a propiciar a adesão e a internalização, por parte dos servidores públicos participantes da formação, de valores, princípios, práticas e ferramentas de fomento da integridade e normas éticas capazes de sustentar e priorizar uma atuação profissional voltada ao interesse público, à geração de valor para a sociedade e ao estabelecimento de um ambiente de integridade nas organizações públicas orientado pelo respeito à diversidade e a inclusão da perspectiva de equidade de gênero e raça nas organizações.
+                                    </small>
 
 
                                 </div>
@@ -356,14 +352,27 @@
                 <div class="page-section flex d-flex align-items-center justify-content-center pb-112pt"
                 style="padding-bottom: 0rem !important;">
 
-                <div class="containerhome">
+                <div class="containereixo1">
                     <!-- Áreas invisíveis interativas -->
-
                     <div class="interactive-area" id="disciplina1"></div>
                     <div class="interactive-area" id="disciplina2"></div>
-                    <div class="interactive-area" id="estudodecaso"></div>
+                    <div class="interactive-area locked-area" id="estudodecaso"></div>
                     <div class="interactive-area" id="salaconferenciaseixo1"></div>
-                   
+
+                    <!-- Modal/Popup -->
+                    <div class="custom-modal" id="disciplinaModal">
+                        <div class="custom-modal-content">
+                            <h3 class="text-center mb-4">Qual conteúdo você quer acessar?</h3>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary btn-rounded mr-3" onclick="acessarConteudo('conteudo')">
+                                    Conteúdo da Disciplina
+                                </button>
+                                <button class="btn btn-primary btn-rounded" onclick="acessarConteudo('avaliacao')">
+                                    Avaliação da Disciplina
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             

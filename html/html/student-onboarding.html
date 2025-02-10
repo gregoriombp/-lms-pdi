@@ -59,9 +59,6 @@
 
 
 
-
-
-
         <!-- Header -->
 
 
@@ -81,7 +78,7 @@
                     min-height: 100vh;">
                     <div class="mdk-box__content justify-content-center">
                         <div class="hero container page__container text-center py-64pt">
-                            <h1 class="text-white text-shadow">Bem-vindo(a)</h1>
+                            <h1 class="text-white text-shadow">Boas Vindas</h1>
                             <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt"
                                 style="font-size: 1rem !important;">Para começar, por
                                 favor, preencha o formulário abaixo com suas informações pessoais.</p>
@@ -123,7 +120,7 @@
                     <div class="flex d-flex justify-content-center align-items-center pb-64pt">
                         <!-- First Form -->
                         <div id="form-1" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
-                            style="width: 50%; transition: opacity 0.5s ease-in-out;">
+                            style="width: 600px; transition: opacity 0.5s ease-in-out;">
                             <div class="row">
                                 <div class="col-lg-12">
 
@@ -133,25 +130,34 @@
                                    
                                     <div class="page-separator"></div>-->
                                     <form action="#" class="form-horizontal">
-                                        <div class="form-group">
-                                            <label class="form-label" for="name">Nome Completo</label>
-                                            <input id="name" type="text" class="form-control"
-                                                placeholder="Digite seu nome completo">
+                                        <div class="form-group d-flex flex-column align-items-center">
+                                            <label class="form-label" for="cpf">Qual seu CPF?</label>
+                                            <input id="cpf" type="text" class="form-control" style="max-width: 240px;"
+                                                placeholder="Digite seu CPF (somente números)" maxlength="14"
+                                                pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="Digite um CPF válido"
+                                                oninput="maskCPF(this)">
                                         </div>
 
-                                        <div class="form-group">
-                                            <label class="form-label" for="email">Email</label>
-                                            <input id="email" type="email" class="form-control"
-                                                placeholder="Digite seu email">
-                                        </div>
+                                        <script>
+                                            function maskCPF(input) {
+                                                let value = input.value.replace(/\D/g, '');
+                                                if (value.length > 11) value = value.slice(0, 11);
 
-                                        <div class="form-group">
-                                            <label class="form-label" for="birth">Data de Nascimento</label>
-                                            <input id="birth" type="date" class="form-control">
-                                        </div>
+                                                if (value.length >= 3) {
+                                                    value = value.slice(0, 3) + '.' + value.slice(3);
+                                                }
+                                                if (value.length >= 7) {
+                                                    value = value.slice(0, 7) + '.' + value.slice(7);
+                                                }
+                                                if (value.length >= 11) {
+                                                    value = value.slice(0, 11) + '-' + value.slice(11);
+                                                }
 
-                                        <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                                input.value = value;
+                                            }
+                                        </script>
 
+                                        <div class="form-group d-flex justify-content-center mt-4">
                                             <button type="button" onclick="switchForms()"
                                                 class="btn btn-primary btn-rounded">Avançar</button>
                                         </div>
@@ -161,7 +167,126 @@
                         </div>
 
                         <!-- Second Form -->
-                        <div id="form-2" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                        <div id="form-2" class="card rounded-lg mb-24pt w-50 pt-4 pl-5 pr-5 pb-4"
+                            style="width: 600px; height: auto; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100 justify-content-between">
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-5 pt-4">Confirme seus dados pessoais</h4>
+                                </div>
+
+                                <div class="user-info-container d-flex align-items-center justify-content-center">
+                                    <!-- Imagem de Perfil -->
+                                    <div class="profile-image me-4 mr-3 mb-auto">
+                                        <img src="../../public/images/avatars/avatar_1.jpeg" alt="Foto de Perfil"
+                                            class="rounded-circle"
+                                            style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #6774df;">
+                                    </div>
+
+                                    <!-- Informações do Usuário em Duas Colunas -->
+                                    <div class="user-details flex-grow-1 d-flex">
+                                        <!-- Coluna da Esquerda -->
+                                        <div class="col-12">
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="fullName"
+                                                    style="font-size: 10px; letter-spacing: normal;">Nome
+                                                    Completo</label>
+                                                <input type="text" id="fullName" class="form-control rounded-lg"
+                                                    value="João da Silva Santos">
+                                            </div>
+
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="birthDate"
+                                                    style="font-size: 10px; letter-spacing: normal;">Data de
+                                                    Nascimento</label>
+                                                <input type="date" id="birthDate" class="form-control rounded-lg"
+                                                    style="max-width: 200px;" value="1990-03-15">
+                                            </div>
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="email"
+                                                    style="font-size: 10px; letter-spacing: normal;">E-mail</label>
+                                                <input type="email" id="email" class="form-control rounded-lg"
+                                                    value="joao.silva@email.com">
+                                            </div>
+
+                                            <!-- Checkbox de Confirmação -->
+
+                                        </div>
+
+
+
+                                        <!-- Coluna da Direita -->
+
+                                    </div>
+
+                                </div>
+                                <div class="form-group mt-4 border-top-1 pt-4">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" id="confirmInfo" class="custom-control-input" required>
+                                        <label for="confirmInfo" class="custom-control-label" style="font-size: 14px;">
+                                            Declaro que todas as informações fornecidas acima são verdadeiras e se
+                                            referem à minha pessoa.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToCreatePassword()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- 3 Form -->
+                        <div id="form-3" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                            style="width: 50%; height: 380px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100">
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-4">Crie uma senha</h4>
+
+
+                                </div>
+
+                                <div class="d-flex flex-column flex-grow-1 mt-3">
+
+                                <!-- Campo de Senha -->
+                                <div class="info-item mb-4">
+                                    <label class="form-label" style="font-size: 10px; letter-spacing: normal;">Crie sua senha</label>
+                                    <input type="password" 
+                                           id="password" 
+                                           class="form-control rounded-lg" 
+                                           placeholder="Digite sua senha"
+                                           required>
+                                    <small class="form-text text-muted">A senha deve conter no mínimo 8 caracteres, incluindo letras e números</small>
+                                </div>
+
+                                <!-- Campo de Confirmação de Senha -->
+                                <div class="info-item mb-3">
+                                    <label class="form-label" style="font-size: 10px; letter-spacing: normal;">Confirme sua senha</label>
+                                    <input type="password" 
+                                           id="confirmPassword" 
+                                           class="form-control rounded-lg" 
+                                           placeholder="Digite sua senha novamente"
+                                           required>
+                                </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToTime()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- 4 Form -->
+                        <div id="form-4" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
                             style="width: 50%; height: 380px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
                             <div class="d-flex flex-column h-100">
 
@@ -220,8 +345,8 @@
                             </div>
                         </div>
 
-                        <!-- Third Form -->
-                        <div id="form-3" class="card rounded-lg p-4 mb-24pt"
+                        <!-- 5 Form -->
+                        <div id="form-5" class="card rounded-lg p-4 mb-24pt"
                             style="width: 50%; height: 400px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
                             <div class="d-flex flex-column h-100">
                                 <!-- Título no topo -->
@@ -235,32 +360,52 @@
                                         <div class="carousel-inner text-center">
                                             <div class="carousel-item active">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-1.jpg"
+                                                    <img src="../../public/images/avatars/avatar_1.jpeg"
                                                         class="avatar-option" data-avatar-id="1">
-                                                    <img src="../../public/images/people/110/guy-2.jpg"
+                                                    <img src="../../public/images/avatars/avatar_2.jpeg"
                                                         class="avatar-option center-avatar selected" data-avatar-id="2">
-                                                    <img src="../../public/images/people/110/guy-3.jpg"
+                                                    <img src="../../public/images/avatars/avatar_3.jpeg"
                                                         class="avatar-option" data-avatar-id="3">
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-4.jpg"
+                                                    <img src="../../public/images/avatars/avatar_4.jpeg"
                                                         class="avatar-option" data-avatar-id="4">
-                                                    <img src="../../public/images/people/110/guy-5.jpg"
+                                                    <img src="../../public/images/avatars/avatar_5.jpeg"
                                                         class="avatar-option" data-avatar-id="5">
-                                                    <img src="../../public/images/people/110/guy-6.jpg"
+                                                    <img src="../../public/images/avatars/avatar_6.jpeg"
                                                         class="avatar-option" data-avatar-id="6">
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-7.jpg"
+                                                    <img src="../../public/images/avatars/avatar_7.jpeg"
                                                         class="avatar-option" data-avatar-id="7">
-                                                    <img src="../../public/images/people/110/guy-8.jpg"
+                                                    <img src="../../public/images/avatars/avatar_8.jpeg"
                                                         class="avatar-option " data-avatar-id="8">
-                                                    <img src="../../public/images/people/110/guy-9.jpg"
+                                                    <img src="../../public/images/avatars/avatar_9.jpeg"
                                                         class="avatar-option" data-avatar-id="9">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/avatars/avatar_10.jpeg"
+                                                        class="avatar-option" data-avatar-id="10">
+                                                    <img src="../../public/images/avatars/avatar_11.jpeg"
+                                                        class="avatar-option " data-avatar-id="11">
+                                                    <img src="../../public/images/avatars/avatar_12.png"
+                                                        class="avatar-option" data-avatar-id="12">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/avatars/avatar_13.jpeg"
+                                                        class="avatar-option" data-avatar-id="13">
+                                                    <img src="../../public/images/avatars/avatar_14.jpeg"
+                                                        class="avatar-option " data-avatar-id="14">
+                                                    <img src="../../public/images/avatars/avatar_15.png"
+                                                        class="avatar-option" data-avatar-id="15">
                                                 </div>
                                             </div>
                                         </div>
@@ -278,8 +423,12 @@
                                 <!-- Botões na parte inferior -->
                                 <div class="d-flex justify-content-end mt-4">
                                     <button type="button" onclick="goBack()"
-                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
-                                    <a href="home.html" class="btn btn-primary btn-rounded">Finalizar Perfil</a>
+                                        class="btn btn-outline-primary btn-rounded mt-3 me-2 mr-3">Voltar</button>
+                                    
+                                        <button onclick="handleContinue()" class="btn btn-primary btn-rounded mt-3" id="continueBtn">
+                                            <span id="btnText">Finalizar Perfil</span>
+                                            <div id="loadingSpinner" class="spinner-border spinner-border-sm d-none" role="status"></div>
+                                        </button>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +569,7 @@
                             }, 500);
                         }
 
-                        function switchToAvatars() {
+                        function switchToCreatePassword() {
                             const form2 = document.getElementById('form-2');
                             const form3 = document.getElementById('form-3');
 
@@ -432,6 +581,38 @@
 
                                 setTimeout(() => {
                                     form3.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        function switchToTime() {
+                            const form3 = document.getElementById('form-3');
+                            const form4 = document.getElementById('form-4');
+
+                            form3.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form3.style.display = 'none';
+                                form4.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form4.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        function switchToAvatars() {
+                            const form4 = document.getElementById('form-4');
+                            const form5 = document.getElementById('form-5');
+
+                            form4.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form4.style.display = 'none';
+                                form5.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form5.style.opacity = '1';
                                 }, 50);
                             }, 500);
                         }
@@ -521,7 +702,7 @@
                             const form2 = document.getElementById('form-2');
                             const form3 = document.getElementById('form-3');
                             const form1 = document.getElementById('form-1');
-
+                            const form4 = document.getElementById('form-4');
                             if (form3.style.display === 'block') {
                                 // Voltando do form 3 para o form 2
                                 form3.style.opacity = '0';
@@ -629,6 +810,26 @@
                 startTimer(sixtyMinutes, display);
             };
         </script>
+
+<script>
+    function handleContinue() {
+        const button = document.getElementById('continueBtn');
+        const spinner = document.getElementById('loadingSpinner');
+        const btnText = document.getElementById('btnText');
+        
+        // Desabilita o botão
+        button.disabled = true;
+        
+        // Mostra o spinner e muda o texto
+        spinner.classList.remove('d-none');
+        btnText.textContent = 'Preparando...';
+        
+        // Redireciona após 3 segundos
+        setTimeout(() => {
+            window.location.href = 'student-onboarding-end.html';
+        }, 3000);
+    }
+    </script>
 
         <!-- END TIMER -->
 
