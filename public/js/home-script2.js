@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (area.id === "door6") {
                 window.location.href = "#";
             } else if (area.id === "salaconferencia") {
-                window.location.href = "student-palestras.html";
+                window.location.href = "student-sala-de-conferencias.html";
             } else if (area.id === "espaco360") {
                 window.location.href = "student-auditorio.html";
             } else if (area.id === "character") {

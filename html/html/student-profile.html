@@ -490,117 +490,156 @@
                     <div class="page-separator">
                         <div class="page-separator__text">Seu Progresso</div>
                     </div>
-                    <div class="row d-flex align-items-stretch">
+                    <div class="row d-flex align-items-stretc mb-64pt">
                         <div class="col-9">
-                            <div class="card border-0 bg-light h-100 card-group-row__card p-relative o-hidden">
-                                <div
-                                    class="card-body boder-0 d-flex flex-row align-items-center py-16pt pl-32pt pr-32pt ">
+                            <div class="card h-100 card-group-row__card p-relative o-hidden" 
+                                 style="background: linear-gradient(to right, #fff, #f8f9fa); border: none; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                                <div class="card-body d-flex flex-column py-24pt px-32pt">
+                                    <div class="d-flex align-items-center mb-16pt">
+                                        <div class="avatar avatar-lg mr-3">
+                                            <span class="avatar-title rounded-circle" 
+                                                  style="background-color: rgba(75, 39, 150, 0.1);">
+                                                <i class="material-icons text-purple500" style="font-size: 28px;">timeline</i>
+                                            </span>
+                                        </div>
+                                        <div class="flex">
+                                            <h4 class="card-title mb-0">Sua Jornada de Aprendizado</h4>
+                                            <p class="card-subtitle text-50">Acompanhe seu progresso em cada eixo</p>
+                                        </div>
+                                    </div>
 
-                                    <div class="container page__container">
-                                        <div class="progression-bar progression-bar--active-accent">
-                                            <div class="progress-bar-container">
-                                                <div class="progress-bar-line"></div>
-                                                <div
-                                                    class="progress-bar-line progress-bar-line-active align-items-start">
+                                    <div class="progression-bar progression-bar--active-accent">
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar-line" style="background: rgba(75, 39, 150, 0.1);"></div>
+                                            <div class="progress-bar-line progress-bar-line-active align-items-start" 
+                                                 style="background: linear-gradient(45deg, #4b2796, #6937b5);"></div>
+                                            
+                                            <div class="progress-bar-circles">
+                                                <a href="link-desejado.html" class="progress-circle-link">
+                                                    <div class="progress-circle-container align-items-start"
+                                                        data-toggle="tooltip"
+                                                        data-title="Você completou todos os níveis do Eixo 1"
+                                                        data-placement="top" data-type="button">
+                                                        <div class="progress-circle completed" 
+                                                             style="background: linear-gradient(45deg, #4b2796, #6937b5); box-shadow: 0 3px 6px rgba(75, 39, 150, 0.2);">
+                                                            <i class="material-icons">check</i>
+                                                        </div>
+                                                        <div class="progress-circle-label bg-purple100">Eixo 1</div>
+                                                    </div>
+                                                </a>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Você completou todos os níveis do Eixo 2"
+                                                    data-placement="top" data-type="button">
+                                                    <div class="progress-circle completed" 
+                                                    style="background: linear-gradient(45deg, #4b2796, #6937b5); box-shadow: 0 3px 6px rgba(75, 39, 150, 0.2);">
+                                                   <i class="material-icons">check</i>
+                                               </div>
+                                                    <div class="progress-circle-label bg-purple100">Eixo 2</div>
                                                 </div>
-                                                <div class="progress-bar-circles">
-                                                    <a href="link-desejado.html" class="progress-circle-link">
-                                                        <div class="progress-circle-container align-items-start"
-                                                            data-toggle="tooltip"
-                                                            data-title="Você completou todos os níveis do Eixo 1"
-                                                            data-placement="top" data-type="button">
-                                                            <div class="progress-circle completed">
-                                                                <i class="material-icons">check</i>
-                                                            </div>
-                                                            <div class="progress-circle-label">Eixo 1</div>
-                                                        </div>
-                                                    </a>
-
-
-
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Você completou todos os níveis do Eixo 2"
-                                                        data-placement="top" data-type="button">
-                                                        <div class="progress-circle completed">
-                                                            <i class="material-icons">check</i>
-                                                        </div>
-                                                        <div class="progress-circle-label">Eixo 2</div>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Você completou todos os níveis do Eixo 3"
+                                                    data-placement="top" data-type="button">
+                                                    <div class="progress-circle completed" 
+                                                    style="background: linear-gradient(45deg, #4b2796, #6937b5); box-shadow: 0 3px 6px rgba(75, 39, 150, 0.2);">
+                                                   <i class="material-icons">check</i>
+                                               </div>
+                                                    <div class="progress-circle-label bg-purple100">Eixo 3</div>
+                                                </div>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Você está no Nível 2 do Eixo 4" data-placement="top"
+                                                    data-type="button">
+                                                    <div class="progress-circle active bg-green200">
+                                                        <i class="material-icons text-green600">play_arrow</i>
                                                     </div>
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Você completou todos os níveis do Eixo 3"
-                                                        data-placement="top" data-type="button">
-                                                        <div class="progress-circle completed">
-                                                            <i class="material-icons">check</i>
-                                                        </div>
-                                                        <div class="progress-circle-label">Eixo 3</div>
+                                                    <div class="progress-circle-label bg-green100">Eixo 4</div>
+                                                </div>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Bloqueado" data-placement="top"
+                                                    data-type="button">
+                                                    <div class="progress-circle">
+                                                        <i class="material-icons">lock</i>
                                                     </div>
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Você está no Nível 2 do Eixo 4" data-placement="top"
-                                                        data-type="button">
-                                                        <div class="progress-circle active">
-                                                            <i class="material-icons text-success">play_arrow</i>
-                                                        </div>
-                                                        <div class="progress-circle-label">Eixo 4</div>
+                                                    <div class="progress-circle-label locked">Eixo 5</div>
+                                                </div>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Bloqueado" data-placement="top"
+                                                    data-type="button">
+                                                    <div class="progress-circle">
+                                                        <i class="material-icons">lock</i>
                                                     </div>
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Notificações" data-placement="top"
-                                                        data-type="button">
-                                                        <div class="progress-circle">
-                                                            <i class="material-icons">lock</i>
-                                                        </div>
-                                                        <div class="progress-circle-label locked">Eixo 5</div>
+                                                    <div class="progress-circle-label locked">Eixo 6</div>
+                                                </div>
+                                                <div class="progress-circle-container" data-toggle="tooltip"
+                                                    data-title="Bloqueado" data-placement="top"
+                                                    data-type="button">
+                                                    <div class="progress-circle">
+                                                        <i class="material-icons">lock</i>
                                                     </div>
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Notificações" data-placement="top"
-                                                        data-type="button">
-                                                        <div class="progress-circle">
-                                                            <i class="material-icons">lock</i>
-                                                        </div>
-                                                        <div class="progress-circle-label locked">Eixo 6</div>
+                                                    <div class="progress-circle-label locked">Eixo 7</div>
+                                                </div>
+                                                <div class="progress-circle-container align-items-end"
+                                                    data-toggle="tooltip" data-title="Bloqueado"
+                                                    data-placement="top" data-type="button">
+                                                    <div class="progress-circle">
+                                                        <i class="material-icons locked">lock</i>
                                                     </div>
-                                                    <div class="progress-circle-container" data-toggle="tooltip"
-                                                        data-title="Notificações" data-placement="top"
-                                                        data-type="button">
-                                                        <div class="progress-circle">
-                                                            <i class="material-icons">lock</i>
-                                                        </div>
-                                                        <div class="progress-circle-label locked">Eixo 7</div>
-                                                    </div>
-                                                    <div class="progress-circle-container align-items-end"
-                                                        data-toggle="tooltip" data-title="Notificações"
-                                                        data-placement="top" data-type="button">
-                                                        <div class="progress-circle">
-                                                            <i class="material-icons locked">lock</i>
-                                                        </div>
-                                                        <div class="progress-circle-label locked">Eixo 8</div>
-                                                    </div>
+                                                    <div class="progress-circle-label locked">Eixo 8</div>
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
 
+                                    <div class="d-flex align-items-center mt-3">
+                                        <div class="badge badge-soft-success mr-2" 
+                                             style="background-color: rgba(40, 167, 69, 0.1);">
+                                            <i class="material-icons text-success" style="font-size: 14px;">check_circle</i>
+                                            <span class="text-success">3 Eixos Completos</span>
+                                        </div>
+                                        <div class="badge badge-soft-purple" 
+                                             style="background-color: rgba(75, 39, 150, 0.1);">
+                                            <i class="material-icons text-purple" style="font-size: 14px;">play_circle_filled</i>
+                                            <span class="text-purple">Eixo 4 em Andamento</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-3">
-                            <div class="card h-100 card-group-row__card p-relative o-hidden bg-green200">
-                                <div class="card-body d-flex flex-row align-items-center">
-                                    <div class="flex">
-                                        <span class="h2 m-0 text-black-100">Nível 2</span>
-                                        <p class="card-title d-flex align-items-center mb-2">
-                                            <strong class="text-black-70">Do Eixo 4</strong>
-
-                                        </p>
-                                        <span class="text-black-70">Gregório, você está no Nível 2 do Eixo 4. Ao todo,
-                                            você já concluíu 32 níveis.</span>
-
+                            <div class="card h-100 card-group-row__card p-relative align-items-center 
+                                 style="background: #ffffff00; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <div class="avatar avatar-md mr-2">
+                                          
+                                   
+                                                <img src="../../public/images/icon/ICON-UP.png" alt="author"
+                                                    class="avatar rounded-circle ">
+                              
+                                        </div>
+                                        <div class="flex">
+                                            <h1 class="h2 mb-0">Nível 2</h1>
+                                            <p class="mb-0 text-muted">
+                                                <strong class="text-muted">Do Eixo 4</strong>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <i class="material-icons icon-32pt  ml-8pt text-green600">gps_fixed</i>
+
+                                
+
+                                    <p class="text-muted mt-3 mb-0 text-center"><strong>Gregório, você está no Nível 2 do Eixo 4. Continue assim!</strong>
+                                  
+                                    </p>
+
+                                    <div class="badge mt-3 align-self-center pl-2 pr-2" 
+                                         style="background-color: rgba(40, 167, 69, 0.1);">
+                                        <i class="material-icons text-success" style="font-size: 16px;">trending_up</i>
+                                        <span class="text-success" style="font-size: 11px;">+3 níveis este mês</span>
+                                    </div>
                                 </div>
 
+                                <div class="card__overlay-background" 
+                                     style="background-image: url(../../public/images/icon/ICON-GPS.png); opacity: 0.05; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-size: 150px; background-position: right bottom; background-repeat: no-repeat;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -610,121 +649,148 @@
 
                     <!-- Page Content -->
 
-                    <div class="page-section border-bottom-2">
-                        <div class="container page__container">
-
-
-                        </div>
-                    </div>
+                  
                     <div class="  mb-112pt mt-32pt">
                         <div class="row flex d-flex">
                             <div class="col-md-8">
+                                <div class="page-separator">
+                                    <div class="page-separator__text">Overview</div>
+                                </div>
 
 
 
 
-                                <div class=" row mb-64pt">
-
-
-                                    <div class="col-lg-6 col-sm-6 flex d-flex flex-column">
-
+                                <div class="row mb-64pt">
+                                    <!-- Primeira coluna -->
+                                     
+                                    <div class="col-lg-6 col-sm-6 d-flex">
                                         <div
-                                            class="card card-group-row__card text-center o-hidden  mb-lg-0">
+                                            class="card card-group-row__card text-center o-hidden bg-white mb-0 w-100">
 
-                                            <span
-                                                class="corner-ribbon corner-ribbon--default-right-top corner-ribbon--shadow bg-accent text-white">Start</span>
+                                            <div class="card-body d-flex flex-column justify-content-between h-100">
+                                                <div class="circular-progress-container">
+                                                    <div class="circular-progress">
+                                                        <div class="circular-progress-value">
+                                                            <span class="h1 m-0 font-weight-normal">92,6</span>
+                                                            <span class="h4 m-0 font-weight-normal">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                            <div class="card-body d-flex flex-column">
-                                               
-                                                <p class="d-flex justify-content-center align-items-center mt-32pt">
-                                                  
-                                                    <span class="h1 m-0 font-weight-normal">92,6</span>
-                                                    <span class="h4 m-0 font-weight-normal">%</span>
+                                                <div>
+                                                    <span class="h4 m-0 font-weight-normal mb-1">de
+                                                        Aproveitamento</span>
+                                                    <p class="lh-1 text-muted mb-0 pl-3 pr-3">
+                                                        <small>O Aproveitamento é baseado no seu desempenho nas
+                                                            atividades avaliativas.</small>
+                                                    </p>
+                                                </div>
 
-                                                </p>
-
-                                                    <span class="h4 m-0 font-weight-normal mb-1">de Aproveitamento</span>
-                                                    <p class="lh-1 text-muted mb-0 pl-3 pr-3"><small>O Aproveitamento é baseado no seu desempenho nas atividades avaliativas.</small>
-                                                </p>
-
-                                              
+                                                <div class="d-flex justify-content-center align-items-center mt-3">
+                                                    <i class="material-icons text-success mr-2">trending_up</i>
+                                                    <span class="text-success">Você está indo muito bem!</span>
+                                                </div>
                                             </div>
-                                          
                                         </div>
-
                                     </div>
 
-
-                                    <div class="col-lg-6 col-md-6 flex d-flex flex-column">
-                                        <div class="">
-
-                                            <div class="card card-group-row__card card-body"
-                                                style="position: relative; padding-bottom: calc(80px - 1.25rem); overflow: hidden; z-index: 0;">
-
-                                                <div class="d-flex">
+                                    <!-- Segunda coluna -->
+                                    <div class="col-lg-6 col-md-6 d-flex flex-column">
+                                        <!-- Card das Chaves -->
+                                        <div class="flex-grow-1 mb-3">
+                                            <div class="card card-group-row__card card-body h-100"
+                                                style="position: relative; overflow: hidden; z-index: 0; background: linear-gradient(45deg, #4b2796, #6937b5); border: none; box-shadow: 0 4px 15px rgba(75, 39, 150, 0.2);">
+                                                <div class="d-flex align-items-center">
                                                     <div class="flex mr-3">
-                                                        <div class="h2 mb-0"
-                                                           >
-                                                            780</div>
-                                                        <div class="d-flex flex-column">
-                                                            <p class="mb-0"><strong>Chaves</strong></p>
-                                                            <small class="text-50">Desde Outubro de 2024</small>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#"><i class="material-icons text-50">more_horiz</i></a>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                        <div class="">
-
-                                            <div class="card card-group-row__card">
-                                                <div class="card-body">
-                                                    <div class="d-flex mb-16pt">
-                                                        <div class="flex mr-3">
-                                                            <p class="mb-0"><strong>Posição</strong></p>
-                                                            <div class="h2 mb-0"
-                                                               >
-                                                                9ª</div>
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="avatar avatar-lg mr-3">
+                                                                <span class="avatar-title rounded-circle border-2"
+                                                                    style="border: 1px solid rgba(255,255,255,0.7) !important; background: transparent;">
+                                                                    <i class="material-icons text-white"
+                                                                        style="font-size: 28px;">vpn_key</i>
+                                                                </span>
+                                                            </div>
                                                             <div class="d-flex flex-column">
-
-                                                                <small class="text-50">De os 157 Alunos. Continue
-                                                                    assim!</small>
+                                                                <div class="h1 mb-0 text-white"
+                                                                    style="font-size: 2.5rem;">780</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <p class="mb-0"><strong
+                                                                            class="text-white">Chaves</strong></p>
+                                                                    <div class="badge badge-soft-success ml-2"
+                                                                        style="background-color: rgba(255,255,255,0.1);">
+                                                                        <i class="material-icons text-white"
+                                                                            style="font-size: 14px;">trending_up</i>
+                                                                        <span class="text-white">+45 esse mês</span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <a href="#"><i class="material-icons text-50">more_horiz</i></a>
-                                                    </div>
-                                                    <div class="progress" style="height: 8px;">
-                                                        <div class="progress-bar bg-accent" role="progressbar"
-                                                            style="width: 91%;" aria-valuenow="42" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="card-body d-flex flex-column align-items-center justify-content-center">
-                                                    <div>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <i
-                                                                class="material-icons text-primary mr-4pt">trending_up</i>
-                                                            <div class="text-70">12%</div>
+
+
+                                                <div class="card__overlay-background"
+                                                    style="background-image: url(../../public/images/icon/ICON-KEY.png); opacity: 0.7; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-size: 100px; background-position: right bottom; background-repeat: no-repeat;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card do Ranking -->
+                                        <div class="flex-grow-1">
+                                            <div class="card card-group-row__card h-100"
+                                                style="background: linear-gradient(45deg, #2b215a, #4b2796); border: none; box-shadow: 0 4px 15px rgba(75, 39, 150, 0.2);">
+                                                <div
+                                                    class="card-body d-flex align-items-center justify-content-center h-100">
+                                                    <div class="d-flex align-items-center justify-content-center w-100">
+                                                        <div class="avatar avatar-lg mr-3">
+                                                            <span class="avatar-title rounded-circle border-2"
+                                                                style="border: 1px solid rgba(255,255,255,0.7) !important; background: transparent;">
+                                                                <i class="material-icons text-white"
+                                                                    style="font-size: 28px;">emoji_events</i>
+                                                            </span>
                                                         </div>
-                                                        <small class="text-50">dos Alunos tem um desempenho como o
-                                                            seu.</small>
+                                                        <div class="flex">
+                                                            <h1 class="h1 mb-0 text-white">9º</h1>
+                                                            <p class="mb-0 text-white-50">
+                                                                <strong class="text-white">Lugar</strong> entre 157
+                                                                alunos
+                                                            </p>
+                                                        </div>
+                                                        <div class="badge badge-soft-success ml-2"
+                                                            style="background-color: rgba(255,255,255,0.1);">
+                                                            <i class="material-icons text-white"
+                                                                style="font-size: 14px;">arrow_upward</i>
+                                                            <span class="text-white">+2 posições</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="card-body d-flex flex-column align-items-center justify-content-center border-top"
+                                                    style="border-color: rgba(255,255,255,0.1) !important;">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="d-flex align-items-center mr-3">
+                                                            <i class="material-icons text-white-50 mr-2">group</i>
+                                                            <div class="text-white">Top 12%</div>
+                                                        </div>
+                                                        <div class="text-white-50">
+                                                            dos alunos têm desempenho similar
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="page-separator">
+                                    <div class="page-separator__text">Últimas Notificações</div>
+                                </div>
                                 <div class="card">
                                     <div class="list-group list-group-flush">
 
-                                        <div class="list-group-item p-3">
+                                        <div class="list-group-item p-3 mt-8pt">
                                             <div class="row align-items-start">
                                                 <div class="col-md-4 mb-8pt mb-md-0">
                                                     <div class="media align-items-center">
@@ -739,8 +805,7 @@
                                                             <a href="notification-center.html"
                                                                 class="card-title">Avançou de
                                                                 Nível</a>
-                                                            <small class="text-muted">3 minutros
-                                                                atrás</small>
+                                                            <small class="text-muted">2 horas atrás</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -749,8 +814,8 @@
                                                             class="text-body"><strong>Parabéns!
                                                                 Você subiu um nível porque
                                                                 terminou um conteúdo obrigatório
-                                                                na Disciplina 1 do Eixo
-                                                                1.</strong></a></p>
+                                                                na Disciplina 2 do Eixo
+                                                                4.</strong></a></p>
 
 
 
@@ -765,27 +830,22 @@
                                                     <div class="media align-items-center">
                                                         <div class="media-left mr-12pt">
                                                             <a href="" class="avatar avatar-sm">
-                                                                <img src="../../public/images/icon/ICONS-AWARDS-15.png"
+                                                                <img src="../../public/images/icon/ICONS-AWARDS-16.png"
                                                                     alt="avatar" class="avatar-img rounded-circle">
 
                                                             </a>
                                                         </div>
                                                         <div class="d-flex flex-column media-body media-middle">
                                                             <a href="notification-center.html"
-                                                                class="card-title">Avançou de
-                                                                Nível</a>
-                                                            <small class="text-muted">3 minutros
-                                                                atrás</small>
+                                                                class="card-title">+10 Chaves</a>
+                                                            <small class="text-muted">2 horas atrás</small>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col mb-8pt mb-md-0">
                                                     <p class="mb-8pt"><a href="discussion.html"
                                                             class="text-body"><strong>Parabéns!
-                                                                Você subiu um nível porque
-                                                                terminou um conteúdo obrigatório
-                                                                na Disciplina 1 do Eixo
-                                                                1.</strong></a></p>
+                                                               Você recebeu 10 chaves por ter completado o conteúdo obrigatório da Disciplina 2 do Eixo 4.</strong></a></p>
 
 
 
@@ -800,27 +860,22 @@
                                                     <div class="media align-items-center">
                                                         <div class="media-left mr-12pt">
                                                             <a href="" class="avatar avatar-sm">
-                                                                <img src="../../public/images/icon/ICONS-AWARDS-15.png"
+                                                                <img src="../../public/images/icon/ICONS-AWARDS-17.png"
                                                                     alt="avatar" class="avatar-img rounded-circle">
 
                                                             </a>
                                                         </div>
                                                         <div class="d-flex flex-column media-body media-middle">
                                                             <a href="notification-center.html"
-                                                                class="card-title">Avançou de
-                                                                Nível</a>
-                                                            <small class="text-muted">3 minutros
-                                                                atrás</small>
+                                                                class="card-title">+1 Medalha</a>
+                                                            <small class="text-muted">3 horas atrás</small>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col mb-8pt mb-md-0">
                                                     <p class="mb-8pt"><a href="discussion.html"
                                                             class="text-body"><strong>Parabéns!
-                                                                Você subiu um nível porque
-                                                                terminou um conteúdo obrigatório
-                                                                na Disciplina 1 do Eixo
-                                                                1.</strong></a></p>
+                                                                Você recebeu 1 medalha por ter completado o conteúdo obrigatório da Disciplina 2 do Eixo 4.</strong></a></p>
 
 
 
@@ -835,27 +890,22 @@
                                                     <div class="media align-items-center">
                                                         <div class="media-left mr-12pt">
                                                             <a href="" class="avatar avatar-sm">
-                                                                <img src="../../public/images/icon/ICONS-AWARDS-15.png"
+                                                                <img src="../../public/images/icon/ICONS-AWARDS-16.png"
                                                                     alt="avatar" class="avatar-img rounded-circle">
 
                                                             </a>
                                                         </div>
                                                         <div class="d-flex flex-column media-body media-middle">
                                                             <a href="notification-center.html"
-                                                                class="card-title">Avançou de
-                                                                Nível</a>
-                                                            <small class="text-muted">3 minutros
-                                                                atrás</small>
+                                                                class="card-title">+20 Chaves</a>
+                                                            <small class="text-muted">3 horas atrás</small>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col mb-8pt mb-md-0">
                                                     <p class="mb-8pt"><a href="discussion.html"
                                                             class="text-body"><strong>Parabéns!
-                                                                Você subiu um nível porque
-                                                                terminou um conteúdo obrigatório
-                                                                na Disciplina 1 do Eixo
-                                                                1.</strong></a></p>
+                                                                    Você recebeu 20 chaves por ter completado o conteúdo obrigatório da Disciplina 1 do Eixo 4.</strong></a></p>
 
 
 
@@ -879,21 +929,33 @@
 
 
 
-                            <div class="col-md-4  pl-32pt py-32pt rounded-lg">
+                            <div class="col-md-4  pl-32pt">
 
                                 <div class="page-separator">
                                     <div class="page-separator__text">Seu progresso Geral</div>
                                 </div>
+                                <div class="card card-body">
                                 <div class="flex d-inline-flex align-items-end">
-                                    <h1 style="letter-spacing: -0.08em; font-weight: bold;">25</h1>
+                                    <h1 style="letter-spacing: -0.08em; font-weight: bold;">51,2</h1>
                                     <h2 class="ml-4pt">%</h2>
                                 </div>
                                 <div class="flex" style="max-width: 100%">
 
-                                    <div class="progress" style="height: 20px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                    <div class="flex" style="max-width: 100%">
+
+                                        <div class="progress">
+                                            <div class="progress-bar bg-accent" role="progressbar" style="width: 51%"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"
+                                                data-toggle="tooltip" data-title="51,2% do Curso concluído."
+                                                data-placement="bottom"></div>
+                                            <div class="progress-bar bg-purple200" role="progressbar" style="width: 20%"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                                data-toggle="tooltip"
+                                                data-title="De acordo com seu ritmo, o esperado seria 73,4% de conclusão."
+                                                data-placement="bottom"></div>
+
                                         </div>
+
                                     </div>
 
                                 </div>
@@ -904,150 +966,77 @@
                                             <i class="material-icons">timer</i>
                                         </div>
                                         <div class="flex">
-                                            <small class="text-100">Mantenha o ritmo! Para finalizar o curso até o dia
-                                                23/03/2021, você já deveria ter concluído 87,2% dele, conforme indicado
-                                                no gráfico acima.</small>
+                                            <small class="text-100">Mantenha o ritmo! Você já concluiu 51,2% do curso,
+                                                mas, considerando seu ritmo atual (1 ano), o esperado seria 73,4% de
+                                                conclusão.</small>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-70"></p>
+                            </div>
+                                
 
                                 <div class="card card-body ">
-
+                                    <div class="h4" style="font-weight: 600 ;">Quadro de Medalhas</div>
                                     <div class="row d-block">
-                                        <div class="card-header">
-                                            <h4>Quadro de Medalhas</h4>
-                                        </div>
+                                      
+                              
 
-
-
-                                        <div class="card-body flex d-flex flex-wrap mr-8pt">
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                        <div class="card-body flex d-flex flex-wrap  align-items-center justify-content-center">
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Novato">
                                                 <a href=""><img src="../../public/images/icon/MERAL-1.png"
                                                         alt="Iniciante"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2"></a>
                                             </div>
 
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Aprendiz">
                                                 <a href=""><img src="../../public/images/icon/MEDAL-2.png"
                                                         alt="Aprendiz"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
                                             </div>
 
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Aprendiz">
                                                 <a href=""><img src="../../public/images/icon/MEDAL-3.png" alt="Pleno"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
                                             </div>
 
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Aprendiz">
                                                 <a href=""><img src="../../public/images/icon/MEDAL-4.png" alt="Sênior"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
                                             </div>
 
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Aprendiz">
                                                 <a href=""><img src="../../public/images/icon/MEDAL-5.png"
                                                         alt="Avançado"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
                                             </div>
 
-                                            <div class="avatar avatar-xl mt-2 mr-2" data-toggle="tooltip"
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
                                                 data-placement="top" title="Aprendiz">
                                                 <a href=""><img src="../../public/images/icon/MEDAL-6.png"
                                                         alt="Lendário"
-                                                        class="avatar-img rounded-circle bg-light border-2 border-lightgreen"></a>
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
+                                            </div>
+                                            <div class="avatar avatar-lg mt-2 mr-2" data-toggle="tooltip"
+                                                data-placement="top" title="Aprendiz">
+                                                <a href=""><img src="../../public/images/icon/SELO EIXO 1.png"
+                                                        alt="Lendário"
+                                                        class="avatar-img rounded-circle bg-light border-2 "></a>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <div class="page-separator">
-                                    <div class="page-separator__text">Últimas Notificações</div>
-                                </div>
+                              
 
 
 
-                                <div class="card">
-
-                                    <div class="list-group list-group-flush">
-                                        <!-- Primeira notificação -->
-                                        <div class="list-group-item p-3">
-                                            <div class="d-flex">
-                                                <div class="avatar avatar-xl mt-2 mr-2">
-                                                    <span class="avatar-title rounded-circle bg-white">
-                                                        <img src="../../public/images/icon/ICON-UP.png" alt="award"
-                                                            class="avatar-img">
-                                                    </span>
-                                                </div>
-                                                <span class="flex d-flex flex-column justify-content-center">
-                                                    <strong class="text-black-100 card-title mb-1">Você
-                                                        subiu um nível!</strong>
-                                                    <span class="text-black-70 mb-1">Parabéns!
-                                                        Você subiu um nível porque
-                                                        terminou
-                                                        um conteúdo obrigatório.</span>
-                                                    <small class="text-black-50">3 minutos
-                                                        atrás</small>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <!-- Segunda notificação -->
-                                        <div class="list-group-item p-3">
-                                            <div class="d-flex">
-                                                <div class="avatar avatar-xl mt-2 mr-2">
-                                                    <span class="avatar-title rounded-circle bg-white">
-                                                        <img src="../../public/images/icon/ICON-KEY.png" alt="award"
-                                                            class="avatar-img">
-                                                    </span>
-                                                </div>
-                                                <span class="flex d-flex flex-column justify-content-center">
-                                                    <strong class="text-black-100 card-title mb-1">+4
-                                                        Chaves</strong>
-                                                    <span class="text-black-70 mb-1">Você ganhou
-                                                        4 chaves por completar todas as
-                                                        atividades do módulo.</span>
-                                                    <small class="text-black-50">7 minutos
-                                                        atrás</small>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <!-- Terceira notificação -->
-                                        <div class="list-group-item p-3 align-items-center justify-content-center">
-                                            <div class="d-flex">
-                                                <div class="avatar avatar-xl mt-2 mr-2">
-                                                    <span class="avatar-title rounded-circle bg-white border-1">
-                                                        <img src="../../public/images/icon/ICON-AWARD.png" alt="award"
-                                                            class="avatar-img">
-                                                    </span>
-                                                </div>
-                                                <span class="flex d-flex flex-column  justify-content-center">
-                                                    <strong class="text-black-100 card-title mb-1">+1
-                                                        Medalha</strong>
-                                                    <span class="text-black-70 mb-1">Você ganhou
-                                                        uma medalha por completar o
-                                                        eixo.</span>
-                                                    <small class="text-black-50">5 horas
-                                                        atrás</small>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Footer com botão para central de notificações -->
-                                    <div class="card-footer p-8pt text-center">
-                                        <a href="notification-center.html" class="btn btn-link">
-                                            <i class="material-icons icon--left">notifications</i>
-                                            Ver todas as notificações
-                                        </a>
-                                    </div>
-                                </div>
+                              
 
 
 
@@ -1239,6 +1228,44 @@
                         font-size: 14px;
                         color: #9e9e9e;
                         font-family: 'Exo 2', sans-serif;
+                    }
+
+                    .circular-progress-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px 0;
+                    }
+
+                    .circular-progress {
+                        position: relative;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        background: conic-gradient(#42B77A 92.6%, #e0e0e0 0);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .circular-progress::before {
+                        content: "";
+                        position: absolute;
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        background-color: white;
+                    }
+
+                    .circular-progress-value {
+                        position: relative;
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: center;
+                    }
+
+                    .circular-progress-value .h1 {
+                        font-size: 3rem;
                     }
                 </style>
 
