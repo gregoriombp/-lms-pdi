@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Modificar Perfil</title>
+    <title>Preferências</title>
     <link rel="icon" href="../../public/images/logo/Logo_icon_261px.png" type="image/png">
 
     <!-- Prevent the demo from appearing in search engines -->
@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
 
     <!-- Perfect Scrollbar -->
@@ -30,16 +31,14 @@
     <!-- App CSS -->
     <link type="text/css" href="../../public/css/app.css" rel="stylesheet">
 
-       <!-- Quill Theme -->
-       <link type="text/css"
-       href="../../public/css/quill.css"
-       rel="stylesheet">
+    <!-- Quill Theme -->
+    <link type="text/css" href="../../public/css/quill.css" rel="stylesheet">
 
 </head>
 
 <body class="layout-sticky-subnav layout-default ">
 
-  
+
 
     <!-- Header Layout -->
     <div class="mdk-header-layout js-mdk-header-layout">
@@ -51,18 +50,17 @@
 
                 <!-- Navbar -->
 
-                <div class="navbar navbar-expand pr-0 navbar-light bg-white navbar-shadow" id="default-navbar"
-                    data-primary>
+                <div class="navbar navbar-expand pr-0 navbar-dark bg-primary900 id=" default-navbar" data-primary>
 
                     <!-- Navbar Brand -->
 
-                    <a href="index.html" class="navbar-brand mr-16pt">
+                    <a href="home.html" class="navbar-brand mr-16pt">
 
 
                         <span class="mr-0 mr-lg-8pt">
 
-                            <span class=""><img src="../../public/images/Asset 4@4x.png" alt="logo" class="img-fluid"
-                                    style="max-height: 48px;" /></span>
+                            <span class=""><img src="../../public/images/logo/Logo-Text-White.png" alt="logo"
+                                    class="img-fluid" style="max-height: 48px;" /></span>
 
                         </span>
 
@@ -77,43 +75,24 @@
 
                     <!-- Navbar Toggler -->
 
-                    <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                    <ul class="nav navbar-nav d-none d-lg-flex flex justify-content-start ml-32pt">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Início</a>
+                            <a href="home.html" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                data-caret="false">Eixos</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">Eixos</a>
                             <div class="dropdown-menu">
                                 <a href="student-eixo1.html" class="dropdown-item">Eixo 1</a>
-                                <a href="#" class="dropdown-item">Eixo 2</a>
-                                <a href="#"  class="dropdown-item">Eixo 3</a>
-                                <a href="#" class="dropdown-item"><span class="mr-16pt">Eixo
-                                        4</span> <span
-                                        class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
-                                        <a href="#"  class="dropdown-item"><span
-                                        class="mr-16pt text-20">Eixo
-                                        5</span> <span
-                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
-                                        <a href="#"  class="dropdown-item"><span
-                                        class="mr-16pt text-20">Eixo
-                                        6</span> <span
-                                        class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
-
-
-
-
+                                <a href="student-eixo2.html" class="dropdown-item">Eixo 2</a>
+                                <a href="student-eixo3.html" class="dropdown-item">Eixo 3</a>
+                                <a href="student-eixo4.html" class="dropdown-item"><span class="mr-16pt">Eixo 4</span> <span class="badge badge-notifications badge-accent text-uppercase ml-auto">Novo</span></a>
+                                <a href="student-eixo5.html" class="dropdown-item"><span class="mr-16pt text-20">Eixo 5</span> <span class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
+                                <a href="student-eixo6.html" class="dropdown-item"><span class="mr-16pt text-20">Eixo 6</span> <span class="badge badge-notifications badge-secondary text-uppercase ml-auto">Bloqueado</span></a>
                             </div>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Dashboard</a>
+                        <li class="nav-item active">
+                            <a href="student-profile.html" class="nav-link">Meu Perfil</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="notification-center.html" class="nav-link">Notificações</a>
-                        </li>
-
-
                     </ul>
 
                     <!-- // END Navbar Toggler -->
@@ -134,12 +113,12 @@
 
                         <!-- Notifications dropdown -->
                         <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
-                            data-toggle="tooltip" data-title="Notifications" data-placement="bottom"
+                            data-toggle="tooltip" data-title="Notificações" data-placement="bottom"
                             data-boundary="window">
                             <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
                                 data-caret="false">
                                 <i class="material-icons">notifications_none</i>
-                                <span class="badge badge-notifications badge-accent">1</span>
+                                <span class="badge badge-notifications bg-purple500 text-white-100">1</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right rounded-lg">
                                 <div data-perfect-scrollbar class="position-relative">
@@ -168,7 +147,8 @@
                                                         nível!</strong>
                                                     <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
                                                         porque
-                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para
+                                                        ver
                                                         suas conquistas.
                                                     </span>
                                                     <small class="text-black-50">3 minutos atrás.</small>
@@ -192,10 +172,12 @@
                                                     </span>
                                                 </span>
                                                 <span class="flex d-flex flex-column">
-                                                    <strong class="text-black-100 card-title mb-1">+4 Chaves</strong>
+                                                    <strong class="text-black-100 card-title mb-1">+4
+                                                        Chaves</strong>
                                                     <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
                                                         porque
-                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para
+                                                        ver
                                                         suas conquistas.
                                                     </span>
                                                     <small class="text-black-50">7 minuttos atrás.</small>
@@ -219,8 +201,10 @@
                                                     </span>
                                                 </span>
                                                 <span class="flex d-flex flex-column">
-                                                    <strong class="text-black-100 card-title mb-1">+1 Medalha</strong>
-                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma medalha
+                                                    <strong class="text-black-100 card-title mb-1">+1
+                                                        Medalha</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma
+                                                        medalha
                                                         porque
                                                         terminou todas as atividades obrigatórias do eixo.
                                                     </span>
@@ -230,17 +214,18 @@
                                         </a>
 
 
-                                        <a href="notification-center.html" class="list-group-item list-group-item-action">
+                                        <a href="notification-center.html"
+                                            class="list-group-item list-group-item-action">
 
                                             <span class="d-flex">
                                                 <span class="avatar avatar-xs mr-2">
                                                     <span class="avatar-title rounded-circle bg-accent">
-                                                        <i
-                                                            class="material-icons font-size-16pt text-white">add</i>
+                                                        <i class="material-icons font-size-16pt text-white">add</i>
                                                     </span>
                                                 </span>
                                                 <span class="flex d-flex flex-column">
-                                                    <strong class="text-black-100">Veja todas as suas notificações</strong>
+                                                    <strong class="text-black-100">Veja todas as suas
+                                                        notificações</strong>
 
                                                 </span>
                                             </span>
@@ -260,15 +245,16 @@
 
                                     <span class="avatar-title rounded-circle bg-primary"> <img
                                             class=" avatar rounded-circle"
-                                            src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"> </span>
+                                            src="../../public/images/avatars/avatar_1.jpeg">
+                                    </span>
 
                                 </span>
 
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
-                                <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
-                                <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                <a class="dropdown-item" href="student-profile.html">Meu Perfil</a>
+                                <a class="dropdown-item" href="student-edit-account-profile.html">Preferências</a>
                                 <a class="dropdown-item" href="#">Sair</a>
 
                             </div>
@@ -295,21 +281,20 @@
                             class="d-flex flex-column flex-md-row align-items-center align-items-md-center flex mb-16pt mb-lg-0 text-center text-md-left">
                             <div
                                 class="avatar avatar-xl rounded-circle bg-primary400 avatar-title mb-16pt mb-md-0 mr-md-16pt">
-                                <i class="material-icons md-48 text-primary100">face</i>
+                                <i class="material-icons md-48 text-primary100">settings</i>
                             </div>
-                            <div class="mr-auto w-50">
-                                <h1 class="p-0 mb-16pt pt-3 text-primary100">Meu Perfil</h1>
+                            <div class="mr-auto w-75">
+                                <h1 class="p-0 mb-16pt pt-3 text-primary100">Preferências</h1>
                             </div>
                         </div>
 
                         <div class="ml-lg-16pt">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
-                                <a href="#"
-                                    class="btn btn-outline-white btn-rounded mb-16pt mb-sm-0 mr-sm-16pt">Salvar Alterações<i
-                                        class="material-icons icon--right">save</i></a>
+                                <a href="#" class="btn btn-outline-white btn-rounded mb-16pt mb-sm-0 mr-sm-16pt">Salvar
+                                    Alterações<i class="material-icons icon--right">save</i></a>
                             </div>
-                  
-             
+
+
                         </div>
                     </div>
 
@@ -332,116 +317,89 @@
 
             <div class="container page__container mb-32pt">
                 <div class="pt-32pt">
-
+                    <p>Altere o avatar do seu perfil ou o seu plano de estudos nesta página. </p>
                 </div>
 
 
                 <div class="row py-32pt">
-               
-                    
-
+                 
                     <div class="col-md-6">
-
-                        <form>
-                            <div class="row">
-                                <div class="col-12 col-md-6 mb-3">
-
-                                    <label class="form-label">Nome*</label>
-                                    <input type="text" class="form-control rounded-lg"
-                                  
-                                        value="Gregório" placeholder="Ex: Gregório">
-
-                                </div>
-                                <div class="col-12 col-md-6 mb-3">
-
-                                    <label class="form-label">Sobrenome*</label>
-                                    <input type="text" class="form-control "
-                                       
-                                        value="Pinheiro" placeholder="Ex: Pinheiro">
-
+                      
+                        <div class="card card-group-row__card p-1 pb-4 mr-3 ml-3">
+                            <div class="card-header d-flex align-items-center border-0">
+                                <div class="mb-0 mr-3"><i class="material-icons text-primary700 ml-2">schedule</i></div>
+                                <div class="flex">
+                                    <small class="strong text-uppercase text-primary700 form-label">Plano de
+                                        Estudos</small>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label class="form-label">Email*</label>
-                                <input type="email" class="form-control rounded-lg" value="gregpinheiro@gmail.com"
-                                    placeholder="exemplo@gmail.com"  >
-                                <small class="form-text text-muted">Se você alterar o seu email, você terá que autentica-lo novamente.</small>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-8 mb-3">
-                                    <label class="form-label" for="validationSample01">Cidade</label>
-                                    <input type="text" class="form-control rounded-lg" id="validationSample01"
-                                        placeholder="(Obrigatório)" value="Belo Horizonte" required="">
-                                </div>
-                                <div class="col-12 col-md-4 mb-3">
-                                    <label class="form-label" for="validationSample01">País</label>
-                                    <input type="text" class="form-control rounded-lg" id="validationSample01"
-                                        placeholder="(Obrigatório)" value="Brasil" required="">
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="form-group">
-                                <div class="flex" style="max-width: 100%">
-
-                                    <label class="form-label">Descrição</label>
-                                    <div style="height: 185px; background-color: #FFFFFF; "
-                                        data-toggle="quill" data-quill-placeholder=""
-                                        data-quill-modules-toolbar='[["bold", "italic"], ["link", "blockquote", "code", "image"], [{"list": "ordered"}, {"list": "bullet"}]]'>
-                                        <p>Altere aqui a descrição do seu perfil...</p>
-                                        <p><br></p>
+                            <div class="card-body">
+                                <div class="alert alert-soft-warning mb-24pt">
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-3"><i class="material-icons">info</i></div>
+                                        <div class="text-body">Você pode alterar seu plano apenas uma vez. Escolha com
+                                            atenção!</div>
                                     </div>
+                                </div>
 
+                                <div class="form-group">
+                                    <label class="form-label">Seu plano atual: <strong>Plano
+                                            Convencional</strong></label>
+                                    <select class="form-control" id="planSelect">
+                                        <option value="" disabled selected>Selecione um novo plano</option>
+                                        <option value="turbo">Plano Turbo (6 meses)</option>
+                                        <option value="acelerado">Plano Acelerado (1 ano)</option>
+                                        <option value="convencional">Plano Convencional (1 ano e 6 meses)</option>
+                                        <option value="estendido">Plano Estendido (2 anos)</option>
+                                    </select>
+                                    <small class="form-text text-muted">
+                                        Escolha o plano que melhor se adapta ao seu ritmo de aprendizado.
+                                    </small>
+                                </div>
+
+                                <div class="card mt-3" id="planDetails" style="display: none;">
+                                    <div class="card-body">
+                                        <h6 class="card-title" id="planTitle">Detalhes do Plano</h6>
+                                        <p class="card-text" id="planDescription"></p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-12 col-md-6 mb-3">
-                                    <label class="form-label" for="validationSample01">Perfil do Facebook</label>
-                                    <input type="text" class="form-control rounded-lg" id="validationSample01"
-                                        placeholder="(Obrigatório)" value="@GregórioMbp" required="" >
-                                </div>
-                                <div class="col-12 col-md-6 mb-3">
-                                    <label class="form-label" for="validationSample01">LinkedIn</label>
-                                    <input type="text" class="form-control rounded-lg" id="validationSample01"
-                                        placeholder="(Obrigatório)" value="@Gregorio.Pinheiro" required="">
-                                </div>
-                            </div>
-
-                        </form>
+                        </div>
                     </div>
 
-                    <div class="col-md-5 ml-auto">
+                
 
-                        <div class="card card-group-row__card p-1 pb-4 mr-3 ml-3 bg-primary100">
-                            <div class="card-header d-flex align-items-center border-0 bg-primary100">
+                    <div class="col-md-6 ml-auto">
+
+                        <div class="card card-group-row__card p-1 pb-4 mr-3 ml-3 bg-purple100">
+                            <div class="card-header d-flex align-items-center border-0 bg-purple100">
                                 <div class="mb-0 mr-3"><i class="material-icons text-primary700 ml-2">face</i>
                                 </div>
                                 <div class="flex">
-                                    <small class="strong text-uppercase text-primary700 form-label">Foto de perfil</small>
+                                    <small class="strong text-uppercase text-primary700 form-label">Foto de
+                                        perfil</small>
 
                                 </div>
 
                             </div>
 
                             <div
-                                class="card-body flex text-center d-flex flex-column align-items-center justify-content-center py-32pt">
+                                class="card-body flex text-center d-flex flex-column align-items-center justify-content-center">
 
 
-                                <a href="student-modify-profile-image.html"
-                                    class="avatar avatar-xxl overlay js-overlay rounded-circle p-relative o-hidden mb-16pt" style="width: 12rem; height: 12rem;">
-                                    <img src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"
-                                        alt="teacher" class="avatar-img" width="180px">
+                                <a href="#"   onclick="toggleAvatarSelector(event)"
+                                    class="avatar avatar-xxl overlay js-overlay rounded-circle p-relative o-hidden mb-16pt"
+                                    style="width: 12rem; height: 12rem;">
+                                    <img src="../../public/images/avatars/avatar_1.jpeg" alt="teacher"
+                                        class="avatar-img" width="180px">
                                     <span class="overlay__content"><i
                                             class="overlay__action material-icons icon-40pt">edit</i></span>
                                 </a>
                                 <div class="flex">
 
-<h2>Gregório Pinheiro</h2>
-<div class="text-70 pl-16pt pr-16pt" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </div>
+                                    <h2>Gregório Pinheiro</h2>
+                                    <div class="text-70 pl-16pt pr-16pt">Membro desde 23 de Outubro de 2024 </div>
 
 
 
@@ -452,9 +410,137 @@
 
 
 
-                                    <a href="student-modify-profile-image.html"
-                                        class="btn btn-rounded  btn-accent mt-3">Escolha outro avatar <i
-                                        class="material-icons icon--right">edit</i></a>
+                                    <a href="#" 
+                                        onclick="toggleAvatarSelector(event)"
+                                        class="btn btn-rounded btn-accent mt-3">Escolha outro avatar <i
+                                            class="material-icons icon--right">edit</i></a>
+                                    
+                                    <!-- Card de Seleção de Avatar -->
+                                    <div id="avatarSelector" class="card mt-5" style="display: none;">
+                                        <div class="card-header bg-purple400">
+                                            <h5 class="card-title mb-0 text-white">Escolha seu Avatar</h5>
+                                        </div>
+                                        <div class="card-body justify-content-center align-items-center">
+                                            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                                                <!-- Primeira linha -->
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_1.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_1.jpeg" alt="Avatar 1" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_2.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_2.jpeg" alt="Avatar 2" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_3.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_3.jpeg" alt="Avatar 3" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_4.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_4.jpeg" alt="Avatar 4" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_5.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_5.jpeg" alt="Avatar 5" class="rounded-circle" width="60" height="60">
+                                                </div>
+
+                                                <!-- Segunda linha -->
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_6.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_6.jpeg" alt="Avatar 6" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_7.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_7.jpeg" alt="Avatar 7" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_8.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_8.jpeg" alt="Avatar 8" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_9.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_9.jpeg" alt="Avatar 9" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_10.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_10.jpeg" alt="Avatar 10" class="rounded-circle" width="60" height="60">
+                                                </div>
+
+                                                <!-- Terceira linha -->
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_12.png', this)">
+                                                    <img src="../../public/images/avatars/avatar_11.jpeg" alt="Avatar 11" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_12.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_12.png" alt="Avatar 12" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_13.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_13.jpeg" alt="Avatar 13" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_14.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_14.jpeg" alt="Avatar 14" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                                <div class="avatar-item m-2" onclick="selectAvatar('avatar_15.jpeg', this)">
+                                                    <img src="../../public/images/avatars/avatar_15.png" alt="Avatar 15" class="rounded-circle" width="60" height="60">
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button class="btn btn-accent  btn-rounded" onclick="saveAvatar()">Salvar</button>
+                                                <button class="btn btn-outline-secondary ml-2 btn-rounded" onclick="toggleAvatarSelector(event)">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        // Variável para armazenar o avatar selecionado
+                                        let selectedAvatarFile = null;
+
+                                        // Função para mostrar/ocultar o seletor de avatar
+                                        function toggleAvatarSelector(event) {
+                                            event.preventDefault();
+                                            const selector = document.getElementById('avatarSelector');
+                                            selector.style.display = selector.style.display === 'none' ? 'block' : 'none';
+                                        }
+
+                                        // Função para selecionar um avatar
+                                        function selectAvatar(avatarFile, element) {
+                                            // Remove a seleção anterior
+                                            document.querySelectorAll('.avatar-item').forEach(item => {
+                                                item.classList.remove('selected');
+                                            });
+                                            
+                                            // Adiciona a seleção ao novo avatar
+                                            element.classList.add('selected');
+                                            selectedAvatarFile = avatarFile;
+                                        }
+
+                                        // Função para salvar o avatar selecionado
+                                        function saveAvatar() {
+                                            if (selectedAvatarFile) {
+                                                // Atualiza a imagem do avatar principal
+                                                const mainAvatar = document.querySelector('.edit-avatar-img');
+                                                if (mainAvatar) {
+                                                    mainAvatar.src = `../../public/images/avatars/${selectedAvatarFile}`;
+                                                }
+                                                
+                                                // Oculta o seletor
+                                                document.getElementById('avatarSelector').style.display = 'none';
+                                                
+                                                // Reset da seleção
+                                                selectedAvatarFile = null;
+                                                
+                                                // Feedback para o usuário
+                                                alert('Avatar atualizado com sucesso!');
+                                            }
+                                        }
+                                    </script>
+
+                                    <style>
+                                        .avatar-item {
+                                            cursor: pointer;
+                                            padding: 3px;
+                                            border: 2px solid transparent;
+                                            border-radius: 50%;
+                                            transition: all 0.2s ease;
+                                        }
+
+                                        .avatar-item:hover {
+                                            transform: scale(1.1);
+                                        }
+
+                                        .avatar-item.selected {
+                                            border-color: #5567ff;
+                                        }
+                                    </style>
                                 </div>
                             </div>
 
@@ -467,8 +553,9 @@
                     <div class="col-md-12 mt-3">
 
 
-                        <a href="student-dashboard.html" class="btn btn-accent btn-rounded">Salvar alterações</a>
-                        <a href="student-modify-profile-quick.html" class="btn btn-outline-secondary btn-rounded ml-3">Voltar</a>
+                        <a href="student-profile.html" class="btn btn-accent btn-rounded">Salvar alterações</a>
+                        <a href="#" onclick="history.back()"
+                            class="btn btn-outline-secondary btn-rounded ml-3">Voltar</a>
                     </div>
                 </div>
 
@@ -508,7 +595,7 @@
 
         <!-- Drawer -->
 
-   
+
 
         <!-- // END Drawer -->
 
@@ -532,14 +619,88 @@
         <script src="../../public/js/app.js"></script>
 
 
-    
+
 
         <!-- Quill -->
         <script src="../../public/vendor/quill.min.js"></script>
         <script src="../../public/js/quill.js"></script>
 
-        
-
 </body>
+
+<!-- Mobile Warning -->
+<div id="mobile-warning" class="d-none">
+    <div class="mobile-overlay"></div>
+    <div class="mobile-message">
+        <div class="mobile-content">
+            <i class="material-icons mb-3" style="font-size: 48px;">computer</i>
+            <h4>Acesso Indisponível</h4>
+            <p>Esta plataforma foi desenvolvida para uso em computadores.</p>
+            <p>Por favor, acesse através de um desktop ou notebook.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        #mobile-warning {
+            display: block !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 9999 !important;
+        }
+
+        .mobile-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .mobile-message {
+            position: absolute;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 90% !important;
+            max-width: 320px !important;
+            background-color: white !important;
+            padding: 2rem !important;
+            border-radius: 8px !important;
+            text-align: center !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .mobile-content {
+            color: #4b2796;
+        }
+
+        .mobile-content i {
+            color: #4b2796;
+        }
+
+        .mobile-content h4 {
+            margin-bottom: 1rem !important;
+            font-weight: 600  !important;
+        }
+
+        .mobile-content p {
+            color: #666  !important;
+            margin-bottom: 0.5rem  !important;
+            font-size: 0.9rem  !important;
+        }
+
+        body {
+            overflow: hidden !important;
+        }
+    }
+</style>
+
+<!-- END Mobile Warning -->
 
 </html>

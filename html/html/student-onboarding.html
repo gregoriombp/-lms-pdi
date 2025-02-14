@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Assistir a um vídeo</title>
+    <title>Onboarding</title>
     <link rel="icon" href="../../public/images/logo/Logo_icon_261px.png" type="image/png">
 
     <!-- Prevent the demo from appearing in search engines -->
@@ -59,9 +59,6 @@
 
 
 
-
-
-
         <!-- Header -->
 
 
@@ -81,13 +78,14 @@
                     min-height: 100vh;">
                     <div class="mdk-box__content justify-content-center">
                         <div class="hero container page__container text-center py-64pt">
-                            <h1 class="text-white text-shadow">Bem-vindo(a)</h1>
-                            <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt">Para começar, por
+                            <h1 class="text-white text-shadow">Boas Vindas</h1>
+                            <p class="lead measure-hero-lead mx-auto text-white text-shadow mb-2pt"
+                                style="font-size: 1rem !important;">Para começar, por
                                 favor, preencha o formulário abaixo com suas informações pessoais.</p>
 
 
 
-                         
+
 
                         </div>
                         <!-- <div class="d-flex justify-content-center mb-4">
@@ -117,90 +115,268 @@
                             </div>
                         </div> -->
                     </div>
-                    
+
 
                     <div class="flex d-flex justify-content-center align-items-center pb-64pt">
                         <!-- First Form -->
                         <div id="form-1" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
-                            style="width: 50%; transition: opacity 0.5s ease-in-out;">
+                            style="width: 600px; transition: opacity 0.5s ease-in-out;">
                             <div class="row">
                                 <div class="col-lg-12">
 
-                                   <!-- <div class="d-flex justify-content-center align-items-center mb-12pt">
+                                    <!-- <div class="d-flex justify-content-center align-items-center mb-12pt">
                                         <p class="h4">Formulário de Onboarding</p>
                                         </div>
                                    
                                     <div class="page-separator"></div>-->
-                                    <form action="#" class="form-horizontal">
-                                        <div class="form-group">
-                                            <label class="form-label" for="name">Nome Completo</label>
-                                            <input id="name" type="text" class="form-control"
-                                                placeholder="Digite seu nome completo">
+                                    <!-- Colocar aqui o form 4-->
+                                    
+                                    <div class="d-flex flex-column h-100">
+        
+                                        <div>
+                                            <h4 class="text-center pl-5 pr-5 mb-4">Em quanto tempo você planeja concluir o
+                                                curso?</h4>
+        
+        
                                         </div>
-
-                                        <div class="form-group">
-                                            <label class="form-label" for="email">Email</label>
-                                            <input id="email" type="email" class="form-control"
-                                                placeholder="Digite seu email">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="avatar avatar-sm bg-purple100 rounded-circle">
+                                                <i class="avatar avatar-sm avatar-title bg-purple100 rounded-circle material-icons text-purple500 mr-2"
+                                                    style="font-size: 38px;">schedule</i>
+                                            </div>
+                                            <div class="ml-3 text-black-100"><strong>Marque uma opção abaixo.</strong> </div>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label class="form-label" for="birth">Data de Nascimento</label>
-                                            <input id="birth" type="date" class="form-control">
+                                        <div class="d-flex flex-column flex-grow-1 mt-3">
+        
+                                            <form action="#" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="form-label h3 mb-4"></label>
+        
+        
+                                                    <div class="form-group px-4">
+                                                        <div class="d-flex flex-wrap justify-content-between mt-0">
+                                                            <div class="chip chip-outline-secondary time-option"
+                                                                onclick="selectTimeOption(this)" data-value="6">
+                                                                6 Meses
+                                                            </div>
+                                                            <div class="chip chip-outline-secondary time-option"
+                                                                onclick="selectTimeOption(this)" data-value="12">
+                                                                1 Ano
+                                                            </div>
+                                                            <div class="chip chip-outline-secondary time-option"
+                                                                onclick="selectTimeOption(this)" data-value="18">
+                                                                1 Ano e 6 Meses
+                                                            </div>
+                                                            <div class="chip chip-outline-secondary time-option"
+                                                                onclick="selectTimeOption(this)" data-value="24">
+                                                                2 Anos
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+        
+                                                </div>
+                                            </form>
                                         </div>
-
                                         <div class="form-group d-flex justify-content-end mt-4 gap-2">
-                                           
-                                            <button type="button" onclick="switchForms()"
+                                            <button type="button" onclick="goBack()"
+                                                class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                            <button type="button" onclick="switchToAvatars()"
                                                 class="btn btn-primary btn-rounded">Avançar</button>
                                         </div>
-                                    </form>
+        
+                             
+                                </div>
+        
+
+    
+                                   
                                 </div>
                             </div>
                         </div>
 
                         <!-- Second Form -->
-                        <div id="form-2" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
-                            style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
-                            <div class="d-flex flex-column h-100">
-                            
-                                    <div>
-                                        <h4 class="text-center mb-4">Em quanto tempo você planeja concluir o
-                                            curso?</h4>
+                        <div id="form-2" class="card rounded-lg mb-24pt w-50 pt-4 pl-5 pr-5 pb-4"
+                            style="width: 600px; height: auto; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100 justify-content-between">
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-5 pt-4">Confirme seus dados pessoais</h4>
+                                </div>
+
+                                <div class="user-info-container d-flex align-items-center justify-content-center">
+                                    <!-- Imagem de Perfil -->
+                                    <div class="profile-image me-4 mr-3 mb-auto">
+                                        <img src="../../public/images/avatars/avatar_1.jpeg" alt="Foto de Perfil"
+                                            class="rounded-circle"
+                                            style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #6774df;">
                                     </div>
-                                    <div class="d-flex flex-column flex-grow-1 justify-content-center">
+
+                                    <!-- Informações do Usuário em Duas Colunas -->
+                                    <div class="user-details flex-grow-1 d-flex">
+                                        <!-- Coluna da Esquerda -->
+                                        <div class="col-12">
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="fullName"
+                                                    style="font-size: 10px; letter-spacing: normal;">Nome
+                                                    Completo</label>
+                                                <input type="text" id="fullName" class="form-control rounded-lg"
+                                                    value="João da Silva Santos">
+                                            </div>
+
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="birthDate"
+                                                    style="font-size: 10px; letter-spacing: normal;">Data de
+                                                    Nascimento</label>
+                                                <input type="date" id="birthDate" class="form-control rounded-lg"
+                                                    style="max-width: 200px;" value="1990-03-15">
+                                            </div>
+                                            <div class="info-item mb-3">
+                                                <label class="form-label" for="email"
+                                                    style="font-size: 10px; letter-spacing: normal;">E-mail</label>
+                                                <input type="email" id="email" class="form-control rounded-lg"
+                                                    value="joao.silva@email.com">
+                                            </div>
+
+                                            <!-- Checkbox de Confirmação -->
+
+                                        </div>
+
+
+
+                                        <!-- Coluna da Direita -->
+
+                                    </div>
+
+                                </div>
+                                <div class="form-group mt-4 border-top-1 pt-4">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" id="confirmInfo" class="custom-control-input" required>
+                                        <label for="confirmInfo" class="custom-control-label" style="font-size: 14px;">
+                                            Declaro que todas as informações fornecidas acima são verdadeiras e se
+                                            referem à minha pessoa.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToCreatePassword()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- 3 Form -->
+                        <div id="form-3" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                            style="width: 50%; height: 380px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100">
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-4">Crie uma senha</h4>
+
+
+                                </div>
+
+                                <div class="d-flex flex-column flex-grow-1 mt-3">
+
+                                <!-- Campo de Senha -->
+                                <div class="info-item mb-4">
+                                    <label class="form-label" style="font-size: 10px; letter-spacing: normal;">Crie sua senha</label>
+                                    <input type="password" 
+                                           id="password" 
+                                           class="form-control rounded-lg" 
+                                           placeholder="Digite sua senha"
+                                           required>
+                                    <small class="form-text text-muted">A senha deve conter no mínimo 8 caracteres, incluindo letras e números</small>
+                                </div>
+
+                                <!-- Campo de Confirmação de Senha -->
+                                <div class="info-item mb-3">
+                                    <label class="form-label" style="font-size: 10px; letter-spacing: normal;">Confirme sua senha</label>
+                                    <input type="password" 
+                                           id="confirmPassword" 
+                                           class="form-control rounded-lg" 
+                                           placeholder="Digite sua senha novamente"
+                                           required>
+                                </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToTime()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- 4 Form -->
+                        <div id="form-4" class="card rounded-lg p-4 mb-24pt w-50 pt-5 pl-5 pr-5"
+                            style="width: 50%; height: 380px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                            <div class="d-flex flex-column h-100">
+
+                                <div>
+                                    <h4 class="text-center pl-5 pr-5 mb-4">Em quanto tempo você planeja concluir o
+                                        curso?</h4>
+
+
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="avatar avatar-sm bg-purple100 rounded-circle">
+                                        <i class="avatar avatar-sm avatar-title bg-purple100 rounded-circle material-icons text-purple500 mr-2"
+                                            style="font-size: 38px;">schedule</i>
+                                    </div>
+                                    <div class="ml-3 text-black-100"><strong>Marque uma opção abaixo.</strong> </div>
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1 mt-3">
+
                                     <form action="#" class="form-horizontal">
                                         <div class="form-group">
                                             <label class="form-label h3 mb-4"></label>
 
+
                                             <div class="form-group px-4">
-                                                <div class="slider-container">
-                                                    <input type="range" class="custom-range" min="0" max="3" step="1"
-                                                        id="timeSlider">
-                                                    <div class="slider-labels d-flex justify-content-between mt-2">
-                                                        <span class="slider-label">3 meses</span>
-                                                        <span class="slider-label">6 meses</span>
-                                                        <span class="slider-label">1 ano</span>
-                                                        <span class="slider-label">2 anos</span>
+                                                <div class="d-flex flex-wrap justify-content-between mt-0">
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="6">
+                                                        6 meses
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="12">
+                                                        1 ano
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="24">
+                                                        2 anos
+                                                    </div>
+                                                    <div class="chip chip-outline-secondary time-option"
+                                                        onclick="selectTimeOption(this)" data-value="30">
+                                                        2 anos e 6 meses
                                                     </div>
                                                 </div>
                                             </div>
 
-                                           
+
                                         </div>
                                     </form>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-end mt-4 gap-2">
-                                        <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
-                                        <button type="button" onclick="switchToAvatars()"
-                                            class="btn btn-primary btn-rounded">Avançar</button>
-                                    </div>
-                       
+                                </div>
+                                <div class="form-group d-flex justify-content-end mt-4 gap-2">
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
+                                    <button type="button" onclick="switchToAvatars()"
+                                        class="btn btn-primary btn-rounded">Avançar</button>
+                                </div>
+
                             </div>
                         </div>
 
-                        <!-- Third Form -->
-                        <div id="form-3" class="card rounded-lg p-4 mb-24pt" style="width: 50%; height: 450px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+                        <!-- 5 Form -->
+                        <div id="form-5" class="card rounded-lg p-4 mb-24pt"
+                            style="width: 50%; height: 400px; display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
                             <div class="d-flex flex-column h-100">
                                 <!-- Título no topo -->
                                 <div>
@@ -213,40 +389,61 @@
                                         <div class="carousel-inner text-center">
                                             <div class="carousel-item active">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-1.jpg"
+                                                    <img src="../../public/images/avatars/avatar_1.jpeg"
                                                         class="avatar-option" data-avatar-id="1">
-                                                    <img src="../../public/images/people/110/guy-2.jpg"
-                                                        class="avatar-option center-avatar selected"
-                                                        data-avatar-id="2">
-                                                    <img src="../../public/images/people/110/guy-3.jpg"
+                                                    <img src="../../public/images/avatars/avatar_2.jpeg"
+                                                        class="avatar-option center-avatar selected" data-avatar-id="2">
+                                                    <img src="../../public/images/avatars/avatar_3.jpeg"
                                                         class="avatar-option" data-avatar-id="3">
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-4.jpg"
+                                                    <img src="../../public/images/avatars/avatar_4.jpeg"
                                                         class="avatar-option" data-avatar-id="4">
-                                                    <img src="../../public/images/people/110/guy-5.jpg"
+                                                    <img src="../../public/images/avatars/avatar_5.jpeg"
                                                         class="avatar-option" data-avatar-id="5">
-                                                    <img src="../../public/images/people/110/guy-6.jpg"
+                                                    <img src="../../public/images/avatars/avatar_6.jpeg"
                                                         class="avatar-option" data-avatar-id="6">
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="avatar-group">
-                                                    <img src="../../public/images/people/110/guy-7.jpg"
+                                                    <img src="../../public/images/avatars/avatar_7.jpeg"
                                                         class="avatar-option" data-avatar-id="7">
-                                                    <img src="../../public/images/people/110/guy-8.jpg"
+                                                    <img src="../../public/images/avatars/avatar_8.jpeg"
                                                         class="avatar-option " data-avatar-id="8">
-                                                    <img src="../../public/images/people/110/guy-9.jpg"
+                                                    <img src="../../public/images/avatars/avatar_9.jpeg"
                                                         class="avatar-option" data-avatar-id="9">
                                                 </div>
                                             </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/avatars/avatar_10.jpeg"
+                                                        class="avatar-option" data-avatar-id="10">
+                                                    <img src="../../public/images/avatars/avatar_11.jpeg"
+                                                        class="avatar-option " data-avatar-id="11">
+                                                    <img src="../../public/images/avatars/avatar_12.png"
+                                                        class="avatar-option" data-avatar-id="12">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="avatar-group">
+                                                    <img src="../../public/images/avatars/avatar_13.jpeg"
+                                                        class="avatar-option" data-avatar-id="13">
+                                                    <img src="../../public/images/avatars/avatar_14.jpeg"
+                                                        class="avatar-option " data-avatar-id="14">
+                                                    <img src="../../public/images/avatars/avatar_15.png"
+                                                        class="avatar-option" data-avatar-id="15">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <a class="carousel-control-prev bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev bg-primary200 border-1" href="#avatarCarousel"
+                                            role="button" data-slide="prev">
                                             <span class="material-icons text-primary400">chevron_left</span>
                                         </a>
-                                        <a class="carousel-control-next bg-primary200 border-1" href="#avatarCarousel" role="button" data-slide="next">
+                                        <a class="carousel-control-next bg-primary200 border-1" href="#avatarCarousel"
+                                            role="button" data-slide="next">
                                             <span class="material-icons text-primary400">chevron_right</span>
                                         </a>
                                     </div>
@@ -254,8 +451,13 @@
 
                                 <!-- Botões na parte inferior -->
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button type="button" onclick="goBack()" class="btn btn-outline-primary btn-rounded me-2 mr-3">Voltar</button>
-                                    <a href="home.html" class="btn btn-primary btn-rounded">Finalizar Perfil</a>
+                                    <button type="button" onclick="goBack()"
+                                        class="btn btn-outline-primary btn-rounded mt-3 me-2 mr-3">Voltar</button>
+                                    
+                                        <button onclick="handleContinue()" class="btn btn-primary btn-rounded mt-3" id="continueBtn">
+                                            <span id="btnText">Finalizar Perfil</span>
+                                            <div id="loadingSpinner" class="spinner-border spinner-border-sm d-none" role="status"></div>
+                                        </button>
                                 </div>
                             </div>
                         </div>
@@ -274,10 +476,10 @@
 
                         .custom-range::-webkit-slider-thumb {
                             -webkit-appearance: none !important;
-                            appearance: none !important ;
+                            appearance: none !important;
                             width: 20px !important;
                             height: 20px !important;
-                            background: #8230e6 !important ;
+                            background: #8230e6 !important;
                             border: 2px solid #b785f3 !important;
                             border-radius: 50% !important;
                             cursor: pointer !important;
@@ -364,6 +566,19 @@
                             opacity: 1;
                             box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
                         }
+
+                        .time-option {
+                            cursor: pointer;
+                            padding: 8px 16px;
+                            border-radius: 20px;
+                            transition: all 0.3s ease;
+                        }
+
+                        .time-option.selected {
+                            background-color: #8230e6;
+                            color: white;
+                            border-color: #8230e6;
+                        }
                     </style>
 
                     <script>
@@ -383,7 +598,7 @@
                             }, 500);
                         }
 
-                        function switchToAvatars() {
+                        function switchToCreatePassword() {
                             const form2 = document.getElementById('form-2');
                             const form3 = document.getElementById('form-3');
 
@@ -395,6 +610,38 @@
 
                                 setTimeout(() => {
                                     form3.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        function switchToTime() {
+                            const form3 = document.getElementById('form-3');
+                            const form4 = document.getElementById('form-4');
+
+                            form3.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form3.style.display = 'none';
+                                form4.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form4.style.opacity = '1';
+                                }, 50);
+                            }, 500);
+                        }
+
+                        function switchToAvatars() {
+                            const form4 = document.getElementById('form-1');
+                            const form5 = document.getElementById('form-5');
+
+                            form4.style.opacity = '0';
+
+                            setTimeout(() => {
+                                form4.style.display = 'none';
+                                form5.style.display = 'block';
+
+                                setTimeout(() => {
+                                    form5.style.opacity = '1';
                                 }, 50);
                             }, 500);
                         }
@@ -484,7 +731,7 @@
                             const form2 = document.getElementById('form-2');
                             const form3 = document.getElementById('form-3');
                             const form1 = document.getElementById('form-1');
-                            
+                            const form4 = document.getElementById('form-4');
                             if (form3.style.display === 'block') {
                                 // Voltando do form 3 para o form 2
                                 form3.style.opacity = '0';
@@ -506,6 +753,16 @@
                                     }, 50);
                                 }, 500);
                             }
+                        }
+
+                        function selectTimeOption(element) {
+                            // Remove selected class from all options
+                            document.querySelectorAll('.time-option').forEach(option => {
+                                option.classList.remove('selected');
+                            });
+
+                            // Add selected class to clicked option
+                            element.classList.add('selected');
                         }
                     </script>
                 </div>
@@ -583,6 +840,26 @@
             };
         </script>
 
+<script>
+    function handleContinue() {
+        const button = document.getElementById('continueBtn');
+        const spinner = document.getElementById('loadingSpinner');
+        const btnText = document.getElementById('btnText');
+        
+        // Desabilita o botão
+        button.disabled = true;
+        
+        // Mostra o spinner e muda o texto
+        spinner.classList.remove('d-none');
+        btnText.textContent = 'Preparando...';
+        
+        // Redireciona após 3 segundos
+        setTimeout(() => {
+            window.location.href = 'student-onboarding-end.html';
+        }, 3000);
+    }
+    </script>
+
         <!-- END TIMER -->
 
         <!-- jQuery -->
@@ -611,5 +888,81 @@
 
 
 </body>
+
+<!-- Mobile Warning -->
+<div id="mobile-warning" class="d-none">
+    <div class="mobile-overlay"></div>
+    <div class="mobile-message">
+        <div class="mobile-content">
+            <i class="material-icons mb-3" style="font-size: 48px;">computer</i>
+            <h4>Acesso Indisponível</h4>
+            <p>Esta plataforma foi desenvolvida para uso em computadores.</p>
+            <p>Por favor, acesse através de um desktop ou notebook.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        #mobile-warning {
+            display: block !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 9999 !important;
+        }
+
+        .mobile-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .mobile-message {
+            position: absolute;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 90% !important;
+            max-width: 320px !important;
+            background-color: white !important;
+            padding: 2rem !important;
+            border-radius: 8px !important;
+            text-align: center !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .mobile-content {
+            color: #4b2796;
+        }
+
+        .mobile-content i {
+            color: #4b2796;
+        }
+
+        .mobile-content h4 {
+            margin-bottom: 1rem !important;
+            font-weight: 600  !important;
+        }
+
+        .mobile-content p {
+            color: #666  !important;
+            margin-bottom: 0.5rem  !important;
+            font-size: 0.9rem  !important;
+        }
+
+        body {
+            overflow: hidden !important;
+        }
+    }
+</style>
+
+<!-- END Mobile Warning -->
 
 </html>

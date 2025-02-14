@@ -26296,6 +26296,35 @@ a.close.disabled {
     color: #052011 !important
 }
 
+.text-red100 {
+    color: #FDD6D7!important
+}
+
+.text-red200 {
+    color: #FB9EA1!important
+}
+
+.text-red300 {
+    color: #F9666A!important
+}
+
+.text-red400 {
+    color: #F73337!important
+}
+
+.text-red500 {
+    color: #D42125!important
+}
+
+.text-red600 {
+    color: #A1161A!important
+}
+
+.text-red700 {
+    color: #6E0C10!important
+}
+
+
 
 .text-primary100 {
     color: #F5FEFF!important
@@ -27230,7 +27259,7 @@ a.text-primary-pickled-bluewood:hover {
 [dir] .btn-outline-primary.is-loading:after,
 [dir] .is-loading-primary:after,
 [dir] .loader-primary {
-    border-color: #002C2F#002C2Ftransparent
+    border-color: #002C2F #002C2F transparent
 }
 
 [dir] .btn-primary.is-loading:after {
@@ -28483,6 +28512,36 @@ a.text-primary-pickled-bluewood:hover {
 .z-2 {
     z-index: 2
 }
+
+
+[dir] .bg-red100 {
+    background-color: #FDD6D7!important
+}
+
+[dir] .bg-red200 {
+    background-color: #FB9EA1!important
+}
+
+[dir] .bg-red300 {
+    background-color: #F9666A!important
+}
+
+[dir] .bg-red400 {
+    background-color: #F73337!important
+}
+
+[dir] .bg-red500 {
+    background-color: #D42125!important
+}
+
+[dir] .bg-red600 {
+    background-color: #A1161A!important
+}
+
+[dir] .bg-red700 {
+    background-color: #6E0C10!important
+}
+
 
 [dir] .bg-primary {
     background-color: #002C2F!important
@@ -34253,12 +34312,13 @@ body {
 }
 
 .progression-bar__item-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     color: inherit;
-    line-height: 22px;
+    line-height: 25px;
     font-size: 16px
 }
+
 
 [dir] .progression-bar__item-icon {
     border-radius: 50%;
@@ -37193,7 +37253,7 @@ code.django .hljs-template-tag {
 }
 
 .mdk-box--bg-gradient-primary .mdk-box__bg-front:after {
-    opacity: .9
+    opacity: .6
 }
 
 [dir=ltr] .mdk-box--bg-gradient-primary .mdk-box__bg-front:after {
@@ -37209,7 +37269,7 @@ code.django .hljs-template-tag {
 }
 
 [dir] .mdk-box--bg-secondary .mdk-box__bg-front:after {
-    background-color: rgba(134, 142, 150, .9)
+    background-color: rgba(134, 142, 150, .6)
 }
 
 [dir] .mdk-box--bg-success .mdk-box__bg-front:after {
@@ -37233,11 +37293,11 @@ code.django .hljs-template-tag {
 }
 
 [dir] .mdk-box--bg-dark .mdk-box__bg-front:after {
-    background-color: rgba(48, 56, 64, .9)
+    background-color: rgba(48, 56, 64, .5)
 }
 
 [dir] .mdk-box--bg-black .mdk-box__bg-front:after {
-    background-color: rgba(39, 44, 51, .9)
+    background-color: rgba(39, 44, 51, .5)
 }
 
 [dir] .mdk-box--bg-accent-red .mdk-box__bg-front:after,

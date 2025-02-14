@@ -68,18 +68,18 @@
 
                 <!-- Navbar -->
 
-                <div class="navbar navbar-expand pr-0 navbar-light bg-white navbar-shadow" id="default-navbar"
+                <div class="navbar navbar-expand pr-0 navbar-light bg-alt border-bottom-1" id="default-navbar"
                     data-primary>
 
                     <!-- Navbar Brand -->
 
-                    <a href="index.html" class="navbar-brand mr-16pt">
+                    <a href="home.html" class="navbar-brand mr-16pt">
 
 
                         <span class="mr-0 mr-lg-8pt">
 
-                            <span class=""><img src="../../public/images/Asset 4@4x.png" alt="logo" class="img-fluid"
-                                    style="max-height: 48px;" /></span>
+                            <span class=""><img src="../../public/images/logo/Logo-Text-Primary.png" alt="logo"
+                                    class="img-fluid" style="max-height: 48px;" /></span>
 
                         </span>
 
@@ -94,9 +94,9 @@
 
                     <!-- Navbar Toggler -->
 
-                    <ul class="nav navbar-nav d-flex d-sm-flex flex justify-content-start ml-32pt">
+                    <ul class="nav navbar-nav d-none d-lg-flex flex justify-content-start ml-32pt">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Início</a>
+                            <a href="home.html" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
@@ -122,11 +122,9 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Dashboard</a>
+                            <a href="student-profile.html" class="nav-link">Meu Perfil</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="notification-center.html" class="nav-link">Notificações</a>
-                        </li>
+
 
 
                     </ul>
@@ -149,12 +147,12 @@
 
                         <!-- Notifications dropdown -->
                         <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
-                            data-toggle="tooltip" data-title="Notifications" data-placement="bottom"
+                            data-toggle="tooltip" data-title="Notificações" data-placement="bottom"
                             data-boundary="window">
                             <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
                                 data-caret="false">
                                 <i class="material-icons">notifications_none</i>
-                                <span class="badge badge-notifications badge-accent">1</span>
+                                <span class="badge badge-notifications bg-purple500 text-white-100">1</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right rounded-lg">
                                 <div data-perfect-scrollbar class="position-relative">
@@ -183,7 +181,8 @@
                                                         nível!</strong>
                                                     <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
                                                         porque
-                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para
+                                                        ver
                                                         suas conquistas.
                                                     </span>
                                                     <small class="text-black-50">3 minutos atrás.</small>
@@ -207,10 +206,12 @@
                                                     </span>
                                                 </span>
                                                 <span class="flex d-flex flex-column">
-                                                    <strong class="text-black-100 card-title mb-1">+4 Chaves</strong>
+                                                    <strong class="text-black-100 card-title mb-1">+4
+                                                        Chaves</strong>
                                                     <span class="text-black-70 mb-1">Parabéns! Você subiu um nível
                                                         porque
-                                                        terminou um conteúdo obrigatório. Acesse o dashboard para ver
+                                                        terminou um conteúdo obrigatório. Acesse o dashboard para
+                                                        ver
                                                         suas conquistas.
                                                     </span>
                                                     <small class="text-black-50">7 minuttos atrás.</small>
@@ -234,8 +235,10 @@
                                                     </span>
                                                 </span>
                                                 <span class="flex d-flex flex-column">
-                                                    <strong class="text-black-100 card-title mb-1">+1 Medalha</strong>
-                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma medalha
+                                                    <strong class="text-black-100 card-title mb-1">+1
+                                                        Medalha</strong>
+                                                    <span class="text-black-70 mb-1">Parabéns, você ganhou uma
+                                                        medalha
                                                         porque
                                                         terminou todas as atividades obrigatórias do eixo.
                                                     </span>
@@ -276,15 +279,16 @@
 
                                     <span class="avatar-title rounded-circle bg-primary"> <img
                                             class=" avatar rounded-circle"
-                                            src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg"> </span>
+                                            src="../../public/images/avatars/avatar_1.jpeg">
+                                    </span>
 
                                 </span>
 
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-header"><strong>Olá, Gregório</strong></div>
-                                <a class="dropdown-item" href="student-edit-account-profile.html">Meu Perfil</a>
-                                <a class="dropdown-item" href="student-dashboard.html">Dashboard</a>
+                                <a class="dropdown-item" href="student-profile.html">Meu Perfil</a>
+                                <a class="dropdown-item" href="student-edit-account-profile.html">Preferências</a>
                                 <a class="dropdown-item" href="#">Sair</a>
 
                             </div>
@@ -305,7 +309,7 @@
         <!-- Header Layout Content -->
 
         <div class="mdk-header-layout__content page-content">
-            <div class="navbar navbar-list navbar-light bg-lightgreen border-bottom-2 border-bottom navbar-expand-sm"
+            <div class="navbar navbar-list navbar-light bg-primary100 border-bottom-2 border-bottom navbar-expand-sm"
                 style="white-space: nowrap;">
                 <div class="container page__container">
                     <nav class="nav navbar-nav">
@@ -339,14 +343,16 @@
 
                     <div class=" flex d-flex flex-column align-items-center justify-content-center mb-16pt text-center">
                         <h2 class=" text-white flex m-0 mb-32pt">Hora de testar suas habilidades!</h2>
-                        <h1 class="text-primary200 flex m-0 w-75 mb-32pt">Quiz: Desafios Estratégicos na Gestão da
+                        <h1 class="text-primary200 flex m-0 w-75 mb-32pt">Atividade Avaliativa: Desafios Estratégicos na
+                            Gestão da
                             Inovação
                         </h1>
                     </div>
 
                     <div class="d-flex flex-wrap mb-16pt align-items-center justify-content-center">
-                        <a href="student-take-a-quiz.html"><button type="button" class="btn btn-white btn-md btn-rounded">
-                                <i class="material-icons icon--left">launch</i> Iniciar Quiz
+                        <a href="student-take-a-quiz.html"><button type="button"
+                                class="btn btn-white btn-md btn-rounded">
+                                <i class="material-icons icon--left">launch</i> Iniciar Atividade
                             </button></a>
 
                     </div>
@@ -360,7 +366,7 @@
                 <div class="page-headline text-center">
 
                     <h2>Antes de começar, leia as instruções</h2>
-                    <p class="lead w-75 mx-auto text-70">Os questionários/quizzes têm como objetivo
+                    <p class="lead w-75 mx-auto text-70">As atividades avaliativas têm como objetivo
                         verificar a aprendizagem dos alunos para obtenção de certificado. Eles se baseiam nas aulas
                         em
                         vídeo e materiais de apoio.</p>
@@ -372,24 +378,24 @@
             <div class="container page__container mt-2 pb-64pt">
 
                 <div class="row card-group-row border-bottom-2 botder-muted py-32pt">
+                  
                     <div class="col-md-4 card-group-row__col">
 
-                        <div class="card card--elevated card-group-row__card bg-purple500 py-8pt">
+                        <div class="card card--elevated card-group-row__card bg-white py-8pt ">
                             <div class="card-body d-flex ">
-                                <span
-                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-purple600">
+                                <span class="icon-holder text-white rounded-circle d-inline-flex mr-16pt bg-purple400">
                                     <i class="material-icons">replay</i>
                                 </span>
                                 <div class="flex">
-                                    <a class="mb-12pt text-orange100" href="" style="font-size: 1.15rem;
-                                    font-weight: bold;
-                                    line-height: 1.5rem;
-                                    
-                                    ">
-                                        Somente 2 tentativas são permitidas</a>
-                                    <p class="text-purple100 mt-3"><strong>A partir da segunda tentativa, uma questão
-                                            que foi respondida incorretamente na primeira vez tem sua nota
-                                            reduzida.</strong>
+                                    <a class="text-black-100" href="" style="font-size: 1.15rem;
+                                       font-weight: bold;
+                                
+                                       
+                                       ">
+                                           Somente 2 tentativas são permitidas</a>
+                                    <p class="text-muted mb-0 mt-2"><strong>A partir da segunda tentativa, uma questão
+                                        que foi respondida incorretamente na primeira vez tem sua nota
+                                        reduzida.</strong>
                                         <p>
                                 </div>
                             </div>
@@ -399,20 +405,19 @@
                     </div>
                     <div class="col-md-4 card-group-row__col">
 
-                        <div class="card card--elevated card-group-row__card bg-orange300 py-8pt ">
+                        <div class="card card--elevated card-group-row__card bg-white py-8pt ">
                             <div class="card-body d-flex ">
-                                <span
-                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-orange500">
+                                <span class="icon-holder text-white rounded-circle d-inline-flex mr-16pt bg-orange300">
                                     <i class="material-icons">access_time</i>
                                 </span>
                                 <div class="flex">
-                                    <a class="mb-12pt text-orange100" href="" style="font-size: 1.15rem;
+                                    <a class="text-black-100" href="" style="font-size: 1.15rem;
                                        font-weight: bold;
-                                       line-height: 1.5rem;
+                                
                                        
                                        ">
                                         Limite de Tempo</a>
-                                    <p class="text-orange600 mb-0 mt-3"><strong>Você terá até 1 hora para concluir e
+                                    <p class="text-muted mb-0 mt-2"><strong>Você terá até 1 hora para concluir e
                                             enviar o questionário. Gerencie bem o tempo para responder todas as
                                             perguntas com atenção e revisar as respostas antes do envio.</strong>
                                         <p>
@@ -424,22 +429,19 @@
                     </div>
                     <div class="col-md-4 card-group-row__col">
 
-                        <div class="card card--elevated card-group-row__card bg-green200 py-8pt">
+                        <div class="card card--elevated card-group-row__card bg-white py-8pt ">
                             <div class="card-body d-flex ">
-                                <span
-                                    class="icon-holder icon-holder--outline-muted text-white rounded-circle d-inline-flex mr-16pt bg-green600">
+                                <span class="icon-holder text-white rounded-circle d-inline-flex mr-16pt bg-green300">
                                     <i class="material-icons">check_circle</i>
                                 </span>
                                 <div class="flex">
-                                    <a class="mb-12pt text-lightgreen" href="" style="font-size: 1.15rem;
+                                    <a class="text-black-100" href="" style="font-size: 1.15rem;
                                        font-weight: bold;
-                                       line-height: 1.5rem;
+                                
                                        
                                        ">
-                                        Método de Avaliação</a>
-                                    <p class="text-green500 mb-0 mt-3"><strong>Você terá até 1 hora para concluir e
-                                            enviar o questionário. Gerencie bem o tempo para responder todas as
-                                            perguntas com atenção e revisar as respostas antes do envio.</strong>
+                                         Método de Avaliação</a>
+                                    <p class="text-muted mb-0 mt-2"><strong>A sua nota final consiste da maior nota obtida nas tentativas dos quizzes. Lembre-se de que as questões respondidas incorretamente na primeira tentativa terão seu valor reduzido na segunda tentativa.</strong>
                                         <p>
                                 </div>
                             </div>
@@ -447,6 +449,7 @@
                         </div>
 
                     </div>
+                    
 
 
 
@@ -456,10 +459,10 @@
                 <div class="page-section ">
                     <div class="mb-2">
                         <h4>Importante:</h4>
-                        <p class="w-75  text-black-100" >Os quizzes e questionários são ferramentas para avaliar o aprendizado dos
+                        <p class="w-75  text-black-100">As atividades avaliativas são ferramentas para avaliar o
+                            aprendizado dos
                             alunos, servindo como critério para a emissão do certificado. Baseados nas aulas em vídeo e
-                            nos materiais de apoio, eles permitem consulta livre durante sua realização. Caso surjam
-                            dúvidas, é possível discutir com outros alunos no fórum. Há também a possibilidade de uma
+                            nos materiais de apoio, eles permitem consulta livre durante sua realização. Há também a possibilidade de uma
                             segunda tentativa, sendo considerada a maior nota obtida. No entanto, é importante lembrar
                             que as questões respondidas incorretamente na primeira tentativa terão seu valor reduzido na
                             segunda tentativa.</p>
@@ -472,9 +475,8 @@
                             <img src="../../public/images/illustration/background-blur.jpg" alt="TypeScript"
                                 class="card-img" style="max-height: 100%; width: initial;">
                             <div class="fullbleed bg-primary" style="opacity: .5;"></div>
-                            <img src="../../public/images/logo-color.svg" width="64"
-                                alt="Instruduction to TypeScript" class="rounded position-absolute"
-                                style="right: 1rem; top: 1rem;">
+                            <img src="../../public/images/logo-color.svg" width="64" alt="Instruduction to TypeScript"
+                                class="rounded position-absolute" style="right: 1rem; top: 1rem;">
                             <div class="card-body d-flex align-items-center justify-content-center fullbleed">
                                 <div>
                                     <h2 class="text-white mb-16pt">Tudo certo? Vamos iniciar o quiz?</h2>
@@ -605,5 +607,79 @@
 
 
 </body>
+<!-- Mobile Warning -->
+<div id="mobile-warning" class="d-none">
+    <div class="mobile-overlay"></div>
+    <div class="mobile-message">
+        <div class="mobile-content">
+            <i class="material-icons mb-3" style="font-size: 48px;">computer</i>
+            <h4>Acesso Indisponível</h4>
+            <p>Esta plataforma foi desenvolvida para uso em computadores.</p>
+            <p>Por favor, acesse através de um desktop ou notebook.</p>
+        </div>
+    </div>
+</div>
 
+<style>
+    @media (max-width: 768px) {
+        #mobile-warning {
+            display: block !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 9999 !important;
+        }
+
+        .mobile-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(5px) !important;
+        }
+
+        .mobile-message {
+            position: absolute;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 90% !important;
+            max-width: 320px !important;
+            background-color: white !important;
+            padding: 2rem !important;
+            border-radius: 8px !important;
+            text-align: center !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .mobile-content {
+            color: #4b2796;
+        }
+
+        .mobile-content i {
+            color: #4b2796;
+        }
+
+        .mobile-content h4 {
+            margin-bottom: 1rem !important;
+            font-weight: 600  !important;
+        }
+
+        .mobile-content p {
+            color: #666  !important;
+            margin-bottom: 0.5rem  !important;
+            font-size: 0.9rem  !important;
+        }
+
+        body {
+            overflow: hidden !important;
+        }
+    }
+</style>
+
+<!-- END Mobile Warning -->
 </html>
