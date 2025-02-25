@@ -40,19 +40,7 @@
 
 <body class="layout-sticky-subnav layout-default ">
     <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
+      
 
 
 
@@ -387,130 +375,107 @@
             
 
 
-                <div class="card-body flex d-flex card position-sticy fixed-bottom justify-content-end  ml-auto mr-5"
-                    style="z-index: 2; width: 350px;">
-                    <div class="flex d-flex d-block align-items-center">
-                        <a href="teacher-profile.html" class="avatar avatar avatar-md avatar-online mr-12pt">
-                            <img src="../../public/images/people/256/256_rsz_90-greg-linkedin.jpeg" alt="author"
-                                class="avatar rounded-circle bg-white">
-                        </a>
-                        <div class="mr-16pt">
-                            <a href="teacher-profile.html" class="card-title">Posição no Eixo 1</a>
-                            <div class="d-flex align-items-center">
-                                <small class="text-50 mr-2">Atualizado há</small>
-                                <small class="text-50 mr-2">2 min</small>
-
-                            </div>
-                        </div>
-                        <a href="#" class="ml-auto">
-                            <h2 class="text-primary500 d-flex align-items-center text-decoration-0 mb-0">3º<i
-                                    class="material-icons icon--left">trending_up</i> </h2>
-                        </a>
-                    </div>
-                </div>
+            
 
 
                 <div class="card-body flex d-flex card position-sticy fixed-bottom justify-content-end  ml-auto mr-5 bg-black text-white border-0"
-                    style="z-index: 2; width: 350px;">
+                    style="z-index: 2; width: 350px; transition: width 0.3s ease-in-out;" id="profileCard">
 
                     <div class="flex d-flex d-block align-items-center mb-2">
-
                         <a href="#" class="avatar avatar avatar-md avatar-online mr-12pt">
                             <img src="../../public/images/avatars/avatar_1.jpeg" alt="author"
                                 class="avatar rounded-circle bg-white">
                         </a>
-                        <div class="w-100">
-                            <a href="#" class="card-title">Gregório Pinheiro</a>
-                            <div class="d-flex align-items-center mt-2">
-
-                                <div class="d-flex align-items-center mb-2">
-
-                                    <span
-                                        class="chip chip-light bg-primary100 text-primary600 d-inline-flex align-items-center shine-effect border-0"
-                                        data-toggle="tooltip"
-                                        data-title="Você está no Nível 7 do Eixo 1. Esté é o maior nível."
-                                        data-placement="bottom"
-                                        style="padding: 2px 15px; font-size: 12px; position: relative; overflow: hidden;">
-                                        <i class="material-icons icon--left" style="font-size: 14px;">bar_chart</i>
-                                        NÍVEL 7
-
-                                    </span>
-                                    <span class="chip chip-outline-secondary text-white-50 ml-2" style="padding: 2px 15px; font-size: 12px; position: relative; overflow: hidden;">DO EIXO 1</span>
-
-
+                        <div class="w-100 d-flex justify-content-between align-items-start">
+                            <div>
+                                <a href="#" class="card-title">Gregório Pinheiro</a>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span
+                                            class="chip chip-light bg-primary100 text-primary600 d-inline-flex align-items-center shine-effect border-0"
+                                            data-toggle="tooltip"
+                                            data-title="Você está no Nível 7 do Eixo 1. Esté é o maior nível."
+                                            data-placement="bottom"
+                                            style="padding: 2px 15px; font-size: 12px; position: relative; overflow: hidden;">
+                                            <i class="material-icons icon--left" style="font-size: 14px;">bar_chart</i>
+                                            NÍVEL 7
+                                        </span>
+                                        <span class="chip chip-outline-secondary text-white-50 ml-2" style="padding: 2px 15px; font-size: 12px; position: relative; overflow: hidden;">DO EIXO 1</span>
+                                    </div>
                                 </div>
-
                             </div>
-                           
+                            <button id="toggleProfileCard" class="btn btn-sm p-0 text-white">
+                                <i class="material-icons">remove</i>
+                            </button>
                         </div>
-                        
                     </div>
-                    <div class="d-flex align-items-center mb-1">
-                        <i class="material-icons text-primary300">trending_up</i>
-                        <strong class="text-white-100"></strong>
-                               
-                        <div class="progress flex-grow-1 ml-2" style="height: 8px;">
-                            <div class="progress-bar progress-bar-striped bg-primary400" role="progressbar"  data-toggle="tooltip"
-                            data-title="Você está no Nível 7 do Eixo 1 com 100% de conclusão do conteúdo."
-                            data-placement="bottom" style="width: 100.0%;"
-                                aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"></div>
+                    
+                    <div id="profileCardContent" style="transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; overflow: hidden; max-height: 500px; opacity: 1;">
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="material-icons text-primary300">trending_up</i>
+                            <strong class="text-white-100"></strong>
+                                
+                            <div class="progress flex-grow-1 ml-2" style="height: 8px;">
+                                <div class="progress-bar progress-bar-striped bg-primary400" role="progressbar"  data-toggle="tooltip"
+                                data-title="Você está no Nível 7 do Eixo 1 com 100% de conclusão do conteúdo."
+                                data-placement="bottom" style="width: 100.0%;"
+                                    aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ml-2 h5 text-primary300 mb-0" style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">100,0%</span>
                         </div>
-                        <span class="ml-2 h5 text-primary300 mb-0" style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">100,0%</span>
-                    </div>
-                    <div class="border-bottom-1 border-dark mt-2"></div>
-                    <div class="flex d-flex flex-column mt-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="material-icons text-primary200 mr-2">vpn_key</i>
-                            <strong class="text-white-70">Chaves</strong>
-                            <span class="ml-2 mb-0 h5 text-primary200"
-                                style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">780</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="material-icons text-primary200 mr-2">bar_chart</i>
-                            <strong class="text-white-70">Aproveitamento</strong>
-                            
-                            <span class="ml-2 h5 text-primary200 mb-0"
-                                style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">92.6%</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="material-icons text-primary200 mr-2">star</i>
-                            <strong class="text-white-70">Medalhas</strong>
-                            <div class="avatar-group ml-2">
-                                <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Legendário"
-                                    data-placement="bottom">
-                                    <img src="../../public/images/icon/MEDAL-6.png" alt="Avatar"
-                                        class="avatar-img rounded-circle border-dark border-1 bg-primary900">
-                                </div>
-                                <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Novato"
-                                    data-placement="bottom">
-                                    <img src="../../public/images/icon/MEDAL-2.png" alt="Avatar"
-                                        class="avatar-img rounded-circle border-dark border-1 bg-primary900">
-                                </div>
-                                <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
-                                    data-placement="bottom">
-                                    <img src="../../public/images/icon/MEDAL-4.png" alt="Avatar"
-                                        class="avatar-img rounded-circle border-dark border-1 bg-primary900">
-                                </div>
-                                <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
-                                    data-placement="bottom">
-                                    <img src="../../public/images/icon/MEDAL-5.png" alt="Avatar"
-                                        class="avatar-img rounded-circle border-dark border-1 bg-primary900">
-                                </div>
-                                <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
-                                    data-placement="bottom">
-                                    <img src="../../public/images/icon/MERAL-1.png" alt="Avatar"
-                                        class="avatar-img rounded-circle border-dark border-1 bg-primary900">
-                                </div>
-                                <div class="avatar avatar-xs">
-                                    <a href="student-profile.html"> <span
-                                            class="avatar-title rounded-circle border-0 bg-primary900">+</span></a>
+                        <div class="border-bottom-1 border-dark mt-2"></div>
+                        <div class="flex d-flex flex-column mt-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="material-icons text-primary200 mr-2">vpn_key</i>
+                                <strong class="text-white-70">Chaves</strong>
+                                <span class="ml-2 mb-0 h5 text-primary200"
+                                    style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">780</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="material-icons text-primary200 mr-2">bar_chart</i>
+                                <strong class="text-white-70">Aproveitamento</strong>
+                                
+                                <span class="ml-2 h5 text-primary200 mb-0"
+                                    style="vertical-align: middle;  font-size: 15px; font-family: 'Exo 2','Sans-Serif';">92.6%</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="material-icons text-primary200 mr-2">star</i>
+                                <strong class="text-white-70">Medalhas</strong>
+                                <div class="avatar-group ml-2">
+                                    <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Legendário"
+                                        data-placement="bottom">
+                                        <img src="../../public/images/icon/MEDAL-6.png" alt="Avatar"
+                                            class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Novato"
+                                        data-placement="bottom">
+                                        <img src="../../public/images/icon/MEDAL-2.png" alt="Avatar"
+                                            class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
+                                        data-placement="bottom">
+                                        <img src="../../public/images/icon/MEDAL-4.png" alt="Avatar"
+                                            class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
+                                        data-placement="bottom">
+                                        <img src="../../public/images/icon/MEDAL-5.png" alt="Avatar"
+                                            class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-toggle="tooltip" data-title="Veterano"
+                                        data-placement="bottom">
+                                        <img src="../../public/images/icon/MERAL-1.png" alt="Avatar"
+                                            class="avatar-img rounded-circle border-dark border-1 bg-primary900">
+                                    </div>
+                                    <div class="avatar avatar-xs">
+                                        <a href="student-profile.html"> <span
+                                                class="avatar-title rounded-circle border-0 bg-primary900">+</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
 
@@ -584,43 +549,103 @@
                 })
             </script>
 
-            <style>
-                .btn.disabled {
-                    opacity: 0.8;
-                    position: relative;
-                    pointer-events: all !important; /* Permite que o tooltip apareça mesmo com botão desabilitado */
-                }
+<style>
+    .btn.disabled {
+        opacity: 0.8;
+        position: relative;
+        pointer-events: all !important;
+        /* Permite que o tooltip apareça mesmo com botão desabilitado */
+    }
 
-                .close-modal {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    background: none;
-                    border: none;
-                    cursor: pointer;
-                    padding: 5px;
-                    border-radius: 50%;
-                    transition: background-color 0.3s;
-                }
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+    }
 
-                .close-modal:hover {
-                    background-color: rgba(0, 0, 0, 0.1);
-                }
+    .close-modal:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 
-                .close-modal i {
-                    color: #666;
-                    font-size: 24px;
-                }
+    .close-modal i {
+        color: #666;
+        font-size: 32px;
+    }
 
-                .custom-modal-content {
-                    position: relative;
-                }
-            </style>
+    .custom-modal-content {
+        position: relative;
+    }
+
+    /* Estilos para o botão de toggle e transições do card */
+    #toggleProfileCard {
+        transition: all 0.3s ease;
+        padding: 8px !important;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5px;
+    }
+
+    #toggleProfileCard:hover {
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    #toggleProfileCard i {
+        transition: all 0.3s ease;
+        font-size: 20px;
+    }
+
+    #toggleProfileCard:hover i {
+        color: #ffffff;
+    }
+</style>
 
             <script>
                 function closeModal(modalId) {
                     document.getElementById(modalId).style.display = 'none';
                 }
+            </script>
+
+            <script>
+                // Script para minimizar e maximizar o card de perfil
+                document.addEventListener('DOMContentLoaded', function() {
+                    const toggleBtn = document.getElementById('toggleProfileCard');
+                    const profileCard = document.getElementById('profileCard');
+                    const profileCardContent = document.getElementById('profileCardContent');
+                    
+                    let isMinimized = false;
+                    
+                    toggleBtn.addEventListener('click', function() {
+                        if (isMinimized) {
+                            // Maximizar
+                            profileCardContent.style.opacity = '1';
+                            profileCardContent.style.maxHeight = '500px';
+                            setTimeout(() => {
+                                toggleBtn.innerHTML = '<i class="material-icons">remove</i>';
+                            }, 150);
+                        } else {
+                            // Minimizar
+                            profileCardContent.style.opacity = '0';
+                            profileCardContent.style.maxHeight = '0';
+                            setTimeout(() => {
+                                toggleBtn.innerHTML = '<i class="material-icons">add</i>';
+                            }, 150);
+                        }
+                        isMinimized = !isMinimized;
+                    });
+                });
             </script>
 
 

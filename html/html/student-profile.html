@@ -423,7 +423,7 @@
                                             Gregório Pinheiro</h1>
                                         <p class="text-shadow text-white-50"
                                             style="font-size: 1.2em; color: #FFD700 !; font-weight: bold;">
-                                            <strong>Previsão de conclusão de curso: <b class="text-white-100">1 ano e 6
+                                            <strong>Previsão de conclusão de curso: <b class="text-white-100">18
                                                     meses</b></strong>
                                         </p>
 
@@ -432,11 +432,11 @@
                                             <span
                                                 class="chip chip-light bg-purple100 text-purple600 d-inline-flex align-items-center shine-effect"
                                                 data-toggle="tooltip"
-                                                data-title="Você está no nível mais alto da plataforma."
+                                                data-title="O plano progressivo estabelece uma estimativa de 18 meses para a conclusão completa do curso."
                                                 data-placement="bottom"
                                                 style="padding: 8px 32px; font-size: 14px; position: relative; overflow: hidden;">
                                                 <i class="material-icons icon--left" style="font-size: 20px;">face</i>
-                                                PLANO OURO
+                                                PLANO PROGRESSIVO
 
                                             </span>
 
@@ -476,11 +476,16 @@
 
 
                     <div class="row" role="tablist">
-                        <div class="col-auto">
+                        <div class="col-auto d-flex">
+                            <a href="#" class="mr-2"><button
+                                class="btn btn-outline-primary btn-rounded" onclick="openGamificationVideo(event)"><i
+                                    class="material-icons icon--left">gamepad</i>
+                                Regras de Gamificação</button></a>
                             <a href="student-edit-account-profile.html"><button
                                     class="btn btn-outline-accent btn-rounded ml-16pt"><i
                                         class="material-icons icon--left">settings</i>
                                     Preferências</button></a>
+                         
                         </div>
                     </div>
 
@@ -1504,3 +1509,231 @@
 </style>
 
 <!-- END Mobile Warning -->
+
+<!-- Modal personalizado para o vídeo de gamificação -->
+<div id="customGamificationModal" class="custom-modal">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h5 class="custom-modal-title">Regras de Gamificação da Plataforma</h5>
+                <div class="custom-modal-controls">
+                    <button type="button" class="custom-minimize" onclick="toggleMinimizeModal()">
+                        <span class="material-icons">remove</span>
+                    </button>
+                    <button type="button" class="custom-close" onclick="closeGamificationVideo()">
+                        <span>&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="custom-modal-body">
+                <p class="mb-4">Assista ao vídeo abaixo para entender como funciona o sistema de gamificação da plataforma, incluindo como ganhar pontos, conquistar badges e avançar nos rankings.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kAMTBMwdgYQ?si=3JDn1i9o8riFpjZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Versão minimizada do modal -->
+<div id="minimizedModal" class="minimized-modal">
+    <div class="minimized-modal-content">
+        <i class="material-icons mr-2">gamepad</i>
+        <span>Regras de Gamificação</span>
+        <div class="minimized-modal-controls">
+            <button type="button" class="custom-maximize" onclick="toggleMinimizeModal()">
+                <span class="material-icons">open_in_full</span>
+            </button>
+            <button type="button" class="custom-close-mini" onclick="closeGamificationVideo()">
+                <span>&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para o modal personalizado */
+    .custom-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .custom-modal.show {
+        display: flex;
+    }
+    
+    .custom-modal::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    
+    .custom-modal-dialog {
+        position: relative;
+        width: 800px;
+        max-width: 90%;
+        z-index: 2001;
+        margin: 0;
+    }
+    
+    .custom-modal-content {
+        position: relative;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    
+    .custom-modal-header {
+        padding: 15px;
+        border-bottom: 1px solid #e9ecef;
+        background: linear-gradient(45deg, #4b2796, #6937b5);
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .custom-modal-title {
+        margin: 0;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .custom-modal-controls {
+        display: flex;
+        align-items: center;
+    }
+    
+    .custom-close, .custom-minimize {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0.8;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .custom-minimize {
+        font-size: 20px;
+    }
+    
+    .custom-close:hover, .custom-minimize:hover {
+        opacity: 1;
+    }
+    
+    .custom-modal-body {
+        padding: 20px;
+    }
+    
+    /* Estilos para o modal minimizado */
+    .minimized-modal {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2000;
+    }
+    
+    .minimized-modal.show {
+        display: block;
+    }
+    
+    .minimized-modal-content {
+        background: linear-gradient(45deg, #4b2796, #6937b5);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+    
+    .minimized-modal-controls {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    .custom-maximize, .custom-close-mini {
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        opacity: 0.8;
+        margin-left: 5px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .custom-maximize:hover, .custom-close-mini:hover {
+        opacity: 1;
+    }
+    
+    /* Garantir que o card fique visível */
+    .card {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<script>
+    function openGamificationVideo(event) {
+        event.preventDefault();
+        document.getElementById('customGamificationModal').classList.add('show');
+        document.getElementById('minimizedModal').classList.remove('show');
+    }
+    
+    function closeGamificationVideo() {
+        document.getElementById('customGamificationModal').classList.remove('show');
+        document.getElementById('minimizedModal').classList.remove('show');
+    }
+    
+    function toggleMinimizeModal() {
+        const fullModal = document.getElementById('customGamificationModal');
+        const miniModal = document.getElementById('minimizedModal');
+        
+        if (fullModal.classList.contains('show')) {
+            // Minimizar
+            fullModal.classList.remove('show');
+            miniModal.classList.add('show');
+        } else {
+            // Maximizar
+            miniModal.classList.remove('show');
+            fullModal.classList.add('show');
+        }
+    }
+    
+    // Fechar o modal ao clicar fora dele
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('customGamificationModal');
+        
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeGamificationVideo();
+            }
+        });
+        
+        // Garantir que o modal esteja fechado ao carregar a página
+        modal.classList.remove('show');
+        document.getElementById('minimizedModal').classList.remove('show');
+    });
+</script>
