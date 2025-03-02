@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "door5": "Eixo 5",
         "door6": "Eixo 6",
         "salaconferencia": "Sala de Conferência",
-        "espaco360": "Café com Saber",
+        "espaco360": "Café ConSaber",
     };
 
     // Criar o elemento tooltip uma única vez
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (area.id === "salaconferencia") {
                 window.location.href = "student-sala-de-conferencias.html";
             } else if (area.id === "espaco360") {
-                window.location.href = "student-sala-cafe-com-saber.html";
+                window.location.href = "student-sala-cafe-consaber.html";
             } else if (area.id === "character") {
                 return;
             }

@@ -182,7 +182,7 @@ body, html {
     width: 100%;
     max-width: 1440px;
     height: 810px;
-    background: url('../../public/images/illustration/eixo-2-background.jpg') no-repeat center center;
+    background: url('../../public/images/illustration/eixos/eixo3.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 12px;
     margin: 0 auto;
@@ -200,7 +200,7 @@ body, html {
   width: 100%;
   max-width: 1440px;
   height: 810px;
-  background: url('../../public/images/illustration/eixo-2-background.jpg') no-repeat center center;
+  background: url('../../public/images/illustration/eixos/eixo3.jpg') no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   margin: 0 auto;
@@ -283,19 +283,12 @@ body, html {
 
 #disciplina2 {
     top: 55.99%;
-    left: 11.2%;
+    left: 31.2%;
     width: 11.32%; /* 110px / 1440px */
     height: 14.32%; /* 278px / 810px */
     clip-path: url('#door1clip');
 }
 
-#disciplina3 {
-    top: 55.99%;
-    left: 33.9%;
-    width: 11.32%; /* 110px / 1440px */
-    height: 14.32%; /* 278px / 810px */
-    clip-path: url('#door1clip');
-}
 
 #estudodecaso {
     top: 26.5%;

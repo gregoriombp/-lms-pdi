@@ -182,7 +182,7 @@ body, html {
   
     width: 1440px; /* Largura fixa */
     height: 810px; /* Altura fixa (proporção da imagem de fundo) */
-    background: url('../../public/images/illustration/segundatelaV6.jpg') no-repeat center center;
+    background: url('../../public/images/illustration/Entrada.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 20px;
   }
@@ -201,7 +201,7 @@ body, html {
   width: 100%;
   max-width: 1440px;
   height: 810px;
-  background: url('../../public/images/home_page/background-no-one2.jpg') no-repeat center center;
+  background: url('../../public/images/illustration/Entrada.jpg')  no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   margin: 0 auto;

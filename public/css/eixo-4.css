@@ -182,7 +182,7 @@ body, html {
     width: 100%;
     max-width: 1440px;
     height: 810px;
-    background: url('../../public/images/illustration/eixo-2-background.jpg') no-repeat center center;
+    background: url('../../public/images/illustration/eixos/eixo4.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 12px;
     margin: 0 auto;
@@ -200,7 +200,7 @@ body, html {
   width: 100%;
   max-width: 1440px;
   height: 810px;
-  background: url('../../public/images/illustration/eixo-2-background.jpg') no-repeat center center;
+  background: url('../../public/images/illustration/eixos/eixo4.jpg') no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   margin: 0 auto;
