@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invito — Caffè con Gregorio</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #0f0;
+      font-family: monospace;
+      padding: 20px;
+    }
+    .screen {
+      background: #000;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 700px;
+      margin: 40px auto;
+      box-shadow: 0 0 20px rgba(0,255,0,0.2);
+    }
+    .line { margin: 6px 0; white-space: pre-wrap; }
+    .cursor {
+      display:inline-block;
+      width:10px;
+      background:#0f0;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50% {background:#0f0}
+      51%, 100% {background:transparent}
+    }
+    a {color:#0f0; text-decoration: underline;}
+  </style>
+</head>
+<body>
+  <div class="screen" id="screen"></div>
+  <script>
+    const lines = [
+      {t: "Ciao Carmine ☕", d:800},
+      {t: "Se stai leggendo questo messaggio... significa che sei stato selezionato per un invito molto speciale.", d:1200},
+      {t: "Domani alle ore 14:30 ci vediamo a Baggio, vicino a casa nostra, per prendere un caffè insieme.", d:1200},
+      {t: "Mi farebbe tanto piacere passare un po’ di tempo con te e chiacchierare con calma. 💙", d:1200},
+      {t: "Per favore, conferma con me su WhatsApp così ci organizziamo meglio:", d:1000},
+      {t: "➡️ https://wa.me/5531999496803", d:200}
+    ];
+
+    const screen = document.getElementById('screen');
+
+    async function typeLine(text) {
+      const line = document.createElement('div');
+      line.className = 'line';
+      screen.appendChild(line);
+      for (let i = 0; i < text.length; i++) {
+        line.textContent = text.slice(0, i+1);
+        await new Promise(r => setTimeout(r, 40));
+      }
+    }
+
+    async function run(){
+      for(const l of lines){
+        await typeLine(l.t);
+        await new Promise(r=>setTimeout(r,l.d||500));
+      }
+      const cursor = document.createElement('span');
+      cursor.className = 'cursor';
+      screen.appendChild(cursor);
+    }
+
+    run();
+  </script>
+</body>
+</html>
