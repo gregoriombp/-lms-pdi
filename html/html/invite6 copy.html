@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WHISPERIUM 2025 — Secure Access</title>
+  <meta name="description" content="Convite confidencial para WHISPERIUM 2025. Acesso restrito. Não compartilhar." />
+  <meta property="og:title" content="WHISPERIUM 2025 — Secure Access" />
+  <meta property="og:description" content="Convite confidencial. Acesso restrito. Não compartilhar." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <style>
+    :root{
+      --bg: #0a0a0a;
+      --fg: #e6e6e6;
+      --dim: #a6a6a6;
+      --muted: #6e6e6e;
+      --border: #2a2a2a;
+      --accent: #ffffff;
+      --scanline: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background: radial-gradient(120% 120% at 50% 50%, #000 0%, var(--bg) 60%, #000 100%);
+      color: var(--fg);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+      line-height:1.55;
+    }
+    .frame{ position:relative; min-height:100%; display:grid; place-items:center; padding: clamp(16px, 4vw, 48px); overflow:hidden; }
+    .crt::before{ content:""; position:absolute; inset:0; pointer-events:none; background-image: linear-gradient(var(--scanline) 1px, transparent 1px); background-size: 100% 3px; opacity:.6; animation: scan 8s linear infinite; }
+    @keyframes scan{to{transform: translateY(3px)}}
+    .crt::after{ content:""; position:absolute; inset:-10%; pointer-events:none; background: radial-gradient(120% 120% at 50% 50%, transparent 60%, rgba(0,0,0,.6) 100%); }
+
+    .terminal{ width: min(940px, 100%); border: 1px solid var(--border); border-radius: 12px; background: rgba(16, 16, 16, 0.72); overflow: hidden; }
+    .titlebar{ display:flex; align-items:center; gap:8px; padding:10px 14px; border-bottom:1px solid var(--border); background: linear-gradient(180deg, #141414, #0e0e0e); color: var(--dim); font-size: 12px; letter-spacing:.08em; text-transform:uppercase; }
+    .dot{width:10px;height:10px;border-radius:50%;background:#333}
+    .titlebar .title{margin-left:auto; opacity:.8}
+
+    .screen{position:relative; padding:20px clamp(18px, 3vw, 28px) 28px;}
+    .prompt{color: var(--accent)}
+    .line{display:block; white-space:pre-wrap; word-wrap:break-word}
+    .line.dim{opacity:.45}
+    .cursor{display:inline-block; width:10px; background:var(--fg); margin-left:4px; animation: blink 1s steps(1) infinite}
+    @keyframes blink {50%{opacity:0}}
+
+    .meta{margin-top:18px; color: var(--dim); font-size:.95rem}
+    .meta strong{color: var(--fg)}
+
+    .footer{display:flex; gap:12px; flex-wrap:wrap; margin-top:24px}
+    button{
+      appearance:none; border:1px solid var(--border); background: transparent; color: var(--fg);
+      padding:10px 14px; border-radius:10px; cursor:pointer; font: inherit; letter-spacing:.02em;
+    }
+
+    .badge{display:inline-block; padding:.2rem .5rem; border:1px solid var(--border); border-radius:6px; margin-left:.6rem; color: var(--muted); font-size:.85rem}
+    .countdown{ margin-top:16px; color: var(--fg); font-weight:600; letter-spacing:.04em }
+    .countdown small{ color: var(--muted); font-weight:400; margin-left:.4rem }
+
+    .sponsors{ display:flex; align-items:center; gap:.75rem; margin-top:20px; color: var(--muted); opacity:.75 }
+    .sponsors .label{ letter-spacing:.12em; text-transform:uppercase; font-size:.72rem }
+    .chip{ border:1px solid var(--border); border-radius:999px; padding:.28rem .6rem; color: var(--fg); font-size:.78rem }
+
+    .note{display:inline-block;color:var(--muted);font-size:.85rem;margin-top:6px;padding:.2rem 0}
+
+    .error-box{margin-top:20px; padding:15px; border:1px solid #a00; background:#300; color:#f88; white-space:pre-wrap; border-radius:8px; font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <div class="frame crt">
+    <main class="terminal" role="region" aria-live="polite" aria-label="Terminal de convite confidencial WHISPERIUM 2025">
+      <div class="titlebar" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="title">/secure/whisperium_2025</span>
+      </div>
+
+      <!-- TERMINAL CONTENT -->
+      <section class="screen" id="screen">
+        <div class="meta" id="meta" hidden>
+          <div><strong>WHISPERIUM 2025</strong><span class="badge">Acesso restrito</span></div>
+          <div id="dt">28.08.2025 — 20:00</div>
+          <div id="addr">R. Santa Catarina, 1287 — Belo Horizonte</div>
+          <div class="countdown" id="countdown">Inicia em — <span id="cd">--d --h --m --s</span><small>BRT</small></div>
+          <div class="note">Convite intransferível</div>
+
+          <!-- Sponsors -->
+          <div class="sponsors" id="sponsors" hidden>
+            <span class="label">Powered by</span>
+            <span class="chip">AwSales</span>
+            <span class="chip">Assiny</span>
+            <span class="chip">TBM</span>
+          </div>
+        </div>
+        <div class="footer" id="footer" hidden>
+          <button id="replay" aria-label="Reiniciar animação">Reiniciar</button>
+          <button id="copy" aria-label="Copiar detalhes do convite">Copiar convite</button>
+        </div>
+        <div id="error-box" class="error-box" hidden></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const screen = document.getElementById('screen');
+      const meta = document.getElementById('meta');
+      const footer = document.getElementById('footer');
+      const sponsors = document.getElementById('sponsors');
+      const replayBtn = document.getElementById('replay');
+      const copyBtn = document.getElementById('copy');
+      const errorBox = document.getElementById('error-box');
+
+      // ======== CONFIG (labels + data do evento) ========
+      const EVENT_DATE_LABEL = '28.08.2025';
+      const EVENT_TIME_LABEL = '20:00';
+      const EVENT_ADDRESS = 'R. Santa Catarina, 1287 — Belo Horizonte';
+      const EVENT_DATE_ISO = '2025-08-28T20:00:00-03:00'; // BRT
+
+      // ======== COUNTDOWN ========
+      const cdEl = document.getElementById('cd');
+      function tick(){
+        const target = new Date(EVENT_DATE_ISO).getTime();
+        const now = Date.now();
+        const diff = Math.max(0, target - now);
+        const d = Math.floor(diff / (1000*60*60*24));
+        const h = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+        const m = Math.floor((diff % (1000*60*60)) / (1000*60));
+        const s = Math.floor((diff % (1000*60)) / 1000);
+        cdEl.textContent = `${String(d).padStart(2,'0')}d ${String(h).padStart(2,'0')}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+      }
+
+      // ======== Terminal typing ========
+      const lines = [
+        { t: '> Conexão segura estabelecida...', delay: 400 },
+        { t: '> Verificando credenciais...', delay: 800 },
+        { t: '> Acesso autorizado.', delay: 600 },
+        { t: '', delay: 300 },
+        { t: 'WHISPERIUM 2025', delay: 700 },
+        { t: `${EVENT_DATE_LABEL} — ${EVENT_TIME_LABEL}`, delay: 500 },
+        { t: EVENT_ADDRESS.split(' — ')[0] || EVENT_ADDRESS, delay: 500 },
+        { t: (EVENT_ADDRESS.split(' — ')[1] || '').trim(), delay: 400 },
+        { t: '', delay: 300 },
+        { t: 'Você está na lista.', delay: 600 },
+        { t: 'Nenhuma ação necessária.', delay: 800 },
+        { t: '', delay: 500 },
+        { t: 'Protocolo de sigilo:', delay: 600 },
+        { t: '- Não compartilhe este acesso', delay: 350 },
+        { t: '- Não fale sobre o WHISPERIUM', delay: 350 },
+        { t: '', delay: 300 },
+        { t: 'A partir de agora, você faz parte.', delay: 400 },
+      ];
+
+      const TYPING_SPEED = 2; // ms/char
+      const PROMPT = '<span class="prompt">$</span> ';
+
+      function createLine(){
+        const el = document.createElement('div');
+        el.className = 'line';
+        el.innerHTML = PROMPT + '<span class="content"></span><span class="cursor" aria-hidden="true">&nbsp;</span>';
+        screen.insertBefore(el, meta);
+        return el;
+      }
+
+      async function typeLine(text, el, speed=TYPING_SPEED){
+        const content = el.querySelector('.content');
+        const cursor = el.querySelector('.cursor');
+        for (let i=0;i<text.length;i++){
+          content.textContent += text[i];
+          await new Promise(r=>setTimeout(r, speed + Math.random()*30));
+        }
+        cursor?.remove();
+      }
+
+      async function run(){
+        screen.querySelectorAll('.line').forEach(n=>n.remove());
+        meta.hidden = true; footer.hidden = true; sponsors.hidden = true; errorBox.hidden = true;
+        for (const {t, delay} of lines){
+          const el = createLine();
+          await typeLine(t, el);
+          if (delay) await new Promise(r=>setTimeout(r, delay));
+        }
+        sponsors.hidden = false;
+        meta.hidden = false;
+        footer.hidden = false;
+        tick();
+        setInterval(tick, 1000);
+      }
+
+      // ======== Copiar convite (Easter Egg -> Erro exibido) ========
+      copyBtn.addEventListener('click', ()=>{
+        const text = `VOCE NAO DEVERIA TER COPIADO O CONVITE....ERR%%)Îˆˆ$%ˆ(#(&63657....ESTE EVENTO FOI CRIADO PARA AQUELES QUE OUVEM O INAUDÍVEL.
+
+WHISPERIUM nasce da fusão de 'whisper' (sussurro) + o sufixo '-ium' (elemento, lugar). Pense num laboratório de segredos: um ambiente onde ideias raras e insights de IA circulam em silêncio — de ouvido em ouvido — longe do barulho do feed.
+
+O segredo dos grandes infoprodutores não está no que todos veem, mas no que poucos percebem. Agora você sabe. Guarde bem.
+
+— Detalhes —
+WHISPERIUM 2025
+${EVENT_DATE_LABEL} — ${EVENT_TIME_LABEL}
+${EVENT_ADDRESS}
+Convite intransferível. Powered by AwSales, Assiny e TBM.`;
+        errorBox.hidden = false;
+        errorBox.textContent = text;
+      });
+
+      replayBtn.addEventListener('click', run);
+      run();
+    })();
+  </script>
+</body>
+</html>
